@@ -3,12 +3,12 @@
 # # # # # # # #
 
 # Basic
-name:               "Kiko"
-description:        "a clean, lightweight and minimalistic blog theme for jekyll"
+name:               "henriquelalves"
+description:        "projects, posts and ideas from me"
 
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
-url:                "//kiko.gfjaru.com"
-author:             "gfjaru"
+url:                "//henriquelalves.github.io"
+author:             "henriquelalves"
 twitter:
   username:         "gfjaru"
 #facebook:
@@ -22,13 +22,6 @@ permalink:          /:year/:month/:day/:title/
 
 # Markdown
 markdown:           kramdown
-
-# Navigation
-nav:
-  - name:           "About"
-    href:           "//kiko.gfjaru.com/about"
-  - name:           "Download"
-    href:           "//github.com/gfjaru/Kiko/releases"
 
 # Sass
 sass:

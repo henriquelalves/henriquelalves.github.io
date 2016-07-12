@@ -6,8 +6,10 @@ layout: default
     <a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s blog</span></a>
   </h1>
   <nav class="masthead-nav">
-    {% for nav in site.nav %}
-    <a href="{{ nav.href }}">{{ nav.name }}</a>
+    {% for page in site.pages %}
+    {% if page.title != "404 Not Found" %}
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+    {% endif %}
     {% endfor %}
   </nav>
 </header>
