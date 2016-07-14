@@ -41,6 +41,9 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+      author:       "Henrique L. Alves"
+      lead:         ""
+      tags:         ""
 
 gems:
   - jekyll-seo-tag
