@@ -11,6 +11,7 @@ url:                "//henriquelalves.github.io"
 author:             "henriquelalves"
 twitter:
   username:         "gfjaru"
+
 #facebook:
 #  app_id:           1234
 #    publisher:      1234
@@ -26,6 +27,9 @@ markdown:           kramdown
 # Sass
 sass:
   style:            :compressed
+
+# Github Authentication
+repository: henriquelalves/henriquelalves.github.io
 
 # Scopes
 defaults:
