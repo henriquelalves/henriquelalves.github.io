@@ -3,4 +3,4 @@ title: Projects
 permalink: /projects/
 ---
 
-A list of all projects in which I participated.
+A list of projects in which I took part or I am still producing.
