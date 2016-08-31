@@ -1,6 +1,6 @@
 ---
 title: Gamejams List
-permalink: /gamejams_list
+permalink: /gamejams_list/
 layout: page
 ---
 
