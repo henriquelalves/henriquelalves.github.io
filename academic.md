@@ -1,6 +1,7 @@
 ---
 title: Academic
 permalink: /academic/
+main_menu: true
 ---
 
 ## Scientific Projects and Researches

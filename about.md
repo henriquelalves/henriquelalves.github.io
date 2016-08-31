@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+main_menu: true
 ---
 
 I'm Henrique Lacreta Alves - computer engineering student, storytelling lover and practical gamer. This is a site to host my projects and opinions. More about my curriculum and academic related projects on [Academic](/academic/).

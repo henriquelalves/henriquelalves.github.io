@@ -1,6 +1,7 @@
 ---
 title: Blog
 permalink: /blog/
+main_menu: true
 ---
 
 <div class="content list">

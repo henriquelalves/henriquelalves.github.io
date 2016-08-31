@@ -31,6 +31,10 @@ sass:
 # Github Authentication
 repository: henriquelalves/henriquelalves.github.io
 
+# Collections
+collections:
+  - gamejams_list
+
 # Scopes
 defaults:
   -
@@ -39,6 +43,7 @@ defaults:
       type:         "pages"
     values:
       layout:       "page"
+      main_menu:    false
   -
     scope:
       path:         ""

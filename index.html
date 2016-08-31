@@ -7,7 +7,7 @@ layout: default
   </h1>
   <nav class="masthead-nav">
     {% for page in site.pages %}
-    {% if page.title != "404 Not Found" %}
+    {% if page.main_menu == true %}
     <a href="{{ page.permalink }}">{{ page.title }}</a>
     {% endif %}
     {% endfor %}

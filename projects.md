@@ -1,9 +1,13 @@
 ---
 title: Projects
 permalink: /projects/
+main_menu: true
 ---
 
 A list of projects in which I took part or I am still producing.
+
+### Games
+A good fraction of my games were made during GameJams; a list of most Jams in which I participated (with the corresponding games) is [here](/gamejams_list/).
 
 ### GitHub hosted Projects
 For more projects, visit [my GitHub page](https://github.com/henriquelalves).
