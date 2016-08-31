@@ -1,6 +1,7 @@
 ---
 title: Gamejams List
 permalink: /gamejams_list
+layout: page
 ---
 
 A list of most GameJams (with the corresponding games) that I participated:

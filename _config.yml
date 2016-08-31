@@ -33,7 +33,10 @@ repository: henriquelalves/henriquelalves.github.io
 
 # Collections
 collections:
-  - gamejams_list
+  gamejams_list:
+    output:         false
+  project_pages:
+    output:         true
 
 # Scopes
 defaults:
