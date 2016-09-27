@@ -19,7 +19,7 @@ For more projects, visit [my GitHub page](https://github.com/henriquelalves).
 {% for repository in site.github.public_repositories %}
 {% for name in reponames %}
 {% if repository.name == name %}
-* [{{ repository.name }}]({{ repository.html_url }}): {{ repository.description }} _(Stargazers count: {{ repository.stargazers_count }})_
+[{{ repository.name }}]({{ repository.html_url }}): {{ repository.description }} _(Stargazers count: {{ repository.stargazers_count }})_
 {% endif %}
 {% endfor %}
 {% endfor %}
