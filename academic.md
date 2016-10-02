@@ -41,6 +41,10 @@ main_menu: true
 <div><img align="left" src="/assets/academic/gamepad.png">Game Development</div><br>
 <div><img align="left" src="/assets/academic/dna.png">Genetic Programming</div><br>
 
+## Miscellaneous and Certificates
+- [Coursera 'Gamification' Statement of Accomplishment](/assets/academic/Coursera_gamification_2016.pdf)
+- [Coursera 'The Language of Hollywood: Storytelling, Sound, and Color' Statement of Accomplishment](/assets/academic/Coursera_hollywood_2016.pdf)
+
 ## Curriculum Vitae
 - [Resumé (in Portuguese) (last updated: Aug 2016)](/assets/academic/CVpt.pdf)
 - [Academic Curriculum Lattes (in Portuguese)](http://lattes.cnpq.br/3342464534962229)
