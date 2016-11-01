@@ -1,5 +1,5 @@
 ---
-title: Helping an Open-Source software, a dummy guide.
+title: Contributing to an Open-Source software, a dummy guide.
 lead: Or, how I tried helping Godot game engine with GitHub pull-requests during Hacktoberfest 2016.
 ---
 
