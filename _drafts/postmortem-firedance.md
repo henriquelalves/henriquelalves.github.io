@@ -25,3 +25,9 @@ Godot implementations:
 - Screen resizing without full-screen (distorted screen)
 - Be able to insert sign '+' before numbers
 - Problem in the Alpha of pixelated images
+- small issue: commented line on the end with a ":" won't have extra tab when enter
+
+Plugin Menu Options:
+- Nodes created in tool mode are invisible in editor
+- Multiline string can't create new lines through simple inline export editor.
+- In tool script, setget methods are played before node is created.
