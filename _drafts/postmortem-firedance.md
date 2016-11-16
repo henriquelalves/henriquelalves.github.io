@@ -26,6 +26,7 @@ Godot implementations:
 - Be able to insert sign '+' before numbers
 - Problem in the Alpha of pixelated images
 - small issue: commented line on the end with a ":" won't have extra tab when enter
+- colored lines while editing (blue entire line)
 
 Plugin Menu Options:
 - Nodes created in tool mode are invisible in editor
