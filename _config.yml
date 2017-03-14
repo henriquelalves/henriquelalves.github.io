@@ -35,6 +35,8 @@ repository: henriquelalves/henriquelalves.github.io
 collections:
   gamejams_list:
     output:         false
+  godot_gallery:
+    output:         false
   project_pages:
     output:         true
 

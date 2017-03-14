@@ -253,6 +253,27 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 230px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 12rem;
+    height: 8rem;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
 .lead {
   font-size: 1.25rem;
 }
