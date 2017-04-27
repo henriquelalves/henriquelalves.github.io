@@ -9,6 +9,10 @@ main_menu: true
 <table>
 <col width="30%">
 <tr>
+    <td>Apr 2017 - Present</td>
+    <td style="text-align:right">Game Development Internship, Clickideia</td>
+</tr>
+<tr>
     <td>May 2015 - Jul 2016</td>
     <td style="text-align:right">Cauzin Stripware Image Interpreter, University of Calgary</td>
 </tr>
@@ -17,7 +21,7 @@ main_menu: true
     <td style="text-align:right">Cellullar Automata Research, University of Campinas</td>
 </tr>
 <tr>
-    <td>Mar 2012 - Jul 2015</td>
+    <td>Mar 2012 - Present</td>
     <td style="text-align:right">Student Researcher on Game Development group, University of Campinas, Gamux</td>
 </tr>
 </table>
@@ -46,5 +50,6 @@ main_menu: true
 - [Coursera 'The Language of Hollywood: Storytelling, Sound, and Color' Statement of Accomplishment](/assets/academic/Coursera_hollywood_2016.pdf)
 
 ## Curriculum Vitae
-- [Resumé (in Portuguese) (last updated: Aug 2016)](/assets/academic/CVpt.pdf)
+- [Resumé (in Portuguese) (last updated: Apr 2017)](/assets/academic/CVpt.pdf)
+- [Resumé (in English) (last updated: Apr 2017)](/assets/academic/CVen.pdf)
 - [Academic Curriculum Lattes (in Portuguese)](http://lattes.cnpq.br/3342464534962229)
