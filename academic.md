@@ -4,7 +4,7 @@ permalink: /academic/
 main_menu: true
 ---
 
-## Scientific Projects and Researches
+## Jobs and Projects
 
 <table>
 <col width="30%">
