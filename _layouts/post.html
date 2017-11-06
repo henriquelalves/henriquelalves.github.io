@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+{% if page.lead %}<meta name="description" content="{{ page.lead }}">{% endif %}
+
 <header class="masthead">
   <h1 class="masthead-title--small">
     <a href="/blog/">&#8630; blog</a>
@@ -16,6 +19,8 @@ layout: default
   {{ content }}
   <div id="disqus_thread"></div>
 <script>
+
+
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.

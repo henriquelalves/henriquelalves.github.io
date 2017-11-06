@@ -60,5 +60,5 @@ defaults:
       tags:         ""
 
 gems:
-  - jekyll-seo-tag
+#  - jekyll-seo-tag
   - jekyll-github-metadata
