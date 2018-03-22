@@ -50,7 +50,7 @@ main_menu: true
 - [Coursera 'The Language of Hollywood: Storytelling, Sound, and Color' Statement of Accomplishment](/assets/academic/Coursera_hollywood_2016.pdf)
 
 ## Curriculum Vitae
-- [Resumé (in English) (last updated: Oct 2017)](/assets/academic/CVen.pdf)
+- [Resumé (in English) (last updated: Mar 2018)](/assets/academic/CVen.pdf)
 - [Academic Curriculum Lattes (in Portuguese)](http://lattes.cnpq.br/3342464534962229)
 
 
