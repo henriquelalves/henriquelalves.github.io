@@ -9,7 +9,7 @@ main_menu: true
 <table>
 <col width="30%">
 <tr>
-    <td>Apr 2017 - Present</td>
+    <td>Apr 2017 - Apr 2018</td>
     <td style="text-align:right">Game Development Internship, Clickideia</td>
 </tr>
 <tr>
@@ -50,9 +50,7 @@ main_menu: true
 - [Coursera 'The Language of Hollywood: Storytelling, Sound, and Color' Statement of Accomplishment](/assets/academic/Coursera_hollywood_2016.pdf)
 
 ## Curriculum Vitae
-- [Resumé (in English) (last updated: Mar 2018)](/assets/academic/CVen.pdf)
-- [Academic Curriculum Lattes (in Portuguese)](http://lattes.cnpq.br/3342464534962229)
-
+- [Resumé (in English) (last updated: Apr 2018)](/assets/academic/CVen.pdf)
 
 
 
