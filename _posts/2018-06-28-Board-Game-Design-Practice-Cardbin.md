@@ -1,6 +1,5 @@
 ---
-title: Board-Game Design Practice: Cardbin
-lead: 
+title: Board-Game Design Practice - Cardbin
 ---
 
 **TAGS**: Cards, Luck, Turn-Based
