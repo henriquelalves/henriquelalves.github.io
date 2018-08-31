@@ -1,0 +1,51 @@
+<head>
+  <title>Audio Visualizer</title>
+  <script src="https://aframe.io/releases/0.3.1/aframe.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/aframe-audioanalyser-component@3.0.3/index.js"></script>
+
+</head>
+
+<body>
+  <script>
+    // Or inline before the <a-scene>.
+    AFRAME.registerComponent('test', {
+      update: function () {
+        this.el.music = this.el.sceneEl.querySelector('#analyzer');
+        this.el.waves = []
+        console.log(this.el.music.components.audioanalyser.waveform);
+
+        for (var i = 0; i < 400; i++) {
+          // console.log("OI");
+          var newEl = document.createElement('a-box');
+          newEl.setAttribute('position', '' + (i - 200) + ' 0 -200');
+          newEl.setAttribute('color', 'tomato');
+          this.el.sceneEl.appendChild(newEl);
+          this.el.waves.push(newEl);
+          // console.log(newEl);
+        }
+
+      },
+      tick: function (time, timeDelta) {
+        // console.log(this.el.music)
+        // console.log(this.el.music.components.audioanalyser.waveform);
+        for (var i = 0; i < 400; i++) {
+          this.el.waves[i].object3D.position.y = this.el.music.components.audioanalyser.waveform[i]/10;
+        }
+      }
+    });
+  </script>
+
+  <a-scene>
+    <a-assets>
+      <audio id="song" src="/colossus.mp3" autoplay loop></audio>
+    </a-assets>
+    <a-entity id="analyzer" audioanalyser="src: #song"></a-entity>
+    <!-- Basic box. -->
+    <!-- <a-box color="tomato" depth="2" height="4" width="0.5" test></a-box> -->
+    <a-entity test></a-entity>
+    <a-entity position="0 10 5">
+      <a-camera></a-camera>
+    </a-entity>
+
+  </a-scene>
+</body>
