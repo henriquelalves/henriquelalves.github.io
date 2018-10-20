@@ -1,51 +1,88 @@
-<head>
-  <title>Audio Visualizer</title>
-  <script src="/aframe.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/aframe-audioanalyser-component@3.0.3/index.js"></script>
+<html>
 
+<head>
+  <title>Active</title>
+  <script type="text/javascript" src="/aframe.min.js"></script>
+  <script type="text/javascript" src="/socket.io.slim.js"></script>
 </head>
 
 <body>
   <script>
-    // Or inline before the <a-scene>.
-    AFRAME.registerComponent('test', {
+    // Setting up socket
+    // var socket = window.io('localhost:3000', { query: "player_type=active" });
+    var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=active" });
+
+
+    socket.on('connect', (socket) => {
+      console.log("Connected!");
+    })
+
+    // Game state variables
+    var game_started = false;
+
+    // Score update
+    socket.on('update_score', (score) => {
+      document.querySelector("#score").innerHTML = "Score: " + score;
+    })
+
+    // Timer update
+    socket.on('update_timer', (timer) => {
+      console.log(timer);
+      document.querySelector("#timer").setAttribute('value', timer);
+    })
+
+    // Game ended
+    socket.on('game_ended', () => {
+      document.querySelector("#timer").setAttribute('value', 'You lost because the jury\nwas unfair lol');
+
+    })
+
+    // Label listener (updates label on server demand)
+    AFRAME.registerComponent('label-listener', {
       update: function () {
-        this.el.music = this.el.sceneEl.querySelector('#analyzer');
-        this.el.waves = []
-        console.log(this.el.music.components.audioanalyser.waveform);
-
-        for (var i = 0; i < 400; i++) {
-          // console.log("OI");
-          var newEl = document.createElement('a-box');
-          newEl.setAttribute('position', '' + (i - 200) + ' 0 -200');
-          newEl.setAttribute('color', 'tomato');
-          this.el.sceneEl.appendChild(newEl);
-          this.el.waves.push(newEl);
-          // console.log(newEl);
-        }
-
-      },
-      tick: function (time, timeDelta) {
-        // console.log(this.el.music)
-        // console.log(this.el.music.components.audioanalyser.waveform);
-        for (var i = 0; i < 400; i++) {
-          this.el.waves[i].object3D.position.y = this.el.music.components.audioanalyser.waveform[i]/10;
-        }
+        socket.on('update_label', (letter, pos) => {
+          this.el.setAttribute('value', letter);
+          this.el.setAttribute('position', pos);
+        })
       }
-    });
+    })
+
+    // Camera listener to constantly send camera position to server
+    AFRAME.registerComponent('camera-listener', {
+      update: function () {
+        // this.el.cameraEl = document.querySelector('#camera');
+      },
+
+      tick: function (time, timeDelta) {
+        var rot = this.el.getAttribute('rotation');
+        socket.emit('update_camera', rot);
+      }
+    })
+
   </script>
 
   <a-scene>
-    <a-assets>
-      <audio id="song" src="/colossus.mp3" autoplay loop></audio>
-    </a-assets>
-    <a-entity id="analyzer" audioanalyser="src: #song"></a-entity>
-    <!-- Basic box. -->
-    <!-- <a-box color="tomato" depth="2" height="4" width="0.5" test></a-box> -->
-    <a-entity test></a-entity>
-    <a-entity position="0 10 5">
-      <a-camera></a-camera>
+
+    <!-- Score Label -->
+    <a-text id="label" value="Press Enter to start" color="black" label-listener look-at="#player_pivot" position="2 2 10"></a-text>
+
+    <!-- Player -->
+    <a-entity id="player_pivot" position="0 0 0">
+      <a-camera camera-listener look-controls-enabled="true" wasd-controls-enabled="false">
+      </a-camera>
     </a-entity>
 
+    <!-- Floor -->
+    <a-plane color="tomato" height="100" width="100" rotation="-90 0 0"></a-plane>
+
+    <!-- Timer -->
+    <a-text id="timer" value="60" width="50" align="center" color="black" look-at="#player_pivot" position="0 5 -10"></a-text>
+
   </a-scene>
+
+  <div id="score" style="font-family: 'Courier New'; font-size: 40px; position: fixed; top:0; left:0">
+    Score: 0
+  </div>
 </body>
+
+</html>
