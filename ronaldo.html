@@ -1,51 +1,17 @@
 <html>
 
 <head>
-  <title>Dummy</title>
+  <title>Active</title>
   <script type="text/javascript" src="/aframe.min.js"></script>
   <script type="text/javascript" src="/socket.io.slim.js"></script>
-  <script type="text/javascript" src="/artyom.window.min.js"></script>
-
-  <script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
-
 </head>
 
 <body>
   <script>
-    // Voice recognition!
-    const artyom = new Artyom();
-
-    // Commands
-    artyom.addCommands({
-      indexes: ['start game'],
-      action: function (i) {
-        if (i === 0) {
-          socket.emit("start_game");
-        }
-      }
-    });
-
-    artyom.redirectRecognizedTextOutput((recognized, isFinal) => {
-      document.querySelector("#speech").innerHTML = recognized;
-      if (recognized.toUpperCase() === document.querySelector("#label").getAttribute('value')) {
-        socket.emit('correct_input');
-      }
-    });
-
-    artyom.initialize({
-      lang: "en-US",
-      debug: true,
-      continuous: true,
-      listen: true
-    });
-
-    setInterval(function () {
-      artyom.restart();
-    }, 5000);
-
     // Setting up socket
-    // var socket = window.io('localhost:3000', { query: "player_type=active" });
-    var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=dummy" });
+    var socket = window.io('localhost:3000', { query: "player_type=active" });
+    // var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=active" });
+
 
     socket.on('connect', (socket) => {
       console.log("Connected!");
@@ -67,19 +33,9 @@
 
     // Game ended
     socket.on('game_ended', () => {
-      document.querySelector("#timer").setAttribute('value', 'You lost because the jury\nwas unfair');
-      document.querySelector("#label").setAttribute('value', '');
+      document.querySelector("#timer").setAttribute('value', 'You lost because the jury\nwas unfair lol');
 
     })
-
-    // Camera listener to get camera rotation from the socket
-    AFRAME.registerComponent('camera-listener', {
-      update: function () {
-        socket.on('on_update_camera', (rot) => {
-          this.el.setAttribute('rotation', rot);
-        })
-      }
-    });
 
     // Label listener (updates label on server demand)
     AFRAME.registerComponent('label-listener', {
@@ -90,16 +46,29 @@
         })
       }
     })
+
+    // Camera listener to constantly send camera position to server
+    AFRAME.registerComponent('camera-listener', {
+      update: function () {
+        // this.el.cameraEl = document.querySelector('#camera');
+      },
+
+      tick: function (time, timeDelta) {
+        var rot = this.el.getAttribute('rotation');
+        socket.emit('update_camera', rot);
+      }
+    })
+
   </script>
 
-  <a-scene keyboard-shortcuts="enterVR: false" background="color: white">
+  <a-scene background="color: white">
 
     <!-- Label -->
-    <a-text id="label" value="Say 'start game' to play" color="black" label-listener look-at="#player_pivot" position="2 2 10"></a-text>
+    <a-text id="label" value="Press Enter to start" color="black" label-listener look-at="#player_pivot" position="2 2 10"></a-text>
 
     <!-- Player -->
     <a-entity id="player_pivot" position="0 0 0">
-      <a-camera camera-listener look-controls-enabled="false" wasd-controls-enabled="false">
+      <a-camera camera-listener look-controls-enabled="true" wasd-controls-enabled="false">
       </a-camera>
     </a-entity>
 
@@ -114,11 +83,6 @@
   <div id="score" style="font-family: 'Courier New'; font-size: 40px; position: fixed; top:0; left:0">
     Score: 0
   </div>
-
-  <div id="speech" style="font-family: 'Courier New'; font-size: 40px; position: fixed; bottom:0; left:0">
-
-  </div>
-
 </body>
 
 </html>
