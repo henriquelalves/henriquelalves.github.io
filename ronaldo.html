@@ -11,8 +11,8 @@
 <body>
   <script>
     // Setting up socket
-    var socket = window.io('localhost:3000', { query: "player_type=active" });
-    // var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=active" });
+    // var socket = window.io('localhost:3000', { query: "player_type=active" });
+    var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=active" });
 
     socket.on('connect', (socket) => {
       console.log("Connected!");
