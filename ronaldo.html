@@ -11,9 +11,8 @@
 <body>
   <script>
     // Setting up socket
-    // var socket = window.io('localhost:3000', { query: "player_type=active" });
-    var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=active" });
-
+    var socket = window.io('localhost:3000', { query: "player_type=active" });
+    // var socket = window.io('https://livregamejam2018.herokuapp.com/', { query: "player_type=active" });
 
     socket.on('connect', (socket) => {
       console.log("Connected!");
@@ -21,6 +20,12 @@
 
     // Game state variables
     var game_started = false;
+    var final_rush = false;
+
+    // Final rush
+    socket.on('final_rush', () => {
+      final_rush = true;
+    })
 
     // Score update
     socket.on('update_score', (score) => {
@@ -39,16 +44,6 @@
       document.querySelector("#label").setAttribute('value', '');
     })
 
-    // Label listener (updates label on server demand)
-    AFRAME.registerComponent('label-listener', {
-      update: function () {
-        socket.on('update_label', (letter, pos) => {
-          this.el.setAttribute('value', letter);
-          this.el.setAttribute('position', pos);
-        })
-      }
-    })
-
     // Camera listener to constantly send camera position to server
     AFRAME.registerComponent('camera-listener', {
       update: function () {
@@ -61,16 +56,105 @@
       }
     })
 
+    // Label listener (updates label on server demand)
+    AFRAME.registerComponent('label-listener', {
+      update: function () {
+        socket.on('update_label', (letter, pos) => {
+          this.el.setAttribute('value', letter);
+          this.el.setAttribute('position', pos);
+        })
+      },
+      
+      tick: function (time, timeDelta) {
+        if (final_rush) {
+          this.el.setAttribute('width', 10 + Math.sin(time*0.01));
+        }
+      }
+    })
+
+    // Lock to camera rotation component
+    AFRAME.registerComponent('lock-camera-rot', {
+      tick: function () {
+        var roty = document.querySelector("#player_camera").getAttribute('rotation').y;
+        var this_rot = this.el.getAttribute("rotation");
+        this_rot.y = roty;
+        this.el.setAttribute("rotation", this_rot);
+      }
+    })
+
   </script>
 
   <a-scene background="color: white">
 
+    <!-- Assets -->
+    <a-assets>
+      <!-- Court -->
+      <a-asset-item id="Court-obj" src="Court.obj"></a-asset-item>
+      <a-asset-item id="Court-mtl" src="Court.mtl"></a-asset-item>
+
+      <!-- Legs -->
+      <img id="legs" src="legs.png">
+
+      <!-- Judge -->
+      <img id="judge" src="judge.png">
+      
+      <!-- Jury -->
+      <img id="jury1" src="jury1.png">
+      <img id="jury2" src="jury2.png">
+      <img id="jury3" src="jury3.png">
+      <img id="jury4" src="jury4.png">
+      <img id="jury5" src="jury5.png">
+      <img id="jury6" src="jury6.png">
+      <img id="jury7" src="jury7.png">
+      <img id="jury8" src="jury8.png">
+      <img id="jury9" src="jury9.png">
+      
+      <!-- Lawyers -->
+      <img id="wright" src="wright2.png">
+      <img id="godot" src="godot2.png">
+      
+    </a-assets>
+
+	<!-- Global light -->
+	<a-light type="point" color="#fff" position="0 5 0"></a-light>
+
+    <!-- Court (centered around the player)-->
+    <a-obj-model src="#Court-obj" mtl="#Court-mtl" scale="0.3 0.3 0.3"></a-obj-model>
+
+    <!-- Legs (just beneath the player) -->
+    <a-entity id="#legs_pivot" position="0 0 0" lock-camera-rot>
+      <a-image src="#legs" rotation="90 0 180" width="1" height="1" position="0 1 0.3"></a-image>
+    </a-entity>
+
+    <!-- Judge Image -->
+    <a-image src="#judge" rotation="0 0 0" width="5" height="5" position="0 6.5 -10"></a-image>
+
+	<!-- Jury -->
+	<a-image src="#jury8" width="2" height="2" position="-8.1 5.0 7.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury1" width="2" height="2" position="-8.1 5.0 -3.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury2" width="2" height="2" position="-8.1 5.0 -1.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury3" width="2" height="2" position="-8.1 5.0 1.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury7" width="2" height="2" position="-8.1 5.0 3.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury5" width="2" height="2" position="-8.1 5.0 5.0" look-at="#player_pivot"></a-image>
+    
+    
+    <a-image src="#jury9" width="2" height="2" position="8.1 5.0 -3.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury3" width="2" height="2" position="8.1 5.0 -1.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury8" width="2" height="2" position="8.1 5.0 1.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury4" width="2" height="2" position="8.1 5.0 3.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury5" width="2" height="2" position="8.1 5.0 5.0" look-at="#player_pivot"></a-image>
+    <a-image src="#jury6" width="2" height="2" position="8.1 5.0 7.0" look-at="#player_pivot"></a-image>
+
+	<!-- Lawyers -->
+    <a-image src="#wright" rotation="0 270 0" width="3" height="3" position="-5.0 1.8 0.0" ></a-image>
+    <a-image src="#godot" rotation="0 270 0" width="3.1" height="3.1" position="5.0 1.8 1.0" ></a-image>
     <!-- Label -->
-    <a-text id="label" value="Press Enter to start" color="black" label-listener look-at="#player_pivot" position="2 2 10"></a-text>
+    <a-text id="label" font='custom-msdf.json' value="DIGA JOGO PARA COMEÇAR" color="black" label-listener look-at="#player_pivot"
+      position="2 4 10"></a-text>
 
     <!-- Player -->
     <a-entity id="player_pivot" position="0 0 0">
-      <a-camera camera-listener look-controls-enabled="true" wasd-controls-enabled="false">
+      <a-camera id="player_camera" camera-listener look-controls-enabled="true" wasd-controls-enabled="false">
       </a-camera>
     </a-entity>
 
