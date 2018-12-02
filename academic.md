@@ -9,6 +9,14 @@ main_menu: true
 <table>
 <col width="30%">
 <tr>
+    <td>Dec 2018 - Now</td>
+    <td style="text-align:right">Game Developer Engineer, TFG</td>
+</tr>
+<tr>
+    <td>Jul 2018 - Nov 2018</td>
+    <td style="text-align:right">Game Developer Engineer, Javary Games</td>
+</tr>
+<tr>
     <td>Apr 2017 - Apr 2018</td>
     <td style="text-align:right">Game Development Internship, Clickideia</td>
 </tr>
@@ -21,8 +29,8 @@ main_menu: true
     <td style="text-align:right">Cellullar Automata Research, University of Campinas</td>
 </tr>
 <tr>
-    <td>Mar 2012 - Present</td>
-    <td style="text-align:right">Student Researcher on Game Development group, University of Campinas, Gamux</td>
+    <td>Mar 2012 - Dec 2018</td>
+    <td style="text-align:right">Student Researcher and Project Coordinator on Game Development group, University of Campinas, Gamux</td>
 </tr>
 </table>
 
