@@ -1,6 +1,6 @@
 ---
-title: Academic
-permalink: /academic/
+title: Curriculum
+permalink: /curriculum/
 main_menu: true
 ---
 
