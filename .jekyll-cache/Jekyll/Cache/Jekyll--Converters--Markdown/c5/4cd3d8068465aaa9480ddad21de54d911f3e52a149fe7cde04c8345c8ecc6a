@@ -1,0 +1,31 @@
+I"4<p>A list of most GameJams (with the corresponding games) that I participated:</p>
+
+<p><a href="http://2013.globalgamejam.org/2013/hearting-me"><strong>Hearting Me</strong> <em>(Global Game Jam 2013)</em></a><br />
+<em>Made with: Game Maker.</em><br />
+The game of my first GameJam; had to be improvised in 24h using the GameMaker engine (only engine I was sure I knew how to use on that time). The game is quite simple, involving a mechanic that I always found interesting (controlling two characters at the same time, one with each hand) - but the main course of the game, and something I would use on other games too, is the music and audio effects made with my own voice.</p>
+
+<p><a href="https://github.com/henriquelalves/Dissociative-Identity-Papaco"><strong>Dissociative Identity Papaco</strong> <em>(Global Game Jam 2014)</em></a><br />
+<em>Made with: Native JavaScript.</em><br />
+A game I created with Matheus Jun Ota and Pedro Ciambra; we used pure JavaScript (later a small JQuery code, only for the Highscore we would store on a public folder in Dropbox) for that one. This game features an iconic character from old brazillian cinema, the Gunman Papaco.</p>
+
+<p><a href="https://github.com/henriquelalves/Chaos"><strong>Chaos</strong> <em>(Global Game Jam 2016)</em></a><br />
+<em>Made with: Godot.</em><br />
+The main idea of the game was to create a chaotic local multiplayer by randomizing the movement keys of each player; so the players are playing finger-twister while trying to get to the next stage.</p>
+
+<p><a href="http://globalgamejam.org/2017/games/water-cannonbal"><strong>Water Cannonball</strong> <em>(Global Game Jam 2017)</em></a><br />
+<em>Made with: Godot.</em><br />
+A silly multiplayer game in which players try to get the most coins in 60 seconds while trying to push other players out of the pool by creating waves. Based on a couple of chaotic Mario Party games.</p>
+
+<p><a href="https://perons.itch.io/a-game-about-mushrooms"><strong>A Game about Mushrooms</strong> <em>(Ludum Dare 38)</em></a><br />
+<em>Made with: Phaser.</em><br />
+I barely had time on the weekend to program and draw this game, but I managed to end up with a functional (although dead simple) puzzle. It’s based on some experiences I had with Celullar Automata mechanics plus simple matching pattern puzzles (the idea was to create something similar to app games so I could one day export it to PlayStore / AppStore). Also, it was my first jam game using <a href="http://phaser.io/">Phaser</a>, a libre JavaScript framework.</p>
+
+<p><a href="https://illusionfisherman.itch.io/super-broken-circuit-breaker-simulator-2017"><strong>Super Broken Circuit-Breaker Simulator 2017</strong> <em>(Ludum Dare 39)</em></a><br />
+<em>Made with: Godot.</em><br />
+This game was concepted to be mobile-first; you’ll see in its design how I tried to make the UX as pleasant and as native as possible. It is basically a pipe-puzzle game, with not enough twists to make it any more remarkable besides the fact that I polished it a lot - and also, since I didn’t have an artist to work with me, I made the decision of trying to make the game look like a Game Boy game (4 color green pallete, pixelized).</p>
+
+<p><a href="https://github.com/henriquelalves/Ambrigram"><strong>Ambrigram</strong> <em>(Unicamp Meeting Jam 2015)</em></a><br />
+<em>Made with: Godot.</em><br />
+This game was my ‘official’ first entry to Godot Engine; it was more of a concept that we (me and a friend) wanted to explore and to discover how to build from ground up using the Engine. Hence, the whole architecture is a little messed up; but we ended up with an interesting game and a fair overview of Godot v1.0 (at the time) that we published on Gamasutra. <a href="http://www.gamasutra.com/blogs/HenriqueAlves/20150601/244521/Godot_Firstimpressions_as_Game_Development_Students.php">Postmortem analysis!</a></p>
+
+:ET
