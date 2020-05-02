@@ -13,4 +13,4 @@ A good fraction of my games were made during GameJams; a list of most Jams in wh
 To check my open-source projects, visit [my GitHub page](https://github.com/henriquelalves).
  
 ### Itch.io
-I'm currently using my [Itch.io page](https://itch.io/dashboard) as a Hub for my Godot and game-related projects; it has less projects than my GitHub page, but I'm working on bringing them there for better visibility.
+I'm currently using my [Itch.io page](https://perons.itch.io/) as a Hub for my Godot and game-related projects; it has less projects than my GitHub page, but I'm working on bringing them there for better visibility.
