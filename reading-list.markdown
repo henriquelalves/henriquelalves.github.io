@@ -4,22 +4,26 @@ title: Reading List
 permalink: /reading-list/
 ---
 
+<div style="text-align: right"> Last updated: 17/01/2023 </div>
 
 #### Currently Reading
 
-- POPPER, Karl. *The Logic of scientific discovery*
 - HODENT, Celia. *The psychology of Video Games*
 
 #### Finished
 
 **2023**:
+- POPPER, Karl. *The Logic of scientific discovery*
+
+	The later half of the book was unintereting to me and I ended up skimming through it, but the first half of the book is surprisingly readable for anyone with light academic background, and it shows how the falsifiability concept impacted modern scientific methodology.
+
 - KUSHNER, David. *Masters of Doom*
 
     It reads like a TV series, romaticized but throughly entertaining. It also gives a great glimpse on America's digital entertainment culture, from it's birth until the aftermath of the Columbine shooting.
 
 - SCHELL, Jesse. 2008. *The Art of Game Design: A book of lenses*
 
-	Some chapters aged quite bad, specially in the first half of the book. Besides that, it's a good "Game Design 101" reference (as long as you filter it properly), it covers a lot of ground without going too deep in anything, and give some interesting insights. The ending was really special, too.
+	Some chapters aged quite badly, specially in the first half of the book. Besides that, it's a good "Game Design 101" reference (as long as you filter it properly), it covers a lot of ground without going too deep in anything, and give some interesting insights. The ending was really special, too.
 
 **2022**:
 - BETT, Sam. *Ask Iwata*
