@@ -4,15 +4,22 @@ title: Reading List
 permalink: /reading-list/
 ---
 
-<div style="text-align: right"> Last updated: 17/01/2023 </div>
+<div style="text-align: right"> Last updated: 22/01/2023 </div>
 
 #### Currently Reading
 
-- HODENT, Celia. *The psychology of Video Games*
+- MEIER, Sid. *Memoir!*
+
+- SANFLARD, Fabien. *Game Engine Black Book: Wolfenstein 3D*
 
 #### Finished
 
 **2023**:
+
+- HODENT, Celia. *The psychology of Video Games*
+
+	A very short book and general introduction to psychology and UX in video-games. Hodent does an amazing job as a scientist disproving common misconcepts about "popular psychology" such as left/right side of the brain, and showing the importance of good scientific coverage.
+
 - POPPER, Karl. *The Logic of scientific discovery*
 
 	The later half of the book was unintereting to me and I ended up skimming through it, but the first half of the book is surprisingly readable for anyone with light academic background, and it shows how the falsifiability concept impacted modern scientific methodology.
@@ -28,7 +35,7 @@ permalink: /reading-list/
 **2022**:
 - BETT, Sam. *Ask Iwata*
 
-	Satoru Iwata was one of the first names from the gaming industry I memorized when I was a kid, so this book was an emotional and nostalgia ride for me. It was quite a pleasant read, and the book takes a lot of care describing the life of someone I admired so much. It also contains invaluable leadership lessons from one of the most important CEO's of the modern gaming industry.
+	It was quite a pleasant read, and the book takes a lot of care describing the life of someone I always admired. It also contains invaluable leadership lessons from one of the most important CEO's of the modern gaming industry.
 
 - LINSPECTOR, Clarice. *Paixão segundo GH*
 
@@ -39,6 +46,5 @@ permalink: /reading-list/
 - NICOLL, Benjamin. *The Unity Game Engine and the Circuits of Cultural Software*
 - LEMARCHAND, Richard. *A Playful production process*
 - SCHREIER, Jason. *Blood, Sweat, and Pixels*
-- MEIER, Sid. *Memoir!*
 - JUNG, Carl. *Man and His Symbols*
 - ESTES, Clarissa. *Woman Who Runs with the Wolves*
