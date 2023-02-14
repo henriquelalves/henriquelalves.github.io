@@ -8,14 +8,12 @@ I (really) like making games. Currently working @GDQuest.
 
 Timeline making stuff professionally:
 
-**2022**:
-- @GDQuest: FPS Game Demo.
-- @GDQuest: 3D Platformer Game Demo.
-- @GDQuest: TPS Game Demo.
+**2022-2023**:
+- @GDQuest: developed open-source 3D game demos to be launched on Godot 4.
 - @GDQuest: worked on Game Development educational content and existing GDQuest platforms.
 
 **2022**:
-- @DogPay: founded a startup to bring crypto closer to Game Development. Didn't work out in the end, but still had a lot of experience there.
+- @DogPay: founded a startup to bring crypto closer to Game Development. Didn't work out in the end, but still had a lot of experience developing a Web3 platform, integrating it in games, and creating a business from scratch.
 
 **2019 - 2021**:
 - @WildlifeStudios: worked in Sky Warriors, from prototype to Global Launch. Worked on all systems and metagame.
