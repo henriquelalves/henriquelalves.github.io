@@ -4,7 +4,7 @@ title: Reading List
 permalink: /reading-list/
 ---
 
-<div style="text-align: right"> Last updated: 22/01/2023 </div>
+<div style="text-align: right"> Last updated: 16/02/2023 </div>
 
 #### Currently Reading
 
