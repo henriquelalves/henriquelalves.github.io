@@ -8,13 +8,15 @@ permalink: /reading-list/
 
 #### Currently Reading
 
-- MEIER, Sid. *Memoir!*
-
 - SANFLARD, Fabien. *Game Engine Black Book: Wolfenstein 3D*
 
 #### Finished
 
 **2023**:
+
+- MEIER, Sid. *Memoir!*
+
+	Absolutely amazing book. Sid Meier is a brilliant storyteller, and the book contains invaluable insights not only for Game Designers, but for anyone with a creative spirit. It's a book I'll certainly read again in the future.
 
 - HODENT, Celia. *The psychology of Video Games*
 
