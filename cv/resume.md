@@ -15,7 +15,7 @@
 
 - Bachelor Degree in Computer Science.
 - Focus on Software Engineering, extracurricular topics in Popular Literature and Phonoaudiology.
-- Member of Gamux since 2012, Director in 2017 and 2018 (Game Development students group).
+- Member of Gamux (Game Development students group) since 2012, Project Director in 2017 and 2018.
 
 ### University of Calgary | <location> Calgary, Canada </location> <time> Jun 2015 – Jun 2016 </time>
 
