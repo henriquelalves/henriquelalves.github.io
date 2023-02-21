@@ -24,4 +24,9 @@ I'm currently working at **GDQuest**, creating high-quality and open-source game
 
 My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use Godot**.
 
-For more information, check my [Curriculum Vitae](/cv/resume.html) and my [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)! You can also contact me at <a class="u-email" href="mailto:henriquelalves@gmail.com">henriquelalves@gmail.com</a>.
+For more information:
+
+- [Curriculum Vitae](/cv/resume.html)
+- [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)
+
+You can also contact me at <a class="u-email" href="mailto:henriquelalves@gmail.com">henriquelalves@gmail.com</a>.
