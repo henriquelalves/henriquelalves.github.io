@@ -1,0 +1,95 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.name {
+    font-size: 150%;
+    line-height: 150%;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 120%;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    color: #0D47A1;
+    margin: 0;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: bold;
+    margin: 0;
+}
+
+p, ul {
+    font-size: 100%;
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0 0 0 1.5rem;
+    margin: 0;
+}
+
+li {
+    line-height: 150%;
+    /* change this for tighter spacing */
+    /* default 150% */
+}
+
+/* assume images are icons */
+/* icons for skills/tools */
+.info img {
+    width: 15px;
+}
+
+/* assume images are icons */
+/* icons for contact info */
+.info a img {
+    width: 12px;
+}
+
+a {
+    color: #0D47A1;
+}
+
+code {
+    color: black;
+}
+
+time {
+    float: right;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+location {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.info {
+    display: block;
+    text-align: center;
+}

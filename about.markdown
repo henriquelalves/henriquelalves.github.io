@@ -4,25 +4,24 @@ title: About
 permalink: /about/
 ---
 
-I (really) like making games. Currently working @GDQuest.
+#### Hi! My name is **Henrique Lacreta Alves**, I'm a Game Developer Engineer, and I (really) like making games.
 
-Timeline making stuff professionally:
+![Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera](/assets/dinome.png "Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera")
 
-**2022-2023**:
-- @GDQuest: developed open-source 3D game demos to be launched on Godot 4.
-- @GDQuest: worked on Game Development educational content and existing GDQuest platforms.
+My first experience making games was in 2006 using **Game Maker 6.0**. I haven't stopped since then.
 
-**2022**:
-- @DogPay: founded a startup to bring crypto closer to Game Development. Didn't work out in the end, but still had a lot of experience developing a Web3 platform, integrating it in games, and creating a business from scratch.
+I graduated at **Universidade Estadual de Campinas** in Computer Science, where I was also active member and later Project Director of the student's Game Development group called **Gamux**. I also spent a year at the **Calgary University** in the period of 2014-2015 as part of a scholarship program.
 
-**2019 - 2021**:
-- @WildlifeStudios: worked in Sky Warriors, from prototype to Global Launch. Worked on all systems and metagame.
-- @WildlifeStudios: worked in the Prototypes Team. Helped finding the fun in unnanounced games.
-- @WildlifeStudios: worked in Zooba on the UI team (lots of art integration and UI optimizations on Unity). Refactored the Onboarding system for new players.
-- @WildlifeStudios: worked in Tennis clash on the UI and Gameplay teams. Fixed networking shenanigans, integrated the skin assets in the game client.
+My first steps in professional game development were in 2016, when I started making educational web games at **Clickideia** for schools in underserved regions in Brazil. I worked side-by-side with teachers and pedagogues to create the best learning content for children in elementary and middle school.
 
-**2018**:
-- @JavaryGames: created mobile casual games with Godot.
+I wanted to work in bigger game developing teams, so the second professional step I made was to work in a mobile gaming startup called **Javary Games**. There, I worked with **Godot**, an open-source game engine that I used to teach game development concepts to college freshmen back in **Gamux**.
 
-**2017-2018**:
-- @ClickIdeia: created educational games using PhaserJS. Ported games to mobile using Cordova.
+After publishing two games in **Javary**, I entered **Wildlife Studios**, where I've stayed for 3 years and had the opportunity to work on two flagship games (**Tennis Clash** and **Zooba**) in UI and gameplay squads, and **Sky Warriors** from the very first prototype as the lead engineer to global launch as a full-stack engineer working in every aspect of the game.
+
+I left **Wildlife Studios** to take a sabbatic year, which ended up meaning "I left Wildlife to create a Crypto payment startup to integrate open-source P2P payment rails to indie games" (as one does). The startup ended up not being successful for a variety of reasons, but I learned a lot in the process.
+
+I'm currently working at **GDQuest**, creating high-quality and open-source game demos in Godot to be used in educational content.
+
+My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use Godot**.
+
+For more information, check my [Curriculum Vitae](/cv/resume.html) and my [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)! You can also contact me at <a class="u-email" href="mailto:henriquelalves@gmail.com">henriquelalves@gmail.com</a>.
