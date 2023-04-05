@@ -4,7 +4,7 @@ title: Reading List
 permalink: /reading-list/
 ---
 
-<div style="text-align: right"> Last updated: 16/02/2023 </div>
+<div style="text-align: right"> Last updated: 05/04/2023 </div>
 
 #### Currently Reading
 
@@ -13,6 +13,10 @@ permalink: /reading-list/
 #### Finished
 
 **2023**:
+
+- MOORE, Alan, et al. *V for Vendetta*
+
+	A timeless classic, but feels ever more important on a world as divided politically as today. It's endlessly quotable, has brilliant characters, and the art is like watching the most important frames of a perfectly paced movie.
 
 - MEIER, Sid. *Memoir!*
 
