@@ -9,10 +9,15 @@ permalink: /reading-list/
 #### Currently Reading
 
 - SANFLARD, Fabien. *Game Engine Black Book: Wolfenstein 3D*
+- LEMARCHAND, Richard. *A Playful production process*
 
 #### Finished
 
 **2023**:
+
+- MEYER, Stephanie, *Life and Death*
+
+	The Twilight Saga is my guilty pleasure, so this was an entertaining book to read - but mostly because I read Twilight around 12 years ago, since the book itself it almost a carbon copy of *Twilight* with some interesting changes.
 
 - MOORE, Alan, et al. *V for Vendetta*
 
@@ -50,7 +55,6 @@ permalink: /reading-list/
 #### Backlog
 
 - NICOLL, Benjamin. *The Unity Game Engine and the Circuits of Cultural Software*
-- LEMARCHAND, Richard. *A Playful production process*
 - SCHREIER, Jason. *Blood, Sweat, and Pixels*
 - JUNG, Carl. *Man and His Symbols*
 - ESTES, Clarissa. *Woman Who Runs with the Wolves*
