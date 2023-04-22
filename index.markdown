@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+<link rel="me" href="https://mastodon.gamedev.place/@henriquelalves" />
