@@ -4,7 +4,7 @@ title: Reading List
 permalink: /reading-list/
 ---
 
-<div style="text-align: right"> Last updated: 05/04/2023 </div>
+<div style="text-align: right"> Last updated: 11/07/2023 </div>
 
 #### Currently Reading
 
@@ -14,6 +14,10 @@ permalink: /reading-list/
 #### Finished
 
 **2023**:
+
+- JOYCE, James, *A Portrait of the Artist as a Young Man*
+
+	I was sympathetic with the protagonist's relationship with religion throughout the book (coincidently, I also studied in a jesuit school). I enjoyed the emotional development a lot, even with the context-heavy parts regarding Irish history and aesthetics philosophy exposition.
 
 - MEYER, Stephanie, *Life and Death*
 
