@@ -6,7 +6,7 @@ categories: personal
 
 I just wanted to write down some notes about what I think about the current web and reason about my nostalgia goggles.
 
-I recently deployed a personal project on [https://mastonews.com](mastonews.com), a website that creates an RSS feed from the verified websites of the people you follow on Mastodon (the defederated Twitter/X alternative). a "verified website" is a website that uses the [https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me](rel=me) HTML attribute to indicate that the website owner is the same as the Mastodon account, basically a nifty semantic way to say on Mastodon "hey this is my website". I mostly made this app for me, but reasoned more people that are less tech savvy would find it useful too, so I made it a WebApp.
+I recently deployed a personal project on [mastonews.com](https://mastonews.com), a website that creates an RSS feed from the verified websites of the people you follow on Mastodon (the defederated Twitter/X alternative). a "verified website" is a website that uses the [rel=me](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me) HTML attribute to indicate that the website owner is the same as the Mastodon account, basically a nifty semantic way to say on Mastodon "hey this is my website". I mostly made this app for me, but reasoned more people that are less tech savvy would find it useful too, so I made it a WebApp.
 
 I had the idea for the app after checking some of the profiles of users I follow on Mastodon, and noticed some of the had some quirky and cool little websites - stuff that I'd totally miss otherwise, since we're living on a hellscape of SEO-optimization sites and AI generated content.
 
