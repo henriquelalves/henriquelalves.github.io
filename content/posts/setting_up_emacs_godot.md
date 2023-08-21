@@ -1,8 +1,9 @@
----
-layout: post
-title:  "Setting up Emacs for Godot Engine development"
-categories: emacs godot
----
++++
+title = "Setting up Emacs for Godot Engine development"
+date = 2023-07-13
+[taxonomies]
+tags = ["emacs", "godot"]
++++
 
 This is a quick blog post, in case any developer wonders how to configure their favourite OS to use with Godot development (the Engine code itself, not individual projects).
 

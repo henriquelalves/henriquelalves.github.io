@@ -1,25 +1,25 @@
----
-layout: page
-title: Reading List
-permalink: /reading-list/
----
-
-<div style="text-align: right"> Last updated: 11/07/2023 </div>
++++
+title = "reading list"
+date = 2023-08-20
+template = "post-page.html"
++++
 
 #### Currently Reading
 
-- SANFLARD, Fabien. *Game Engine Black Book: Wolfenstein 3D*
-- LEMARCHAND, Richard. *A Playful production process*
+- NOAH, Trevor. *Born a crime*
 
 #### Finished
 
 **2023**:
+- TCHEKOV, Anton. *O monge negro*
 
-- JOYCE, James, *A Portrait of the Artist as a Young Man*
+	Great read. Haven't got much into Tchekov (yet), but reading this really short book really makes me delve deeper in more stories like this.
+
+- JOYCE, James. *A Portrait of the Artist as a Young Man*
 
 	I was sympathetic with the protagonist's relationship with religion throughout the book (coincidently, I also studied in a jesuit school). I enjoyed the emotional development a lot, even with the context-heavy parts regarding Irish history and aesthetics philosophy exposition.
 
-- MEYER, Stephanie, *Life and Death*
+- MEYER, Stephanie. *Life and Death*
 
 	The Twilight Saga is my guilty pleasure, so this was an entertaining book to read - but mostly because I read Twilight around 12 years ago, since the book itself it almost a carbon copy of *Twilight* with some interesting changes.
 

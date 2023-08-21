@@ -1,8 +1,9 @@
----
-layout: post
-title:  "Notes about making the web weirder"
-categories: personal
----
++++
+title =  "Notes about making the web weirder"
+date = 2023-08-13
+[taxonomies]
+tags = ["personal"]
++++
 
 I just wanted to write down some notes about what I think about the current web and reason about my nostalgia goggles.
 

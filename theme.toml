@@ -1,0 +1,27 @@
+name = "emily_zola_theme"
+description = "a KISS theme for Zola"
+license = "MIT"
+min_version = "0.14.1"
+homepage = "https://github.com/kyoheiu/emily_zola_theme"
+demo = "https://emily-zola-theme.netlify.app/"
+
+[extra]
+# Author name, appears in footer.
+emily_author = "author name"
+
+# Path to the header icon / favicon image.
+# Please save image to static/images
+emily_icon = "/images/logo.png"
+
+emily_favicon = "/images/favicon.png"
+
+# header icon width.
+# height will be automatically rendered.
+emily_iconsize = 70
+
+# number of posts in index.html.
+emily_indexposts = 5
+
+[author]
+homepage = "https://github.com/kyoheiu"
+name = "Kyohei Uto"

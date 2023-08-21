@@ -1,12 +1,12 @@
----
-layout: page
-title: About
-permalink: /about/
----
++++
+title = "about me"
+date = 2023-08-20
+template = "post-page.html"
++++
 
 #### Hi! My name is **Henrique Lacreta Alves**, I'm a Game Developer Engineer, and I (really) like making games.
 
-![Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera](/assets/dinome.png "Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera")
+![Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera](/images/dinome.png "Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera")
 
 My first experience making games was in 2006 using **Game Maker 6.0**. I haven't stopped since then.
 

@@ -1,12 +1,13 @@
----
-layout: post
-title:  "Making Of: GDQuest TPS Demo"
-categories: making-of gdquest
----
++++
+title = "Making Of: GDQuest TPS Demo"
+date = 2022-11-30
+[taxonomies]
+tags = ["making-of", "gdquest"]
++++
 
 *This is a Making Of article of a Demo I made in Godot [@GDQuest](https://www.gdquest.com/). Most of the learnings are generic and can be applied anywhere.*
 
-![TPS Demo](/assets/posts/gdquest-tps-demo/project-complete.png)
+![TPS Demo](/posts/gdquest-tps-demo/project-complete.png)
 
 Our objective [@GDQuest](https://www.gdquest.com/) was to create a Third-Person Shooter demo in Godot, with the following requisites:
 
@@ -36,7 +37,7 @@ Those features would be basic elements to create an "intro" level to a *Ratchet 
 
 One thing I noticed working in the game's camera control is that games like *Ratchet & Clank* are polished for levels with distinct 'arena' spaces, with more horizontal action than vertical exploration, and camera is close enough so it won't move too much when you are aiming from the shoulder.
 
-![Ratchet & Clank screenshot](/assets/posts/gdquest-tps-demo/ratchet-screenshot.jpg)
+![Ratchet & Clank screenshot](/posts/gdquest-tps-demo/ratchet-screenshot.jpg)
 *Ratchet & Clank (PS2)*
 
 My first thought was to create the usual Camera pivot following the character, but *Ratchet & Clank* Camera always follow the character's ground height, not the Character itself. This feels much better to play, as you can jump around to avoid enemies and enemy projectiles without affecting your current view, so I created this behavior with a "Camera Controller" object with `top_level` toggled (a nifty Godot v4.0 `Node3D` toggle that allows the object to have a transform that doesn't inherit it's parent node). The Player's ground height is updated every frame using a `Shapecast` node (it's basically a `Raycast` but using a cillinder shape, so the ground height is correct even when the player is at the edge of a platform).
@@ -49,13 +50,13 @@ My first approach was to create a `Curve3D` (in a `Path3D` Node) which the grena
 
 Instead of generating an ArrayMesh procedurally to make the visual path, I used a `CSGPolygon` with the `path` property set to the `Path3D` Node (CSG is not ideal when changing the geometry in runtime, but in this case it was basically an easy-win). The result was okayish, but the grenade felt weird when thrown because it was following the curve linearly (both horizontally and vertically), and not in a ballistic trajectory (linear horizontal movement, but quadratic vertical speed).
 
-![Grenade first approach](/assets/posts/gdquest-tps-demo/grenade-first-approach.gif)
+![Grenade first approach](/posts/gdquest-tps-demo/grenade-first-approach.gif)
 
 The second approach was to calculate the Grenade trajectory procedurally using ballistic equations, and feed the new points into the `Curve3D`. I'd still use the `CSGPolygon` to generate the curve visually, but instead of using the `PathFollow` node, I'd use the ballistic equations to know the velocity I'd have to throw the grenade, and I'd trust Godot physics simulation to do the rest. This made the ballistic trajectory feel a lot better compared to the previous attempt, but for some reason that I couldn't figure out, the trajectory was always a little bit different than the calculations (not enough to prove the calculations wrong, but different enough to make some grenade trajectories miss the target by a really small margin).
 
 The final approach became an "evolution" of the second approach, adding a small correction each step during the grenade trajectory to make it stay close to the curve the player expected to see (forcing it to hit the target regardless), but mostly trusting Godot physics for the look-and-feel of the trajectory. The physics approach also made it possible to add a little "bounce" effect: the grenade triggers when it collides with the environment, but it explodes a couple of milliseconds after.
 
-![Grenade third approach](/assets/posts/gdquest-tps-demo/grenade-third-approach.gif)
+![Grenade third approach](/posts/gdquest-tps-demo/grenade-third-approach.gif)
 
 #### Blocking the Level with CSG Mesh
 
@@ -83,4 +84,4 @@ The lack of "depthness" in the combat may be caused by the the fact that *Ratche
 
 At total, I spent 5 business days in the core features of the Demo, plus some days to tweak mechanics (mostly the grenade throwing) and integrate the beautiful art assets made by [Tibo](https://twitter.com/heytibo).
 
-![Complete project](/assets/posts/gdquest-tps-demo/complete-project.gif)
+![Complete project](/posts/gdquest-tps-demo/complete-project.gif)

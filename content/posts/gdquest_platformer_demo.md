@@ -1,12 +1,13 @@
----
-layout: post
-title:  "Making Of: GDQuest 3D Platformer Demo"
-categories: making-of gdquest
----
++++
+title =  "Making Of: GDQuest 3D Platformer Demo"
+date = 2023-02-24
+[taxonomies]
+tags = ["making-of", "gdquest"]
++++
 
 *This is a Making Of article of a Demo I made in Godot [@GDQuest](https://www.gdquest.com/). Most of the learnings are generic and can be applied anywhere.*
 
-![Platformer Demo](/assets/posts/gdquest-platformer-demo/project-complete.png)
+![Platformer Demo](/posts/gdquest-platformer-demo/project-complete.png)
 
 Our objective [@GDQuest](https://www.gdquest.com/) was to create a 3D Platformer demo in Godot, with the following requisites:
 
@@ -39,7 +40,7 @@ The camera movement was inspired by Mario Odyseey. My objective was to create a 
 
 To replicate this behavior, I created "Camera Regions", 3D areas in the demo level that the camera would try following a predetermined path when the player is inside.
 
-![Camera region](/assets/posts/gdquest-platformer-demo/camera-region.png)
+![Camera region](/posts/gdquest-platformer-demo/camera-region.png)
 
 The camera movement itself is created using two Paths:
 
@@ -66,13 +67,13 @@ During the development of the game, I noticed that crouch related mechanics (gro
 
 The initial mathematical idea for ledge grabbing seemed easy: raycast into solid objects (looking for ledges), and "glue" player character in the found position.
 
-![Ledge grabbing wrong](/assets/posts/gdquest-platformer-demo/ledge-grabbing-moving-wrong.gif)
+![Ledge grabbing wrong](/posts/gdquest-platformer-demo/ledge-grabbing-moving-wrong.gif)
 
 But this wouldn't work on moving platforms. Just gluing character in the found position wouldn't work, since the position could change in time depending on the platform the character was holding at. Deciding to fix this was important because this is a generic 3D Platformer solution for developers to use, so they should be able to animate any kind of 3D platform in Godot and copy-paste the Character Controller to play around with the controllers.
 
 The solution was to save the global transform of the ledge's object, convert the ledge position (global position) into the object's position (local position), and making the inverse conversion each frame to get the new ledge position.
 
-![Ledge grabbing right](/assets/posts/gdquest-platformer-demo/ledge-grabbing-moving-right.gif)
+![Ledge grabbing right](/posts/gdquest-platformer-demo/ledge-grabbing-moving-right.gif)
 
 This solution worked most of the time, but moving platforms caused a lot of trouble with physics, and I had to tweak carefully when the player character should drop from the ledge (while holding the ledge, other platforms may push the player out of it, for example).
 
@@ -92,6 +93,6 @@ After all the other tweaks, using the same gravity for jumping and falling made 
 
 ## Final result
 
-![Complete demo](/assets/posts/gdquest-platformer-demo/complete-demo.gif)
+![Complete demo](/posts/gdquest-platformer-demo/complete-demo.gif)
 
 At total, I spent around 10 business days in the core features of the Demo. It took me more time to tweak the Ledge Grabbing physics, since it could get finnicky with moving platforms, but I got really satisfied with the end result.
