@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>henriquelalves</title>
+    <link href="https://henriquelalves.com/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://henriquelalves.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-08-21T00:00:00+00:00</updated>
+    <id>https://henriquelalves.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>list of projects</title>
+        <published>2023-08-21T00:00:00+00:00</published>
+        <updated>2023-08-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/projects/" type="text/html"/>
+        <id>https://henriquelalves.com/projects/</id>
+        
+        <content type="html">&lt;h3 id=&quot;games-i-worked-with&quot;&gt;games i worked with&lt;&#x2F;h3&gt;
+&lt;p&gt;A list of games I worked in as part of a company or job.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(2021) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;sky-warriors-airplane-games&#x2F;id1572323748&quot;&gt;Sky Warriors (Android &#x2F; iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer arcade game with aerial combat for mobile. Leaded the prototype stage of the game and acted as full-stack engineer during pre-production.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1346179411&quot;&gt;Tennis Clash (Android &#x2F; iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer sports game for mobile. Acted as UI and gameplay engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1505808518&quot;&gt;Heart Beats: Love &amp;amp; Rhythm (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Rhythm and Visual-novel game. Acted as gameplay and tools engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1530685906&quot;&gt;Deity Clash (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Real-time multiplayer game for mobile. Acted as full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1542474850&quot;&gt;Battle Camp (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Arcade archero-like game focused on storytelling and social interactions. Acted as project leader and full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;truco-clash&#x2F;id1567974128&quot;&gt;Truco-Clash (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer card game based on brazillian &amp;quot;Truco&amp;quot;. Acted as full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1459402952&quot;&gt;Zooba: Zoo Battle Royale (Android &#x2F; iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer arcade game with Zoo cartoon theme for mobile. Acted as UI engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1457836626&quot;&gt;Singularity (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Horror game with sci-fi setting and puzzle elements. Acted as project leader and full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1470280425&quot;&gt;Light Speed (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Real time strategy game with sci-fi setting. Acted as project leader and full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1491073637&quot;&gt;Catch the Goblin (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Party-game multiplayer for mobile. Acted as full-stack engineer and project leader.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;personal-games&quot;&gt;personal games&lt;&#x2F;h3&gt;
+&lt;p&gt;List of my own personal games I created, solo or in small teams. I usually self-publish as &amp;quot;Illusion Fisherman&amp;quot; on my &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;&quot;&gt;itch.io&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;fogoto&quot;&gt;Fogoto! (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Arcade &amp;quot;foddian-like&amp;quot; game. Developed solo for SpeedJam #2 (16th of 84 submissions).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;unrolling-dice&quot;&gt;Unrolling Dice! (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Puzzle game. Developed solo for GMTK Game Jam 2023 (357th of 6818 submissions).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;devour&quot;&gt;&amp;gt;devour (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Adventure text horror game. Developed solo for Themed Horror Game Jam #7.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;would-you-still-love-me-if-i-was-a-banana-peel&quot;&gt;Would you still love me if I was a banana peel? (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Metroidvania action game. Developed solo for Metroidvania Month 17.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;dungeonsanddice&quot;&gt;Dungeons and Dice (Web)&lt;&#x2F;a&gt;. Puzzle game. Developed in a team for the GMTK Game Jam 2022 (431th of 6082 submissions).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2017) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;viral-cards&quot;&gt;Viral Cards (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Puzzle game. Developed solo for Livre GameJam 2017.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Water Cannonball.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) A Game About Mushrooms.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Dissociative Identity Papaco.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Chaos.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Ambigram.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;personal-projects&quot;&gt;personal projects&lt;&#x2F;h3&gt;
+&lt;p&gt;Projects of note I created myself. Most of them you can find on my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;Mastonews.com&lt;&#x2F;a&gt;. A WebApp to generate a feed from your Mastodon follows personal blogs and websites. Made with SvelteKit.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;glam&quot;&gt;GLAM (Godot Lightweight Addon Manager)&lt;&#x2F;a&gt;. A Rust CLI tool to manage Godot addons.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2016) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;SimpleGodotCRTShader&quot;&gt;Godot CRT Shader&lt;&#x2F;a&gt;. A shader to simulate CRT displays. Used in the game &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;devour&quot;&gt;&amp;gt;devour&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2016) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;GodotTIE&quot;&gt;Godot Text Interface Engine&lt;&#x2F;a&gt;. An addon to control text printing as dialogue. Used in the game &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;devour&quot;&gt;&amp;gt;devour&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>about me</title>
+        <published>2023-08-20T00:00:00+00:00</published>
+        <updated>2023-08-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/about/" type="text/html"/>
+        <id>https://henriquelalves.com/about/</id>
+        
+        <content type="html">&lt;h4 id=&quot;hi-my-name-is-henrique-lacreta-alves-i-m-a-game-developer-engineer-and-i-really-like-making-games&quot;&gt;Hi! My name is &lt;strong&gt;Henrique Lacreta Alves&lt;&#x2F;strong&gt;, I&#x27;m a Game Developer Engineer, and I (really) like making games.&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;dinome.png&quot; alt=&quot;Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera&quot; title=&quot;Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;My first experience making games was in 2006 using &lt;strong&gt;Game Maker 6.0&lt;&#x2F;strong&gt;. I haven&#x27;t stopped since then.&lt;&#x2F;p&gt;
+&lt;p&gt;I graduated at &lt;strong&gt;Universidade Estadual de Campinas&lt;&#x2F;strong&gt; in Computer Science, where I was also active member and later Project Director of the student&#x27;s Game Development group called &lt;strong&gt;Gamux&lt;&#x2F;strong&gt;. I also spent a year at the &lt;strong&gt;Calgary University&lt;&#x2F;strong&gt; in the period of 2015-2016 as part of a scholarship program.&lt;&#x2F;p&gt;
+&lt;p&gt;My first steps in professional game development were in 2017, when I started making educational web games at &lt;strong&gt;Clickideia&lt;&#x2F;strong&gt; for schools in underserved regions in Brazil. I worked side-by-side with teachers and pedagogues to create the best learning content for children in elementary and middle school.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to work in bigger game developing teams, so the second professional step I made was to work in a mobile gaming startup called &lt;strong&gt;Javary Games&lt;&#x2F;strong&gt;. There, I worked with &lt;strong&gt;Godot&lt;&#x2F;strong&gt;, an open-source game engine that I used to teach game development concepts to college freshmen back in &lt;strong&gt;Gamux&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;After publishing two games in &lt;strong&gt;Javary&lt;&#x2F;strong&gt;, I entered &lt;strong&gt;Wildlife Studios&lt;&#x2F;strong&gt;, where I&#x27;ve stayed for 3 years and had the opportunity to work on two flagship games (&lt;strong&gt;Tennis Clash&lt;&#x2F;strong&gt; and &lt;strong&gt;Zooba&lt;&#x2F;strong&gt;) in UI and gameplay squads, and &lt;strong&gt;Sky Warriors&lt;&#x2F;strong&gt; from the very first prototype as the lead engineer to global launch as a full-stack engineer working in every aspect of the game.&lt;&#x2F;p&gt;
+&lt;p&gt;I left &lt;strong&gt;Wildlife Studios&lt;&#x2F;strong&gt; to take a sabbatic year, which ended up meaning &amp;quot;I left Wildlife to create a Crypto payment startup to integrate open-source P2P payment rails to indie games&amp;quot; (as one does). The startup ended up not being successful for a variety of reasons, but I learned a lot in the process.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m currently working at &lt;strong&gt;GDQuest&lt;&#x2F;strong&gt;, creating high-quality and open-source game demos in Godot to be used in educational content.&lt;&#x2F;p&gt;
+&lt;p&gt;My main interests are &lt;strong&gt;Game Design&lt;&#x2F;strong&gt;, &lt;strong&gt;Retro Computing&lt;&#x2F;strong&gt; and &lt;strong&gt;Preaching how good Godot is and that it is MIT licensed! You should totally use Godot&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;For more information:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;cv&#x2F;resume.html&quot;&gt;Curriculum Vitae&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;henrique-lacreta-alves-80614169&#x2F;&quot;&gt;LinkedIn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can also contact me at &lt;a class=&quot;u-email&quot; href=&quot;mailto:henriquelalves@gmail.com&quot;&gt;henriquelalves@gmail.com&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>reading list</title>
+        <published>2023-08-20T00:00:00+00:00</published>
+        <updated>2023-08-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/readinglist/" type="text/html"/>
+        <id>https://henriquelalves.com/readinglist/</id>
+        
+        <content type="html">&lt;h4 id=&quot;currently-reading&quot;&gt;Currently Reading&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;NOAH, Trevor. &lt;em&gt;Born a crime&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;finished&quot;&gt;Finished&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;strong&gt;2023&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;TCHEKOV, Anton. &lt;em&gt;O monge negro&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Great read. Haven&#x27;t got much into Tchekov (yet), but reading this really short book really makes me delve deeper in more stories like this.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;JOYCE, James. &lt;em&gt;A Portrait of the Artist as a Young Man&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I was sympathetic with the protagonist&#x27;s relationship with religion throughout the book (coincidently, I also studied in a jesuit school). I enjoyed the emotional development a lot, even with the context-heavy parts regarding Irish history and aesthetics philosophy exposition.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MEYER, Stephanie. &lt;em&gt;Life and Death&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The Twilight Saga is my guilty pleasure, so this was an entertaining book to read - but mostly because I read Twilight around 12 years ago, since the book itself it almost a carbon copy of &lt;em&gt;Twilight&lt;&#x2F;em&gt; with some interesting changes.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MOORE, Alan, et al. &lt;em&gt;V for Vendetta&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;A timeless classic, but feels ever more important on a world as divided politically as today. It&#x27;s endlessly quotable, has brilliant characters, and the art is like watching the most important frames of a perfectly paced movie.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MEIER, Sid. &lt;em&gt;Memoir!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Absolutely amazing book. Sid Meier is a brilliant storyteller, and the book contains invaluable insights not only for Game Designers, but for anyone with a creative spirit. It&#x27;s a book I&#x27;ll certainly read again in the future.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;HODENT, Celia. &lt;em&gt;The psychology of Video Games&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;A very short book and general introduction to psychology and UX in video-games. Hodent does an amazing job as a scientist disproving common misconcepts about &amp;quot;popular psychology&amp;quot; such as left&#x2F;right side of the brain, and showing the importance of good scientific coverage.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;POPPER, Karl. &lt;em&gt;The Logic of scientific discovery&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The later half of the book was unintereting to me and I ended up skimming through it, but the first half of the book is surprisingly readable for anyone with light academic background, and it shows how the falsifiability concept impacted modern scientific methodology.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;KUSHNER, David. &lt;em&gt;Masters of Doom&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It reads like a TV series, romaticized but throughly entertaining. It also gives a great glimpse on America&#x27;s digital entertainment culture, from it&#x27;s birth until the aftermath of the Columbine shooting.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;SCHELL, Jesse. 2008. &lt;em&gt;The Art of Game Design: A book of lenses&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Some chapters aged quite badly, specially in the first half of the book. Besides that, it&#x27;s a good &amp;quot;Game Design 101&amp;quot; reference (as long as you filter it properly), it covers a lot of ground without going too deep in anything, and give some interesting insights. The ending was really special, too.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;2022&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;BETT, Sam. &lt;em&gt;Ask Iwata&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It was quite a pleasant read, and the book takes a lot of care describing the life of someone I always admired. It also contains invaluable leadership lessons from one of the most important CEO&#x27;s of the modern gaming industry.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;LINSPECTOR, Clarice. &lt;em&gt;Paixão segundo GH&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The first book from Clarice Linspector I&#x27;ve ever read, and I didn&#x27;t know it was one of the most difficult too. Relatable in a way that is difficult to explain, and almost surreal in its narrative. Although difficult, I enjoyed it.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;backlog&quot;&gt;Backlog&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;NICOLL, Benjamin. &lt;em&gt;The Unity Game Engine and the Circuits of Cultural Software&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;SCHREIER, Jason. &lt;em&gt;Blood, Sweat, and Pixels&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;JUNG, Carl. &lt;em&gt;Man and His Symbols&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;ESTES, Clarissa. &lt;em&gt;Woman Who Runs with the Wolves&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Notes about making the web weirder</title>
+        <published>2023-08-13T00:00:00+00:00</published>
+        <updated>2023-08-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/notes-about-making-the-web-weirder/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/notes-about-making-the-web-weirder/</id>
+        
+        <content type="html">&lt;p&gt;I just wanted to write down some notes about what I think about the current web and reason about my nostalgia goggles.&lt;&#x2F;p&gt;
+&lt;p&gt;I recently deployed a personal project on &lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;mastonews.com&lt;&#x2F;a&gt;, a website that creates an RSS feed from the verified websites of the people you follow on Mastodon (the defederated Twitter&#x2F;X alternative). a &amp;quot;verified website&amp;quot; is a website that uses the &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTML&#x2F;Attributes&#x2F;rel&#x2F;me&quot;&gt;rel=me&lt;&#x2F;a&gt; HTML attribute to indicate that the website owner is the same as the Mastodon account, basically a nifty semantic way to say on Mastodon &amp;quot;hey this is my website&amp;quot;. I mostly made this app for me, but reasoned more people that are less tech savvy would find it useful too, so I made it a WebApp.&lt;&#x2F;p&gt;
+&lt;p&gt;I had the idea for the app after checking some of the profiles of users I follow on Mastodon, and noticed some of the had some quirky and cool little websites - stuff that I&#x27;d totally miss otherwise, since we&#x27;re living on a hellscape of SEO-optimization sites and AI generated content.&lt;&#x2F;p&gt;
+&lt;p&gt;I think there are two things that affect how I reminisce on the &amp;quot;old&amp;quot; web:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;We followed human beings. There were bigger sites, but blogs were mostly personal things, so following a blog meant we wanted to keep track of someone&#x27;s content.&lt;&#x2F;li&gt;
+&lt;li&gt;Discoverability lead to more discoverability. There were web-rings and blog-to-blog recommendations, and when you trusted a source, the sites it led to were more hits than misses.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Not to say social media wasn&#x27;t an improvement in everyone&#x27;s life, but depending on social media means we did lost content that social media doesn&#x27;t support. When you build a website or a blog, there is an identity you have to build in it that doesn&#x27;t happen with the same complexity on e.g. Facebook, and the kind of content you build is much more free in shape and form. Internet was quirker and weirder, and that&#x27;s the &#x27;fun&#x27; I reminisce about it (definetely not the Flash ads boom though).&lt;&#x2F;p&gt;
+&lt;p&gt;The increasing popularity of a federated web (and by extension the Semantic Web, or the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Semantic_Web&quot;&gt;real Web 3.0&lt;&#x2F;a&gt;) seems like an opportunity to hack our way out of SEO&#x27;s and Google search engine enshittification to give Web visibility back to individuals. I want more weird and quirky websites, not just for the joy of finding cool websites, but because I want the joy of platonically connecting to new individuals I can trust.&lt;&#x2F;p&gt;
+&lt;p&gt;And even if are past the point of understanding how dangerous a platonic social connection can be, a self-aware platonic connection is much healthier than the environment we are creating ourselves with social media and SEO-driven search engines.&lt;&#x2F;p&gt;
+&lt;p&gt;Having said(written) that, my own personal next steps is to make my own website weirder though.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Setting up Emacs for Godot Engine development</title>
+        <published>2023-07-13T00:00:00+00:00</published>
+        <updated>2023-07-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/setting-up-emacs-godot/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/setting-up-emacs-godot/</id>
+        
+        <content type="html">&lt;p&gt;This is a quick blog post, in case any developer wonders how to configure their favourite OS to use with Godot development (the Engine code itself, not individual projects).&lt;&#x2F;p&gt;
+&lt;p&gt;I previously had a tough time configuring Emacs for C&#x2F;C++ projects, probably because I had no idea what I was doing, but I like to think that the problem was the LSP support on Emacs. Nowadays it&#x27;s pretty much straightforward. The main requisite is following this guide:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;emacs-lsp.github.io&#x2F;lsp-mode&#x2F;tutorials&#x2F;CPP-guide&#x2F;&quot;&gt;https:&#x2F;&#x2F;emacs-lsp.github.io&#x2F;lsp-mode&#x2F;tutorials&#x2F;CPP-guide&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To install the corresponding LSP packages on your Emacs. The main packages are &lt;code&gt;lsp-mode&lt;&#x2F;code&gt; (main LSP mode), &lt;code&gt;lsp-ui&lt;&#x2F;code&gt; (LSP UI support), &lt;code&gt;dap-mode&lt;&#x2F;code&gt; (for debugging), &lt;code&gt;company&lt;&#x2F;code&gt; (autocomplete) and &lt;code&gt;flycheck&lt;&#x2F;code&gt; (syntax checking). Remember to set up &lt;code&gt;clangd&lt;&#x2F;code&gt; first.&lt;&#x2F;p&gt;
+&lt;p&gt;Ignore their &lt;code&gt;Project Setup&lt;&#x2F;code&gt; section for the Godot project. Instead, what you want to do is run &lt;code&gt;scons compiledb=yes compile_commands.json&lt;&#x2F;code&gt; on the Godot project root folder, so it generates the stuff LSP needs.&lt;&#x2F;p&gt;
+&lt;p&gt;After setting up &lt;code&gt;clangd&lt;&#x2F;code&gt;, LSP and generating &lt;code&gt;compile_commands.json&lt;&#x2F;code&gt;, Emacs should behave just like any other IDE a normal sensible person would use if they don&#x27;t like the THRILL of breaking their IDE configuration every now and then.&lt;&#x2F;p&gt;
+&lt;p&gt;To be able to use the debug commands (&lt;code&gt;M-x dap-debug&lt;&#x2F;code&gt;) the tutorial points you to, you have to create a &lt;code&gt;launch.json&lt;&#x2F;code&gt; file in the Godot project root, the Debug launch command configuration. Mine looks like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;{
+		&amp;quot;name&amp;quot;: &amp;quot;Launch Project&amp;quot;,
+		&amp;quot;type&amp;quot;: &amp;quot;cppdbg&amp;quot;,
+		&amp;quot;request&amp;quot;: &amp;quot;launch&amp;quot;,
+		&amp;#x2F;&amp;#x2F; Change to godot.linuxbsd.tools.64.llvm for llvm-based builds.
+		&amp;quot;program&amp;quot;: &amp;quot;${workspaceFolder}&amp;#x2F;bin&amp;#x2F;godot.linuxbsd.editor.dev.x86_64&amp;quot;,
+		&amp;#x2F;&amp;#x2F; Change the arguments below for the project you want to test with.
+		&amp;#x2F;&amp;#x2F; To run the project instead of editing it, remove the &amp;quot;--editor&amp;quot; argument.
+		&amp;quot;args&amp;quot;: [ &amp;quot;--editor, &amp;quot;--path&amp;quot;, &amp;quot;path-to-your-godot-project-folder&amp;quot; ],
+		&amp;quot;stopAtEntry&amp;quot;: false,
+		&amp;quot;cwd&amp;quot;: &amp;quot;${workspaceFolder}&amp;quot;,
+		&amp;quot;environment&amp;quot;: [],
+		&amp;quot;externalConsole&amp;quot;: false,
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;That&#x27;s the VSCode &lt;code&gt;.json&lt;&#x2F;code&gt; from the Godot documentation guide, but replacing &lt;code&gt;lldb&lt;&#x2F;code&gt; with &lt;code&gt;cppdbg&lt;&#x2F;code&gt;, and removing the &lt;code&gt;preLaunchTask&lt;&#x2F;code&gt; property (you&#x27;ll have to create a &amp;quot;build&amp;quot; task &lt;code&gt;.json&lt;&#x2F;code&gt; if you want a &lt;code&gt;preLaunchTask&lt;&#x2F;code&gt;). After that, you should be able to add breakpoints with &lt;code&gt;M-x dap-breakpoint-add&lt;&#x2F;code&gt; and run &lt;code&gt;M-x dap-debug&lt;&#x2F;code&gt; successfully.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-emacs-though-isn-t-vscode-much-easier-to-configure-and-use-for-c-development&quot;&gt;Why Emacs, though? Isn&#x27;t VSCode much easier to configure and use for C++ development?&lt;&#x2F;h3&gt;
+&lt;p&gt;Yes.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Making Of: GDQuest 3D Platformer Demo</title>
+        <published>2023-02-24T00:00:00+00:00</published>
+        <updated>2023-02-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/gdquest-platformer-demo/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/gdquest-platformer-demo/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;This is a Making Of article of a Demo I made in Godot &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt;. Most of the learnings are generic and can be applied anywhere.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;project-complete.png&quot; alt=&quot;Platformer Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Our objective &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt; was to create a 3D Platformer demo in Godot, with the following requisites:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maximum of two weeks of development. We are creating demos fast, so we can have lots of content and test ideas using the latest version of Godot (at the time of the Demo, v4.0 beta 4).&lt;&#x2F;li&gt;
+&lt;li&gt;Inspired by &lt;em&gt;3D Mario games&lt;&#x2F;em&gt; mechanics.&lt;&#x2F;li&gt;
+&lt;li&gt;Make it simple and modular, so users can copy-paste the project into theirs or study the codebase.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I was the developer, and &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;heytibo&quot;&gt;Tibo&lt;&#x2F;a&gt; was the artist behind this Demo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;setting-tasks&quot;&gt;Setting tasks&lt;&#x2F;h2&gt;
+&lt;p&gt;Following the last TPS demo, the idea was to leverage nostalgia to create interest and making users more eager to explore the demo to their benefit.&lt;&#x2F;p&gt;
+&lt;p&gt;The feature-set I decided upon to create a good Demo was:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A character controller that would play like Mario 64 in the following ways:
+&lt;ul&gt;
+&lt;li&gt;Jump combo (triple jumping like in Mario 64).&lt;&#x2F;li&gt;
+&lt;li&gt;Ground pound and ground related jumps.&lt;&#x2F;li&gt;
+&lt;li&gt;Wall jump.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Camera guidance similar to what Mario Odyssey.&lt;&#x2F;li&gt;
+&lt;li&gt;Simple button to ground pound and interact with the scenario.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Those tasks completely changed during the development process, but this will be better described below.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-and-decisions&quot;&gt;Development and Decisions&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;camera-action&quot;&gt;Camera action&lt;&#x2F;h4&gt;
+&lt;p&gt;The camera movement was inspired by Mario Odyseey. My objective was to create a non-intrusive way to guide the player&#x27;s camera, without affecting gameplay or where the player wants to look at. In Mario Odyssey, certain regions of the map slightly guide the player&#x27;s camera to where the Game Designers want the player to pay attention to. This is a very light camera movement, and it stops if the player starts moving the camera on their own.&lt;&#x2F;p&gt;
+&lt;p&gt;To replicate this behavior, I created &amp;quot;Camera Regions&amp;quot;, 3D areas in the demo level that the camera would try following a predetermined path when the player is inside.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;camera-region.png&quot; alt=&quot;Camera region&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The camera movement itself is created using two Paths:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;One path is the Player Path, or the closest point the player is from this specific line.&lt;&#x2F;li&gt;
+&lt;li&gt;The other is the Camera Path, which is the &amp;quot;optimal&amp;quot; camera position corresponding to the position the player is on the Player Path.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So if player is at the start of the Player Path (or the closest position in the Path from where the player is), the Camera will try moving to the position at the start of the Camera Path. When the player starts moving and their Player Path position starts changing, the camera position at the Camera Path will also change accordingly, and the Camera will try its best lerping to the new position.&lt;&#x2F;p&gt;
+&lt;p&gt;One important thing was that even with a small velocity, guiding camera was really intrusive. So following more closely the Mario Odyssey behavior, when the player moves the camera, the &amp;quot;guiding&amp;quot; action resets and takes at least 10 seconds of player movement to go back to its previous behavior of following the Camera Path position.&lt;&#x2F;p&gt;
+&lt;p&gt;Ideally, it would also take in consideration if the camera is more than X degrees from &amp;quot;ideal&amp;quot; position (don&#x27;t animate camera when player has its own preferred perspective), but this ended up being a nice-to-have, yet to be implemented.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;arriving-at-the-floor&quot;&gt;Arriving at the floor&lt;&#x2F;h4&gt;
+&lt;p&gt;When I started developing the Demo, jumping accross platforms was really difficult with a naive jump mechanic. After tweaking how the player was able to manipulate the character in-air (to better control air speed before falling), arriving at a platform got less difficult; but staying in a problem was really hard (even on bigger platforms).&lt;&#x2F;p&gt;
+&lt;p&gt;The problem was the fact that the player, when arriving in a platform after a jump that needed precision, usually was tweaking the character in the air, so the analog position is in another direction. When touching the floor, the character would make a sudden move to another direction, making the player lose control of the chracter and falling from the platform if they arrived close to the edge.&lt;&#x2F;p&gt;
+&lt;p&gt;The solution was to add frames in which the character is not able to change direction as soon as they arrive at the floor. If the character is pointing to another direction, instead of walking in the direction, consider the player as &amp;quot;braking&amp;quot; and then moving to the other direction (to give player time to tune direction they want to go).&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;ledge-grabbing&quot;&gt;Ledge grabbing&lt;&#x2F;h4&gt;
+&lt;p&gt;During the development of the game, I noticed that crouch related mechanics (ground pound &#x2F; crouch jumping) was an added character state that would be much less benefitial to other developers using the Demo than Ledge Grabbing, which is a much more difficult mechanic to replicate and makes the gameplay much more interesting.&lt;&#x2F;p&gt;
+&lt;p&gt;The initial mathematical idea for ledge grabbing seemed easy: raycast into solid objects (looking for ledges), and &amp;quot;glue&amp;quot; player character in the found position.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;ledge-grabbing-moving-wrong.gif&quot; alt=&quot;Ledge grabbing wrong&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But this wouldn&#x27;t work on moving platforms. Just gluing character in the found position wouldn&#x27;t work, since the position could change in time depending on the platform the character was holding at. Deciding to fix this was important because this is a generic 3D Platformer solution for developers to use, so they should be able to animate any kind of 3D platform in Godot and copy-paste the Character Controller to play around with the controllers.&lt;&#x2F;p&gt;
+&lt;p&gt;The solution was to save the global transform of the ledge&#x27;s object, convert the ledge position (global position) into the object&#x27;s position (local position), and making the inverse conversion each frame to get the new ledge position.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;ledge-grabbing-moving-right.gif&quot; alt=&quot;Ledge grabbing right&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This solution worked most of the time, but moving platforms caused a lot of trouble with physics, and I had to tweak carefully when the player character should drop from the ledge (while holding the ledge, other platforms may push the player out of it, for example).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cutting-corners&quot;&gt;Cutting corners&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;crouch-and-stomping&quot;&gt;Crouch and stomping&lt;&#x2F;h4&gt;
+&lt;p&gt;Removed crouch&#x2F;stomping as a mechanic. It just seemed to add a new state for the character that wasn&#x27;t needed for the basic platforming action we had; instead, I focused on ledge grabbing, which is a harder mechanic to implement, and influences gameplay in a much more meaningful way.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;jump-fall-gravities&quot;&gt;Jump&#x2F;Fall Gravities&lt;&#x2F;h4&gt;
+&lt;p&gt;When I was studying the reference, one of the design videos I saw mentioned that Mario had different gravities for jumping and falling (GameMaker&#x27;s toolkit, didn&#x27;t mentioned which 3D Mario). I decided to test and it made jump seem easier after a couple of iterations (having a bigger gravity when falling than when going up), but this was before tweaking other jumping variables (like the moment the player touches the floor after jumping).&lt;&#x2F;p&gt;
+&lt;p&gt;Different gravity values stayed in the Demo until I decided to test on Mario 64 whether the &amp;quot;different gravities&amp;quot; was true. I recorded a video and counted the number of frames Mario stays in the air when jumping and falling; it&#x27;s the same, so the previous reference was wrong (or at least not using the same 3D Mario reference as me).&lt;&#x2F;p&gt;
+&lt;p&gt;After all the other tweaks, using the same gravity for jumping and falling made more sense. Thanks to the other tweaks, jumping seemed much less difficult and more natural. So I cut this specific feature out.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;final-result&quot;&gt;Final result&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;complete-demo.gif&quot; alt=&quot;Complete demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;At total, I spent around 10 business days in the core features of the Demo. It took me more time to tweak the Ledge Grabbing physics, since it could get finnicky with moving platforms, but I got really satisfied with the end result.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Making Of: GDQuest TPS Demo</title>
+        <published>2022-11-30T00:00:00+00:00</published>
+        <updated>2022-11-30T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/gdquest-tps-demo/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/gdquest-tps-demo/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;This is a Making Of article of a Demo I made in Godot &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt;. Most of the learnings are generic and can be applied anywhere.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;project-complete.png&quot; alt=&quot;TPS Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Our objective &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt; was to create a Third-Person Shooter demo in Godot, with the following requisites:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Close to one week of development. We are creating demos fast, so we can have lots of content and test ideas using the latest version of Godot (at the time of the Demo, v4.0 beta 4).&lt;&#x2F;li&gt;
+&lt;li&gt;Inspired by &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; mechanics.&lt;&#x2F;li&gt;
+&lt;li&gt;Make it simple and modular, so users can copy-paste the project into theirs or study the codebase.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I was the developer, and &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;heytibo&quot;&gt;Tibo&lt;&#x2F;a&gt; was the artist behind this Demo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;setting-tasks&quot;&gt;Setting tasks&lt;&#x2F;h2&gt;
+&lt;p&gt;Players will always compare Demos or Prototypes to the closest game from the same genre and with similar aesthetics, so playing with the affective memory of users has the upside of making the Demo feel better to play, leading to more invested time by each user and a deeper analysis on the mechanics. It does have the downside of increasing the expectations users have on the Demo and possibly making it feel &amp;quot;worse&amp;quot; to play for the lack of content, but having an exhaustive feedback that you must filter is better than not having enough feedback.&lt;&#x2F;p&gt;
+&lt;p&gt;So the feature-set I decided upon to create a good Demo was:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A good character controller, with camera action similar to &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Melee attack combo.&lt;&#x2F;li&gt;
+&lt;li&gt;Two weapons: a gun and a grenade.&lt;&#x2F;li&gt;
+&lt;li&gt;Two kinds of enemies: a standing one that shoot bullets, and a walking one that follows the player.&lt;&#x2F;li&gt;
+&lt;li&gt;A collectible like &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; metal bolts.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Those features would be basic elements to create an &amp;quot;intro&amp;quot; level to a &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt;-like game. No element alone needs an in-depth explanation, and the user can pretty much test the demo without reading any instruction to understand the references and play around the level like a playground.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-and-decisions&quot;&gt;Development and Decisions&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;camera-action&quot;&gt;Camera action&lt;&#x2F;h4&gt;
+&lt;p&gt;One thing I noticed working in the game&#x27;s camera control is that games like &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; are polished for levels with distinct &#x27;arena&#x27; spaces, with more horizontal action than vertical exploration, and camera is close enough so it won&#x27;t move too much when you are aiming from the shoulder.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;ratchet-screenshot.jpg&quot; alt=&quot;Ratchet &amp;amp; Clank screenshot&quot; &#x2F;&gt;
+&lt;em&gt;Ratchet &amp;amp; Clank (PS2)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;My first thought was to create the usual Camera pivot following the character, but &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; Camera always follow the character&#x27;s ground height, not the Character itself. This feels much better to play, as you can jump around to avoid enemies and enemy projectiles without affecting your current view, so I created this behavior with a &amp;quot;Camera Controller&amp;quot; object with &lt;code&gt;top_level&lt;&#x2F;code&gt; toggled (a nifty Godot v4.0 &lt;code&gt;Node3D&lt;&#x2F;code&gt; toggle that allows the object to have a transform that doesn&#x27;t inherit it&#x27;s parent node). The Player&#x27;s ground height is updated every frame using a &lt;code&gt;Shapecast&lt;&#x2F;code&gt; node (it&#x27;s basically a &lt;code&gt;Raycast&lt;&#x2F;code&gt; but using a cillinder shape, so the ground height is correct even when the player is at the edge of a platform).&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;creating-the-grenade-path&quot;&gt;Creating the grenade path&lt;&#x2F;h4&gt;
+&lt;p&gt;The grenade weapon itself is quite simple: it&#x27;s just an object that, when thrown, checks for enemies in an area around them to damage. The problem was creating a good grenade trajectory visually and the look-and-feel of the grenade throw action.&lt;&#x2F;p&gt;
+&lt;p&gt;My first approach was to create a &lt;code&gt;Curve3D&lt;&#x2F;code&gt; (in a &lt;code&gt;Path3D&lt;&#x2F;code&gt; Node) which the grenade would follow using a &lt;code&gt;PathFollow&lt;&#x2F;code&gt; node. The &lt;code&gt;Curve3D&lt;&#x2F;code&gt; had some default points parameters, and I would only change the start and end points of the curve to generate a new grenade trajectory.&lt;&#x2F;p&gt;
+&lt;p&gt;Instead of generating an ArrayMesh procedurally to make the visual path, I used a &lt;code&gt;CSGPolygon&lt;&#x2F;code&gt; with the &lt;code&gt;path&lt;&#x2F;code&gt; property set to the &lt;code&gt;Path3D&lt;&#x2F;code&gt; Node (CSG is not ideal when changing the geometry in runtime, but in this case it was basically an easy-win). The result was okayish, but the grenade felt weird when thrown because it was following the curve linearly (both horizontally and vertically), and not in a ballistic trajectory (linear horizontal movement, but quadratic vertical speed).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;grenade-first-approach.gif&quot; alt=&quot;Grenade first approach&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The second approach was to calculate the Grenade trajectory procedurally using ballistic equations, and feed the new points into the &lt;code&gt;Curve3D&lt;&#x2F;code&gt;. I&#x27;d still use the &lt;code&gt;CSGPolygon&lt;&#x2F;code&gt; to generate the curve visually, but instead of using the &lt;code&gt;PathFollow&lt;&#x2F;code&gt; node, I&#x27;d use the ballistic equations to know the velocity I&#x27;d have to throw the grenade, and I&#x27;d trust Godot physics simulation to do the rest. This made the ballistic trajectory feel a lot better compared to the previous attempt, but for some reason that I couldn&#x27;t figure out, the trajectory was always a little bit different than the calculations (not enough to prove the calculations wrong, but different enough to make some grenade trajectories miss the target by a really small margin).&lt;&#x2F;p&gt;
+&lt;p&gt;The final approach became an &amp;quot;evolution&amp;quot; of the second approach, adding a small correction each step during the grenade trajectory to make it stay close to the curve the player expected to see (forcing it to hit the target regardless), but mostly trusting Godot physics for the look-and-feel of the trajectory. The physics approach also made it possible to add a little &amp;quot;bounce&amp;quot; effect: the grenade triggers when it collides with the environment, but it explodes a couple of milliseconds after.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;grenade-third-approach.gif&quot; alt=&quot;Grenade third approach&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;blocking-the-level-with-csg-mesh&quot;&gt;Blocking the Level with CSG Mesh&lt;&#x2F;h4&gt;
+&lt;p&gt;I got inspired by the first couple of minutes of the first &lt;code&gt;Ratchet &amp;amp; Clank&lt;&#x2F;code&gt; level, in particular the simple level jump setup. So I used Godot CSG Mesh extensively to block the level and test some platforms.&lt;&#x2F;p&gt;
+&lt;p&gt;In the time I was developing the Demo (Godot v4.0 beta 4), CSG Mesh had some problems:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On subtraction operations, Godot would sometimes crash. I&#x27;m still not 100% sure, but most of the time Godot seemed like it crashed because the meshes in the CSGMesh operation had conflicting vertices (vertices or surfaces were perfectly aligned).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The result mesh had disappearing surfaces.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The result mesh collider had &amp;quot;invisible bumps&amp;quot; that would affect the player movement on the surface.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Problems 1) and 2) were solved by tweaking the CSG primitive sizes in 0.001 increments, so they wouldn&#x27;t have conflicting vertices nor disappearing faces in the result mesh. Problem 3) was solved by changing the Player collider: instead of using a single Capsule shape for the Player collider, I added a small separation ray at the bottom, to force the Player physics object to ignore eventual &amp;quot;floor bumps&amp;quot; without affecting the Player&#x27;s collision with the overall scenario.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cutting-corners&quot;&gt;Cutting corners&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;melee-attack-combo&quot;&gt;Melee Attack Combo&lt;&#x2F;h4&gt;
+&lt;p&gt;I thought I&#x27;d be able to create a melee attack combo flow for the character controller, but I noticed a single attack with a light impulse was enough to make the demo interesting, since combat wasn&#x27;t in-depth and I felt users would mostly use the weapons.&lt;&#x2F;p&gt;
+&lt;p&gt;The lack of &amp;quot;depthness&amp;quot; in the combat may be caused by the the fact that &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; combat has light resource management mechanics, which wasn&#x27;t the focus on this Demo but does create an interesting choice for the player (use weapons and waste ammo vs store ammo for the hard parts of the level). Since we wanted users to test the Camera and changing weapons, it didn&#x27;t look like it would make sense to limit the amount of ammo players had.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;final-result&quot;&gt;Final result&lt;&#x2F;h2&gt;
+&lt;p&gt;At total, I spent 5 business days in the core features of the Demo, plus some days to tweak mechanics (mostly the grenade throwing) and integrate the beautiful art assets made by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;heytibo&quot;&gt;Tibo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;complete-project.gif&quot; alt=&quot;Complete project&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
