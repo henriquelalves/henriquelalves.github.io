@@ -1,6 +1,6 @@
 +++
 title =  "Windows XP Retro Gaming Part 1: It begins"
-date = 2023-08-24
+date = 2023-08-26
 [taxonomies]
 tags = ["windows-xp","retro-gaming"]
 +++
