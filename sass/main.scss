@@ -18,13 +18,13 @@ body {
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
-    
+
     img, video {
         display: block;
         margin: 0 auto;
         max-width: 90%;
     }
-    
+
     ul {
         margin-left: 1rem;
         padding-left: 1rem;
@@ -138,13 +138,35 @@ body {
 }
 
 .footer {
-    text-align: right;
     margin-top: 50px;
     padding-top: 0px;
+		padding-bottom: 50px;
     // border-top: solid 1px $tender-blue;
-    a {
-        color: $textcolor;
-    }
+
+		img {
+				display: inline;
+				align-items:center;
+				text-align: left;
+				width: 32px;
+		}
+
+		.right {
+				width: 49%;
+				float: right;
+				display: inline;
+				text-align: right;
+		}
+
+		.left {
+				width: 49%;
+				float: left;
+				display: inline;
+				text-align: left;
+
+				a {
+						text-decoration: none;
+				}
+		}
 }
 
 h1 {
@@ -156,19 +178,19 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.3rem;    
+    font-size: 1.3rem;
 }
 
 h5 {
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
 
 h6 {
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

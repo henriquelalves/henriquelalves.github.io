@@ -2,10 +2,10 @@
 title =  "Notes about making the web weirder"
 date = 2023-08-13
 [taxonomies]
-tags = ["personal"]
+tags = ["personal","mastonews"]
 +++
 
-I just wanted to write down some notes about what I think about the current web and reason about my nostalgia goggles.
+I just wanted to write down some notes on what I think about the current web and reason about my nostalgia goggles.
 
 I recently deployed a personal project on [mastonews.com](https://mastonews.com), a website that creates an RSS feed from the verified websites of the people you follow on Mastodon (the defederated Twitter/X alternative). a "verified website" is a website that uses the [rel=me](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me) HTML attribute to indicate that the website owner is the same as the Mastodon account, basically a nifty semantic way to say on Mastodon "hey this is my website". I mostly made this app for me, but reasoned more people that are less tech savvy would find it useful too, so I made it a WebApp.
 
@@ -22,4 +22,4 @@ The increasing popularity of a federated web (and by extension the Semantic Web,
 
 And even if are past the point of understanding how dangerous a platonic social connection can be, a self-aware platonic connection is much healthier than the environment we are creating ourselves with social media and SEO-driven search engines.
 
-Having said(written) that, my own personal next steps is to make my own website weirder though.
+Having said(written) that, my own personal next steps is to make my own website weirder.
