@@ -1,16 +1,21 @@
 +++
 title = "reading list"
-date = 2023-08-20
+date = 2023-08-26
 template = "post-page.html"
 +++
 
 #### Currently Reading
 
-- NOAH, Trevor. *Born a crime*
+- AURELIUS, Marcus. *Meditations*
 
 #### Finished
 
 **2023**:
+
+- NOAH, Trevor. *Born a crime*
+
+	In equal parts hilarious, thought-provoking and heartbreaking, an amazing read through and through.
+
 - TCHEKOV, Anton. *O monge negro*
 
 	Great read. Haven't got much into Tchekov (yet), but reading this really short book really makes me delve deeper in more stories like this.
