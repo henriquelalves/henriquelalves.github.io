@@ -14,7 +14,7 @@ Before trying my hands again at solving the SSD error, [@adamscott suggested in 
 
 So I dropped the option of using 86Box and went back to look on how to create a bootable Windows XP USB with the drivers I needed.
 
-I started looking into lots of forums and tutorials, and the best one I found was this one: https://windowspro.eu/installing-windows-xp-on-ssd-disk/.
+I started looking into lots of forums and tutorials, and the best one I found was this one: [https://windowspro.eu/installing-windows-xp-on-ssd-disk/](https://windowspro.eu/installing-windows-xp-on-ssd-disk/).
 
 ### First Round: Enabling BIOS Hard Disk compatibility mode
 
@@ -34,7 +34,7 @@ More **fun** stuff happened now:
 
 - I tried looking into the drivers for my SSD (a Toshiba THNS256GG8BBAA) in a bunch of shady sites, but I couldn't find a download that gave me the actual driver (I may have download tons of viruses though, maybe, possibly). But even the shady sites only showed drivers for Windows 7+.
 - nLite, the software the tutorial mentioned is used to create the "updated" bootable Windows XP setup WITH the drivers, didn't work with any Windows XP ISO I downloaded. I'd find later an anti-feature list that pointed out that nLite wouldn't create Windows XP ISOs, so I have no idea the tutorial was just wrong or if it was assuming a different (older) version of nLite.
-- the OTHER software this tutorial mentioned could also be used to create an updated Windows XP ISO with extra drivers, as mentioned in this second tutorial (that the first tutorial even mentions, making the whole process a bit confusing to me. Why the hell I needed nLite for, then?): http://forum.driverpacks.net/viewtopic.php?id=1449. BUT:
+- the OTHER software this tutorial mentioned could also be used to create an updated Windows XP ISO with extra drivers, as mentioned in this second tutorial (that the first tutorial even mentions, making the whole process a bit confusing to me. Why the hell I needed nLite for, then?): [http://forum.driverpacks.net/viewtopic.php?id=1449](http://forum.driverpacks.net/viewtopic.php?id=1449). BUT:
   - This second tutorial has broken image links, so I couldn't check if the process was going the way it was supposed to or not.
   - The software in question, DP_Base, downloaded updated drivers from its Database. The Database is offline though. So no extra drivers (I downloaded a "Drivers pack" from the first tutorial though, with supposedly all the drivers I needed).
 
