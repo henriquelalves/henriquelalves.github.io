@@ -32,6 +32,8 @@ A list of games I worked in as part of a company or job.
 
 List of my own personal games I created, solo or in small teams. I usually self-publish as "Illusion Fisherman" on my [itch.io](https://illusion-fisherman.itch.io/).
 
+- (2023) [Together (Web)](https://illusion-fisherman.itch.io/together). Illusion Fisherman. A puzzle-exploration game. Developed with Brena Cardoso for Crossing Latitudes Jam.
+
 - (2023) [Fogoto! (Web)](https://illusion-fisherman.itch.io/fogoto). Illusion Fisherman. Arcade "foddian-like" game. Developed solo for SpeedJam #2 (16th of 84 submissions).
 
 - (2023) [Unrolling Dice! (Web)](https://illusion-fisherman.itch.io/unrolling-dice). Illusion Fisherman. Puzzle game. Developed solo for GMTK Game Jam 2023 (357th of 6818 submissions).
