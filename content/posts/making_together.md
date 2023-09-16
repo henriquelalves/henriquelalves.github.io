@@ -45,7 +45,7 @@ This solution have obvious (but minor) problems I chose to ignore (because Game 
 - A player may get repeated letters. I could solve this by adding an unique UUID for each letter in the database, and to query the database until I had a letter with a different UUID than the one I deleted or already spawned.
 - Some regions of the game have less chance of spawning letters. Ideally, every region would spawn X amount of letters, because less players reach the end of the game than they start (so the starting regions have way more letters than the later ones).
 
-![Screenshot of the Game](together-1.png.png)
+![Screenshot of the Game](together-1.png)
 
 ### making an asynchronous coop game
 
