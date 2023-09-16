@@ -1,5 +1,5 @@
 +++
-title =  "Notes about making the web weirder"
+title =  "notes about making the web weirder"
 date = 2023-08-13
 [taxonomies]
 tags = ["personal","mastonews"]

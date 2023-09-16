@@ -1,5 +1,5 @@
 +++
-title =  "Mastonews Devlog 1"
+title =  "mastonews devlog 1"
 date = 2023-08-30
 [taxonomies]
 tags = ["mastonews","devlog"]

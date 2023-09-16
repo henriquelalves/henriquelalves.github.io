@@ -1,5 +1,5 @@
 +++
-title =  "Windows XP Retro Gaming Part 1: It begins"
+title =  "windows XP retro gaming part 1: it begins"
 date = 2023-08-20
 [taxonomies]
 tags = ["windows-xp","retro-gaming"]

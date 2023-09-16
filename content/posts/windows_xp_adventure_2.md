@@ -1,5 +1,5 @@
 +++
-title =  "Windows XP Retro Gaming Part 2: Trying to create an ISO"
+title =  "windows XP retro gaming part 2: trying to create an ISO"
 date = 2023-08-27
 [taxonomies]
 tags = ["windows-xp","retro-gaming"]

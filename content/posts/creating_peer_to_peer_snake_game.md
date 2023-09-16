@@ -1,5 +1,5 @@
 +++
-title = "Creating a Peer-to-Peer Snake Game with Godot WebRTC"
+title = "creating a peer-to-peer snake game with godot webRTC"
 date = 2023-09-07
 [taxonomies]
 tags = ["making-of", "webrtc", "multiplayer"]

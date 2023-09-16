@@ -1,5 +1,5 @@
 +++
-title = "Setting up Emacs for Godot Engine development"
+title = "setting up emacs for godot engine development"
 date = 2023-07-13
 [taxonomies]
 tags = ["emacs", "godot"]

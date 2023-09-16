@@ -1,5 +1,5 @@
 +++
-title =  "Making my own website weirder"
+title =  "making my own website weirder"
 date = 2023-08-31
 [taxonomies]
 tags = ["personal"]

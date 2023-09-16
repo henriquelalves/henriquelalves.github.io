@@ -1,8 +1,8 @@
 +++
-title =  "Making Of: GDQuest 3D Platformer Demo"
+title =  "making of: GDQuest 3D platformer demo"
 date = 2023-02-24
 [taxonomies]
-tags = ["making-of", "gdquest"]
+tags = ["devlog", "gdquest"]
 +++
 
 *This is a Making Of article of a Demo I made in Godot [@GDQuest](https://www.gdquest.com/). Most of the learnings are generic and can be applied anywhere.*
