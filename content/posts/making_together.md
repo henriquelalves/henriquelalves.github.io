@@ -1,8 +1,8 @@
 +++
 title =  "together devlog"
-date = 2023-09-15
+date = 2023-09-17
 [taxonomies]
-tags = ["devlog", "gdquest"]
+tags = ["devlog"]
 +++
 
 
