@@ -60,6 +60,8 @@ List of my own personal games I created, solo or in small teams. I usually self-
 
 Projects of note I created myself. Most of them you can find on my [github](https://github.com/henriquelalves).
 
+- (2023) [EnginesDatabase.com](https://enginesdatabase.com). A website similar to [GameUIDatabase](https://www.gameuidatabase.com), but for Game Engines. Made with Django.
+
 - (2023) [Mastonews.com](https://mastonews.com). A WebApp to generate a feed from your Mastodon follows personal blogs and websites. Made with SvelteKit.
 
 - (2022) [GLAM (Godot Lightweight Addon Manager)](https://github.com/henriquelalves/glam). A Rust CLI tool to manage Godot addons.
