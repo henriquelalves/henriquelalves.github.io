@@ -20,13 +20,12 @@ After publishing two games in **Javary**, I entered **Wildlife Studios**, where 
 
 I left **Wildlife Studios** to take a sabbatic year, which ended up meaning "I left Wildlife to create a Crypto payment startup to integrate open-source P2P payment rails to indie games" (as one does). The startup ended up not being successful for a variety of reasons, but I learned a lot in the process.
 
-I'm currently working at **GDQuest**, creating high-quality and open-source game demos in Godot to be used in educational content.
+I worked in **GDQuest** for a year, creating high-quality and open-source game demos in Godot to be used in educational content.
 
-My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use Godot**.
+I'm currently working on my own projects and looking for opportunities!
 
-For more information:
+My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use 
 
-- [Curriculum Vitae](/cv/resume.html)
-- [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)
+Add me on [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)!
 
 You can also contact me at <a class="u-email" href="mailto:henriquelalves@gmail.com">henriquelalves@gmail.com</a>.
