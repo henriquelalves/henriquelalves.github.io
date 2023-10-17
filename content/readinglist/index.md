@@ -1,6 +1,6 @@
 +++
 title = "reading list"
-date = 2023-09-13
+date = 2023-10-17
 template = "post-page.html"
 +++
 
@@ -8,11 +8,15 @@ I write a small review and grade them just to keep it easier to remember what I 
 
 #### Currently Reading
 
-- AURELIUS, Marcus. *Meditations*
+- Bell, R.C. *Board and Table Games from Many civilizations*
 
 #### Finished
 
 **2023**:
+
+- AURELIUS, Marcus. *Meditations ⭐⭐⭐⭐★
+
+	It's the most historically interesting book I've read. The translation I bought from Gregory Hays also made a great job making the book much more accessible and easy to understand.
 
 - CELESTE, Ng. *Little fires everywhere* ⭐★★★★
 
