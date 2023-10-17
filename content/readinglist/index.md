@@ -14,7 +14,7 @@ I write a small review and grade them just to keep it easier to remember what I 
 
 **2023**:
 
-- AURELIUS, Marcus. *Meditations ⭐⭐⭐⭐★
+- AURELIUS, Marcus. *Meditations* ⭐⭐⭐⭐★
 
 	It's the most historically interesting book I've read. The translation I bought from Gregory Hays also made a great job making the book much more accessible and easy to understand.
 
