@@ -1,6 +1,6 @@
 +++
 title = "about me"
-date = 2023-08-20
+date = 2024-03-20
 template = "post-page.html"
 +++
 
@@ -22,9 +22,9 @@ I left **Wildlife Studios** to take a sabbatic year, which ended up meaning "I l
 
 I worked in **GDQuest** for a year, creating high-quality and open-source game demos in Godot to be used in educational content.
 
-I'm currently working on my own projects and looking for opportunities!
+I'm currently working @ Jungle, creating a new FPS mobile experience!
 
-My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use 
+My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use Godot**.
 
 Add me on [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)!
 

@@ -1,6 +1,6 @@
 +++
 title = "list of projects"
-date = 2023-08-21
+date = 2024-03-20
 template = "post-page.html"
 +++
 
@@ -31,6 +31,14 @@ A list of games I worked in as part of a company or job.
 ### personal games
 
 List of my own personal games I created, solo or in small teams. I usually self-publish as "Illusion Fisherman" on my [itch.io](https://illusion-fisherman.itch.io/).
+
+- (2024) [Don't stop reading (Web)](https://illusion-fisherman.itch.io/dont-stop-reading). Interactive Fiction. A small interactive fiction experiment to play with the [Inky](https://enginesdatabase.com/engine/inky/) tool.
+
+- (2024) [A Fair Game (Web)](https://illusion-fisherman.itch.io/ggj-2024). Wario-ware like. Me & wife & friends entry for the GGJ 2024.
+
+- (2023) [Orpheus (Web)](https://illusion-fisherman.itch.io/orpheus). Illusion Fisherman. Puzzle game. Made with Puzzlescript, inspired by the myth of Orpheus.
+
+- (2023) [Bankoso (Web)](https://illusion-fisherman.itch.io/bankoso). Illusion Fisherman. Puzzle game. A small Sokoban-like experiment.
 
 - (2023) [Together (Web)](https://illusion-fisherman.itch.io/together). Illusion Fisherman. A puzzle-exploration game. Developed with Brena Cardoso for Crossing Latitudes Jam.
 
