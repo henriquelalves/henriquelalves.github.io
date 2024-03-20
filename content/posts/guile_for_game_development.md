@@ -53,4 +53,4 @@ It... kind of worked? The implementation is super simple, so I just posted the [
 
 And surprisinly, the *Very Easy and Probably Wrong* solution of using a different thread for Guile didn't give me any headache. I just created the thread, started the REPL, and I could play with my own little Raylib Logo from an Emacs Guile console. The fact that the first solution that came to mind worked almost out-of-the-box on the integration are huge kudos on my book for both Guile and Raylib. This got me really excited on the kind of things that using Guile+Raylib combination enables me to do on my own projects, even beyond the Tabletop Game Engine.
 
-My next step is to create a small [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) simulation using Raylib and Guile.
+My next step is to create a small [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) simulation using Raylib and Guile, since this combination got me really excited. After that, I'll probably start working on some drafts for the TGE!
