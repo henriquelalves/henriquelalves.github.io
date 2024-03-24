@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>henriquelalves</title>
+    <link href="https://henriquelalves.com/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://henriquelalves.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-24T00:00:00+00:00</updated>
+    <id>https://henriquelalves.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>windows XP retro gaming part 3: finally, success</title>
+        <published>2024-03-24T00:00:00+00:00</published>
+        <updated>2024-03-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/windows-xp-adventure-3/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/windows-xp-adventure-3/</id>
+        
+        <content type="html">&lt;p&gt;After &lt;a href=&quot;&#x2F;posts&#x2F;windows-xp-adventure-2&#x2F;&quot;&gt;last post&lt;&#x2F;a&gt;, I decided on replacing the SSD with a Sata driver of 1 TB. Long-story short, this wasn&#x27;t enough because I was still trying to install Windows XP via USB - so I spent 20 bucks on a DVD Writer that connected to my actual-modern computer via USB, burned a Very Legitemate copy of Windows XP from &lt;a href=&quot;https:&#x2F;&#x2F;archive.org&quot;&gt;archive.org&lt;&#x2F;a&gt;, and finally used it to install Windows XP.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;installing-windows.png&quot; alt=&quot;Fujitsu installing Windows XP&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After burning another CD with Fujitsu Windows XP drivers (that fortunately are all available on their website), my Windows XP gaming machine is finally ready! And it can connect to the internet via wi-fi! But, my only browser is Internet Explorer 6.0, and it can&#x27;t connect to most websites with the exception of google homepage.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;google-on-ie.png&quot; alt=&quot;Google homepage on Internet Explorer 6.0&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Having a better browser would be really handy to solve some problems installing retro games on it, so using Google (the only website available), I searched for a Firefox binary on archive.org, and after a little bit of trial and error, I managed to open the archive.org page for an older Firefox binary (basically, I had to remove the &amp;quot;Secure&amp;quot; from the HTTPS to make the webpage visible enough on Internet Explorer 6.0).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;downloading-firefox.png&quot; alt=&quot;Downloading Firefox&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;And now I finally had a machine that could browse internet (a bit) and install retro games! Some lessons learned:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Installing Windows XP on SSD is hell. Replace it with a &amp;lt;2TB Sata HDD.&lt;&#x2F;li&gt;
+&lt;li&gt;Installing Windows XP via USB is hell. Burn a (Very Legitemate) copy of Windows XP installer on a CD. You&#x27;ll also get to hear the CD burning grinding song of ages.&lt;&#x2F;li&gt;
+&lt;li&gt;First Windows XP installation didn&#x27;t work because I had the wrong Boot mode on my Bios. Changing it to &amp;quot;Legacy&amp;quot; and it worked flawlessly.&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to retro-game, install Windows XP 32-bit! I made the mistake of installing 64-bit first, and some abandonware games I wanted to test didn&#x27;t run on it because they had 16-bit installers (and 64-bit Windows wasn&#x27;t compatible). 64-bit Windows also made some games run slower (e.g. The Sims 1), and I don&#x27;t think there was a game from the 2000 -2010 era that didn&#x27;t work on 32-bit Windows XP.&lt;&#x2F;li&gt;
+&lt;li&gt;I didn&#x27;t check before but I got really lucky that Fujitsu website made it super easy to find the exact drivers I needed to run Windows XP on my machine. It&#x27;s a very obvious &amp;quot;oopsie daisy!&amp;quot;, but before commiting on buying a machine, check how easy you can find its drivers for Windows XP.&lt;&#x2F;li&gt;
+&lt;li&gt;Before having internet connection on the notebook, I had to install the drivers (that I burned on another CD). Interesting enough, a lot of the drivers I tried installing didn&#x27;t work - the reason was that I extracted the drivers &lt;code&gt;.zip&lt;&#x2F;code&gt; on my archlinux and burned the Data CD there, but in the process, the files were &amp;quot;flattened&amp;quot; on the disc (files in subfolders moved to the parent folder, and the subfolder disappeared). So I burned another Drivers disc with the files still in their &lt;code&gt;.zip&lt;&#x2F;code&gt; folders and opened them on Windows, installing directly from the &lt;code&gt;.zip&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Now, finally, I could play a bit with my Windows XP. Since the laptop&#x27;s webcam was working, the first thing I did was to check The Sims 1! Why, you ask?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;me-webcam.png&quot; alt=&quot;The high quality photo of myself from the Webcam&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is me!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;thesimscreator.png&quot; alt=&quot;A screenshot of my character in The Sims creator&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is me in The Sims Creator!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;thesims.png&quot; alt=&quot;A screenshot of my character in The Sims&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is me in the game!&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s the ugliest Sim I&#x27;ve made but it did made me laugh quite a lot (the left Sim is my wife that was obviously Simified from a terrible Webcam photo too).&lt;&#x2F;p&gt;
+&lt;p&gt;The other game I installed was Diablo 2, that runned flawlessly out-of-the-box, no patches needed.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-3&#x2F;diablo2.png&quot; alt=&quot;Diablo screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I never finished Diablo 2 before, so this is also a game I&#x27;m expecting a lot.&lt;&#x2F;p&gt;
+&lt;p&gt;I already burned  some &lt;code&gt;.iso&lt;&#x2F;code&gt;s of CD Games magazines me and my wife had in Brazil when we were kids - lot&#x27;s of those CD&#x27;s are from a now-dead publisher called Digerati, and had a lot of game demos and Flash game nonsense from that era. I also want to try my hands at making a game in Game Maker 5.0, the first Game Maker version I&#x27;ve used and the software that made me realize that making games was a lot of fun. Maybe this is worthy of another post, something like &amp;quot;making games like it&#x27;s the 2000&#x27;s&amp;quot;, but I think I&#x27;ll try finishing Diablo 2 first with my vanilla &amp;quot;lots of skeletons&amp;quot; necro build.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>about me</title>
+        <published>2024-03-20T00:00:00+00:00</published>
+        <updated>2024-03-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/about/" type="text/html"/>
+        <id>https://henriquelalves.com/about/</id>
+        
+        <content type="html">&lt;h4 id=&quot;hi-my-name-is-henrique-lacreta-alves-i-m-a-game-developer-engineer-and-i-really-like-making-games&quot;&gt;Hi! My name is &lt;strong&gt;Henrique Lacreta Alves&lt;&#x2F;strong&gt;, I&#x27;m a Game Developer Engineer, and I (really) like making games.&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;dinome.png&quot; alt=&quot;Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera&quot; title=&quot;Photograph of me handsomly smiling to the camera, side-by-side with the statue of a dinosaur, also handsomly smiling to the camera&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;My first experience making games was in 2006 using &lt;strong&gt;Game Maker 6.0&lt;&#x2F;strong&gt;. I haven&#x27;t stopped since then.&lt;&#x2F;p&gt;
+&lt;p&gt;I graduated at &lt;strong&gt;Universidade Estadual de Campinas&lt;&#x2F;strong&gt; in Computer Science, where I was also active member and later Project Director of the student&#x27;s Game Development group called &lt;strong&gt;Gamux&lt;&#x2F;strong&gt;. I also spent a year at the &lt;strong&gt;Calgary University&lt;&#x2F;strong&gt; in the period of 2015-2016 as part of a scholarship program.&lt;&#x2F;p&gt;
+&lt;p&gt;My first steps in professional game development were in 2017, when I started making educational web games at &lt;strong&gt;Clickideia&lt;&#x2F;strong&gt; for schools in underserved regions in Brazil. I worked side-by-side with teachers and pedagogues to create the best learning content for children in elementary and middle school.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to work in bigger game developing teams, so the second professional step I made was to work in a mobile gaming startup called &lt;strong&gt;Javary Games&lt;&#x2F;strong&gt;. There, I worked with &lt;strong&gt;Godot&lt;&#x2F;strong&gt;, an open-source game engine that I used to teach game development concepts to college freshmen back in &lt;strong&gt;Gamux&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;After publishing two games in &lt;strong&gt;Javary&lt;&#x2F;strong&gt;, I entered &lt;strong&gt;Wildlife Studios&lt;&#x2F;strong&gt;, where I&#x27;ve stayed for 3 years and had the opportunity to work on two flagship games (&lt;strong&gt;Tennis Clash&lt;&#x2F;strong&gt; and &lt;strong&gt;Zooba&lt;&#x2F;strong&gt;) in UI and gameplay squads, and &lt;strong&gt;Sky Warriors&lt;&#x2F;strong&gt; from the very first prototype as the lead engineer to global launch as a full-stack engineer working in every aspect of the game.&lt;&#x2F;p&gt;
+&lt;p&gt;I left &lt;strong&gt;Wildlife Studios&lt;&#x2F;strong&gt; to take a sabbatic year, which ended up meaning &amp;quot;I left Wildlife to create a Crypto payment startup to integrate open-source P2P payment rails to indie games&amp;quot; (as one does). The startup ended up not being successful for a variety of reasons, but I learned a lot in the process.&lt;&#x2F;p&gt;
+&lt;p&gt;I worked in &lt;strong&gt;GDQuest&lt;&#x2F;strong&gt; for a year, creating high-quality and open-source game demos in Godot to be used in educational content.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m currently working @ Jungle, creating a new FPS mobile experience!&lt;&#x2F;p&gt;
+&lt;p&gt;My main interests are &lt;strong&gt;Game Design&lt;&#x2F;strong&gt;, &lt;strong&gt;Retro Computing&lt;&#x2F;strong&gt; and &lt;strong&gt;Preaching how good Godot is and that it is MIT licensed! You should totally use Godot&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Add me on &lt;a href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;henrique-lacreta-alves-80614169&#x2F;&quot;&gt;LinkedIn&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;You can also contact me at &lt;a class=&quot;u-email&quot; href=&quot;mailto:henriquelalves@gmail.com&quot;&gt;henriquelalves@gmail.com&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>guile for game development - a devlog</title>
+        <published>2024-03-20T00:00:00+00:00</published>
+        <updated>2024-03-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/guile-for-game-development/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/guile-for-game-development/</id>
+        
+        <content type="html">&lt;p&gt;Trying to synthesize a bit of my learning experience with Guile, so I can better track my own progress learning it.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;first-what-do-i-want-to-do&quot;&gt;first, what do I want to do?&lt;&#x2F;h3&gt;
+&lt;p&gt;The project that I have in mind is to create a turn-based Tabletop Game Engine (TGE). The idea is that the language itself can describe rules and abstract the most common things used in tabletop games, and the Engine would enforce those rules, show which moves are available for the players on their turn, etc. I&#x27;m not worried about making the visuals for the Engine, just pure data - so in the future, I could embed the TGE anywhere, and the state of each turn would be an Engine query of &amp;quot;What is the current state of the board?&amp;quot;, and I would draw it anyway I want.&lt;&#x2F;p&gt;
+&lt;p&gt;This is &lt;strong&gt;not a novel idea&lt;&#x2F;strong&gt;. The thought actually came to me when out of curiosity I started studying a bit the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Game_Description_Language&quot;&gt;Game Description Language&lt;&#x2F;a&gt;, and I fell into a rabbit hole of declarative metagame descriptions and other experiments with similar objectives (this is worth another post with some very interesting findings). However, most of those experiments were done with AI research and training in mind (&lt;strong&gt;not Large Language Model AI&lt;&#x2F;strong&gt;, but general problem-solving AI research), and even if fun to play around with, they (understandably) are not suitable for game development, even if they could be used in gamedev.&lt;&#x2F;p&gt;
+&lt;p&gt;The project that I have in mind &lt;strong&gt;is very&lt;&#x2F;strong&gt; gamedev related, though. The final product I have in mind is an online engine in the veins of &lt;a href=&quot;https:&#x2F;&#x2F;enginesdatabase.com&#x2F;engine&#x2F;puzzlescript&#x2F;&quot;&gt;PuzzleScript&lt;&#x2F;a&gt;, in which someone could edit Tabletop game rules, and play them in the browser - and, if they find the game fun, they would be able to share and &lt;strong&gt;play online with their friends&lt;&#x2F;strong&gt;. This for me is the near-perfect tabletop prototype experience, being able to create the game in the browser and call your friends to play with you.&lt;&#x2F;p&gt;
+&lt;p&gt;The online part I&#x27;m confident is going to be smooth sail because I have some experience with online multiplayer games. In particular, it seems to me easy enough because &lt;strong&gt;as long as the players have the same tabletop game rules&lt;&#x2F;strong&gt;, they only need to share their actions per turn, and the state of the board is deterministic. Not real time, and I&#x27;m not planning (for now) to create random components in the games such as card drawing and dices. The problem is deciding on what the Tabletop Game Engine is going to be made of, because I want something that is very iterable and easy to embed in other engines.&lt;&#x2F;p&gt;
+&lt;p&gt;Enter Guile.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-guile&quot;&gt;why Guile?&lt;&#x2F;h3&gt;
+&lt;p&gt;I started looking into languages I could use to create such engine. The first thought that came to me was:&lt;&#x2F;p&gt;
+&lt;p&gt;&amp;quot;Welp, I could just use Godot to create the whole thing and make an API on top of GDScript.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;And that is probably the easy way out, but &lt;strong&gt;GDScript is not an interpreted language.&lt;&#x2F;strong&gt; I&#x27;d have to create a pseudo-language that would parse into the GDScript API, limiting much of what someone would be able to do on top of the Tabletop Engine app in real-time. I wanted to give users more freedom than that, but without having to create an interpreted language from scratch.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, using Godot for yet-another-project didn&#x27;t look &lt;a href=&quot;https:&#x2F;&#x2F;dwarffortresswiki.org&#x2F;index.php&#x2F;DF2014:Losing&quot;&gt;Fun&lt;&#x2F;a&gt; enough, so I decided to look into other options.&lt;&#x2F;p&gt;
+&lt;p&gt;The Lisp family of languages picked my interest because:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are options to embed the language with C&#x2F;C++ (e.g. &lt;a href=&quot;https:&#x2F;&#x2F;www.cliki.net&#x2F;ECL&quot;&gt;ECL&lt;&#x2F;a&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;Projects in Lisp seem to naturally develop their own DSL, which is very useful to create the tabletop language subset I&#x27;m imagining.&lt;&#x2F;li&gt;
+&lt;li&gt;I use Emacs for a couple of years but I still have no idea how to program in ELisp, so learning it would be very useful.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And of all languages from the Lisp language branch I looked into, Guile seemed the best fit, since (&lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;guile&#x2F;&quot;&gt;from the website&lt;&#x2F;a&gt;) it is &amp;quot;designed to help programmers create flexible applications that can be extended by users or other programmers with plug-ins, modules, or scripts&amp;quot;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-first-prototype&quot;&gt;the first prototype&lt;&#x2F;h3&gt;
+&lt;p&gt;To test how fitting Guile would be, I thought about pairing it with &lt;a href=&quot;https:&#x2F;&#x2F;enginesdatabase.com&#x2F;engine&#x2F;raylib&#x2F;&quot;&gt;Raylib&lt;&#x2F;a&gt;, a 2D&#x2F;3D game framework library written in pure C. The idea was to implement a little something in Raylib to render a simple window screen, and to draw in it using Guile on a REPL console.&lt;&#x2F;p&gt;
+&lt;p&gt;A very important disclaimer first: &lt;strong&gt;I&#x27;ve never programmed in Lisp&#x2F;Scheme nor used Raylib before.&lt;&#x2F;strong&gt; I was basically testing the waters to see how far I could go without much knowledge.&lt;&#x2F;p&gt;
+&lt;p&gt;I decided that I would follow the &lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;guile&#x2F;docs&#x2F;guile-tut&#x2F;tutorial.html&quot;&gt;Guile logo tutorial&lt;&#x2F;a&gt;, but replacing GNUPlot with Raylib. I didn&#x27;t expect much because I never seen a Raylib project before (although I&#x27;ve been following Raylib development for some years), but Raylib has a very good starting point on their repo with a lot of examples and a template with the Makefile ready - so I picked the &amp;quot;simple window screen&amp;quot;, checked how I would be able to draw a line in the screen, and worked my way on the Guile integration. I picked the &lt;em&gt;Very Easy and Probably Wrong (TM)&lt;&#x2F;em&gt; solution of creating a separate thread to run the REPL Guile console from the Raylib application, so I would be able to connect to the console from my own computer. So, to summarize:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A single &lt;code&gt;main.c&lt;&#x2F;code&gt; file initializing the window screen, creating a thread for the &lt;code&gt;Guile REPL&lt;&#x2F;code&gt; console, and creating the methods I would be able to call from Guile to draw stuff on the screen, Logo style.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;guile-for-game-development&#x2F;logo-guile.png&quot; alt=&quot;Screenshot of Logo Guile working&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It... kind of worked? The implementation is super simple, so I just posted the &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;henriquelalves&#x2F;8f6db4bc43b0e5161466ce972f7bf958&quot;&gt;main.c&lt;&#x2F;a&gt; file on GitHub gist.&lt;&#x2F;p&gt;
+&lt;p&gt;And surprisinly, the &lt;em&gt;Very Easy and Probably Wrong&lt;&#x2F;em&gt; solution of using a different thread for Guile didn&#x27;t give me any headache. I just created the thread, started the REPL, and I could play with my own little Raylib Logo from an Emacs Guile console. The fact that the first solution that came to mind worked almost out-of-the-box on the integration are huge kudos on my book for both Guile and Raylib. This got me really excited on the kind of things that using Guile+Raylib combination enables me to do on my own projects, even beyond the Tabletop Game Engine.&lt;&#x2F;p&gt;
+&lt;p&gt;My next step is to create a small &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Conway&amp;#x27;s_Game_of_Life&quot;&gt;Game of Life&lt;&#x2F;a&gt; simulation using Raylib and Guile, since this combination got me really excited. After that, I&#x27;ll probably start working on some drafts for the TGE!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>list of projects</title>
+        <published>2024-03-20T00:00:00+00:00</published>
+        <updated>2024-03-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/projects/" type="text/html"/>
+        <id>https://henriquelalves.com/projects/</id>
+        
+        <content type="html">&lt;h3 id=&quot;games-i-worked-with&quot;&gt;games i worked with&lt;&#x2F;h3&gt;
+&lt;p&gt;A list of games I worked in as part of a company or job.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(2021) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;sky-warriors-airplane-games&#x2F;id1572323748&quot;&gt;Sky Warriors (Android &#x2F; iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer arcade game with aerial combat for mobile. Leaded the prototype stage of the game and acted as full-stack engineer during pre-production.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1346179411&quot;&gt;Tennis Clash (Android &#x2F; iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer sports game for mobile. Acted as UI and gameplay engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1505808518&quot;&gt;Heart Beats: Love &amp;amp; Rhythm (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Rhythm and Visual-novel game. Acted as gameplay and tools engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1530685906&quot;&gt;Deity Clash (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Real-time multiplayer game for mobile. Acted as full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1542474850&quot;&gt;Battle Camp (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Arcade archero-like game focused on storytelling and social interactions. Acted as project leader and full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2020) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;truco-clash&#x2F;id1567974128&quot;&gt;Truco-Clash (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer card game based on brazillian &amp;quot;Truco&amp;quot;. Acted as full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1459402952&quot;&gt;Zooba: Zoo Battle Royale (Android &#x2F; iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Multiplayer arcade game with Zoo cartoon theme for mobile. Acted as UI engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1457836626&quot;&gt;Singularity (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Horror game with sci-fi setting and puzzle elements. Acted as project leader and full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1470280425&quot;&gt;Light Speed (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Real time strategy game with sci-fi setting. Acted as project leader and full-stack engineer.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2019) &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1491073637&quot;&gt;Catch the Goblin (iOS)&lt;&#x2F;a&gt;. Wildlife Studios. Party-game multiplayer for mobile. Acted as full-stack engineer and project leader.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;personal-games&quot;&gt;personal games&lt;&#x2F;h3&gt;
+&lt;p&gt;List of my own personal games I created, solo or in small teams. I usually self-publish as &amp;quot;Illusion Fisherman&amp;quot; on my &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;&quot;&gt;itch.io&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(2024) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;dont-stop-reading&quot;&gt;Don&#x27;t stop reading (Web)&lt;&#x2F;a&gt;. Interactive Fiction. A small interactive fiction experiment to play with the &lt;a href=&quot;https:&#x2F;&#x2F;enginesdatabase.com&#x2F;engine&#x2F;inky&#x2F;&quot;&gt;Inky&lt;&#x2F;a&gt; tool.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2024) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;ggj-2024&quot;&gt;A Fair Game (Web)&lt;&#x2F;a&gt;. Wario-ware like. Me &amp;amp; wife &amp;amp; friends entry for the GGJ 2024.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;orpheus&quot;&gt;Orpheus (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Puzzle game. Made with Puzzlescript, inspired by the myth of Orpheus.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;bankoso&quot;&gt;Bankoso (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Puzzle game. A small Sokoban-like experiment.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;together&quot;&gt;Together (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. A puzzle-exploration game. Developed with Brena Cardoso for Crossing Latitudes Jam.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;fogoto&quot;&gt;Fogoto! (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Arcade &amp;quot;foddian-like&amp;quot; game. Developed solo for SpeedJam #2 (16th of 84 submissions).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;unrolling-dice&quot;&gt;Unrolling Dice! (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Puzzle game. Developed solo for GMTK Game Jam 2023 (357th of 6818 submissions).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;devour&quot;&gt;&amp;gt;devour (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Adventure text horror game. Developed solo for Themed Horror Game Jam #7.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;would-you-still-love-me-if-i-was-a-banana-peel&quot;&gt;Would you still love me if I was a banana peel? (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Metroidvania action game. Developed solo for Metroidvania Month 17.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;dungeonsanddice&quot;&gt;Dungeons and Dice (Web)&lt;&#x2F;a&gt;. Puzzle game. Developed in a team for the GMTK Game Jam 2022 (431th of 6082 submissions).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2017) &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;viral-cards&quot;&gt;Viral Cards (Web)&lt;&#x2F;a&gt;. Illusion Fisherman. Puzzle game. Developed solo for Livre GameJam 2017.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Water Cannonball.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) A Game About Mushrooms.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Dissociative Identity Papaco.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Chaos.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(??) Ambigram.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;personal-projects&quot;&gt;personal projects&lt;&#x2F;h3&gt;
+&lt;p&gt;Projects of note I created myself. Most of them you can find on my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;enginesdatabase.com&quot;&gt;EnginesDatabase.com&lt;&#x2F;a&gt;. A website similar to &lt;a href=&quot;https:&#x2F;&#x2F;www.gameuidatabase.com&quot;&gt;GameUIDatabase&lt;&#x2F;a&gt;, but for Game Engines. Made with Django.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2023) &lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;Mastonews.com&lt;&#x2F;a&gt;. A WebApp to generate a feed from your Mastodon follows personal blogs and websites. Made with SvelteKit.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2022) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;glam&quot;&gt;GLAM (Godot Lightweight Addon Manager)&lt;&#x2F;a&gt;. A Rust CLI tool to manage Godot addons.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2016) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;SimpleGodotCRTShader&quot;&gt;Godot CRT Shader&lt;&#x2F;a&gt;. A shader to simulate CRT displays. Used in the game &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;devour&quot;&gt;&amp;gt;devour&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;(2016) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;GodotTIE&quot;&gt;Godot Text Interface Engine&lt;&#x2F;a&gt;. An addon to control text printing as dialogue. Used in the game &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;devour&quot;&gt;&amp;gt;devour&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>opinions on death stranding</title>
+        <published>2024-03-13T00:00:00+00:00</published>
+        <updated>2024-03-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/opinions-on-death-stranding/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/opinions-on-death-stranding/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;This is an opinion I posted on &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;DeathStranding&#x2F;comments&#x2F;1b21fp3&#x2F;comment&#x2F;kskxrid&#x2F;?context=3&quot;&gt;Death Stranding reddit&lt;&#x2F;a&gt; about the game - thought I might as well post it on my website&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to hear more opinions on the ending (this is actually the first time I´&#x27;m doing this for any game I&#x27;ve played, such was the impact the game had on me). Obviously, spoilers ahead.&lt;&#x2F;p&gt;
+&lt;p&gt;This is one of my wife&#x27;s favourite game, so I thought on giving it another chance (I churned from the game on the first time I&#x27;ve played a bit before delivering the bomb to South Knot). Have in mind that I&#x27;m actually a fan of Kojima, having played all Metal Gears and such - I just thought the game wasn&#x27;t for me. But reaching the end game, I thought the story was becoming just insufferable to me.&lt;&#x2F;p&gt;
+&lt;p&gt;Quoting myself talking to my wife, before the last 10 minutes of the game: &amp;quot;Kojima actually managed to make me NOT want to play Death Stranding 2.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;After the last 10 minutes (the last delivery), and after recomposing myself from bawling my eyes out: &amp;quot;ok shit what a masterpiece, I&#x27;ll play Death Stranding 2.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;I thought for quite a bit about my feelings on the game, and the main problem for me was the whole Extinction Entity thing. It felt like a piece of the puzzle that didn&#x27;t quite fit into the entire picture of the importance on connecting with other people. Kojima has this way of creating stories in which every character revolves around the concepts he wants to talk about in his games, and that&#x27;s part of the charm of his games, corniness and all (with the exception of Princess Beach, that one made me actually angry). But I couldn&#x27;t feel how EE&#x27;s fit into the whole picture besides working like a glue for character motivation - and even so, I feel that character motivation could work without EE&#x27;s. The whole setting could pretty much work without talking about EE&#x27;s at all even, and I think it&#x27;s a Kojima problem of verbalizing explanations about absolutely everything. The Death Stranding borrows some things from cosmic horror, but a very important concept of cosmic horror is the horror of not understanding the beyond - you are not scared because you know what is going to happen, you are scared because you are not allowed to understand. And EE&#x27;s explanation of the whole thing is just lackluster because there is no character agency on the extinction event besides trying to work around it as a natural phenomenon (so I don&#x27;t actually care about Amelie as a character), and creates more questions that doesn&#x27;t matter for what is really important on the story.&lt;&#x2F;p&gt;
+&lt;p&gt;But the whole part of connecting with other people, and SPECIALLY the end - I got completely by surprise with the Lou&#x2F;Sam memories plot twist. This one made everything worthwhile, and it actually made me want to play the game again so I can understand the gaps the story creates the first time you play. &lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>reading list</title>
+        <published>2023-10-17T00:00:00+00:00</published>
+        <updated>2023-10-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/readinglist/" type="text/html"/>
+        <id>https://henriquelalves.com/readinglist/</id>
+        
+        <content type="html">&lt;p&gt;I write a small review and grade them just to keep it easier to remember what I felt when I read the book, and whether I would recommend them or not.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;currently-reading&quot;&gt;Currently Reading&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Bell, R.C. &lt;em&gt;Board and Table Games from Many civilizations&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;finished&quot;&gt;Finished&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;strong&gt;2023&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;AURELIUS, Marcus. &lt;em&gt;Meditations&lt;&#x2F;em&gt; ⭐⭐⭐⭐★&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s the most historically interesting book I&#x27;ve read. The translation I bought from Gregory Hays also made a great job making the book much more accessible and easy to understand.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;CELESTE, Ng. &lt;em&gt;Little fires everywhere&lt;&#x2F;em&gt; ⭐★★★★&lt;&#x2F;p&gt;
+&lt;p&gt;Had some interesting and well written bits, but in the end you could explain every character action with &amp;quot;Because they were born like this&amp;quot;, with no believable development in any of the character stories. It&#x27;s a novel in which every character is a shallow caricature of itself.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;NOAH, Trevor. &lt;em&gt;Born a crime&lt;&#x2F;em&gt; ⭐⭐⭐⭐★&lt;&#x2F;p&gt;
+&lt;p&gt;In equal parts hilarious, thought-provoking and heartbreaking, an amazing read through and through.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;TCHEKOV, Anton. &lt;em&gt;O monge negro&lt;&#x2F;em&gt; ⭐⭐⭐⭐★&lt;&#x2F;p&gt;
+&lt;p&gt;Great read. Haven&#x27;t got much into Tchekov (yet), but reading this really short book really makes me delve deeper in more stories like this.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;JOYCE, James. &lt;em&gt;A Portrait of the Artist as a Young Man&lt;&#x2F;em&gt; ⭐⭐⭐★★&lt;&#x2F;p&gt;
+&lt;p&gt;I was sympathetic with the protagonist&#x27;s relationship with religion throughout the book (coincidently, I also studied in a jesuit school). I enjoyed the emotional development a lot, even with the context-heavy parts regarding Irish history and aesthetics philosophy exposition.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MEYER, Stephanie. &lt;em&gt;Life and Death&lt;&#x2F;em&gt; ⭐⭐★★★&lt;&#x2F;p&gt;
+&lt;p&gt;The Twilight Saga is my guilty pleasure, so this was an entertaining book to read - but mostly because I read Twilight around 12 years ago, since the book itself it almost a carbon copy of &lt;em&gt;Twilight&lt;&#x2F;em&gt; with some interesting changes.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MOORE, Alan, et al. &lt;em&gt;V for Vendetta&lt;&#x2F;em&gt; ⭐⭐⭐⭐⭐&lt;&#x2F;p&gt;
+&lt;p&gt;A timeless classic, but feels ever more important on a world as divided politically as today. It&#x27;s endlessly quotable, has brilliant characters, and the art is like watching the most important frames of a perfectly paced movie.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;MEIER, Sid. &lt;em&gt;Memoir!&lt;&#x2F;em&gt; ⭐⭐⭐⭐⭐&lt;&#x2F;p&gt;
+&lt;p&gt;Absolutely amazing book. Sid Meier is a brilliant storyteller, and the book contains invaluable insights not only for Game Designers, but for anyone with a creative spirit. It&#x27;s a book I&#x27;ll certainly read again in the future.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;HODENT, Celia. &lt;em&gt;The psychology of Video Games&lt;&#x2F;em&gt; ⭐⭐⭐⭐★&lt;&#x2F;p&gt;
+&lt;p&gt;A very short book and general introduction to psychology and UX in video-games. Hodent does an amazing job as a scientist disproving common misconcepts about &amp;quot;popular psychology&amp;quot; such as left&#x2F;right side of the brain, and showing the importance of good scientific coverage.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;POPPER, Karl. &lt;em&gt;The Logic of scientific discovery&lt;&#x2F;em&gt; ⭐⭐⭐★★&lt;&#x2F;p&gt;
+&lt;p&gt;The later half of the book was unintereting to me and I ended up skimming through it, but the first half of the book is surprisingly readable for anyone with light academic background, and it shows how the falsifiability concept impacted modern scientific methodology.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;KUSHNER, David. &lt;em&gt;Masters of Doom&lt;&#x2F;em&gt; ⭐⭐⭐⭐⭐&lt;&#x2F;p&gt;
+&lt;p&gt;It reads like a TV series, romaticized but throughly entertaining. It also gives a great glimpse on America&#x27;s digital entertainment culture, from it&#x27;s birth until the aftermath of the Columbine shooting.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;SCHELL, Jesse. 2008. &lt;em&gt;The Art of Game Design: A book of lenses&lt;&#x2F;em&gt; ⭐⭐⭐★★&lt;&#x2F;p&gt;
+&lt;p&gt;Some chapters aged quite badly, specially in the first half of the book. Besides that, it&#x27;s a good &amp;quot;Game Design 101&amp;quot; reference (as long as you filter it properly), it covers a lot of ground without going too deep in anything, and give some interesting insights. The ending was really special, too.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;2022&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;BETT, Sam. &lt;em&gt;Ask Iwata&lt;&#x2F;em&gt; ⭐⭐⭐⭐★&lt;&#x2F;p&gt;
+&lt;p&gt;It was quite a pleasant read, and the book takes a lot of care describing the life of someone I always admired. It also contains invaluable leadership lessons from one of the most important CEO&#x27;s of the modern gaming industry.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;LINSPECTOR, Clarice. &lt;em&gt;Paixão segundo GH&lt;&#x2F;em&gt; ⭐⭐⭐★★&lt;&#x2F;p&gt;
+&lt;p&gt;The first book from Clarice Linspector I&#x27;ve ever read, and I didn&#x27;t know it was one of the most difficult too. Relatable in a way that is difficult to explain, and almost surreal in its narrative. Although difficult, I enjoyed it.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;backlog&quot;&gt;Backlog&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;NICOLL, Benjamin. &lt;em&gt;The Unity Game Engine and the Circuits of Cultural Software&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;SCHREIER, Jason. &lt;em&gt;Blood, Sweat, and Pixels&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;JUNG, Carl. &lt;em&gt;Man and His Symbols&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;ESTES, Clarissa. &lt;em&gt;Woman Who Runs with the Wolves&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>together devlog</title>
+        <published>2023-09-17T00:00:00+00:00</published>
+        <updated>2023-09-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/making-together/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/making-together/</id>
+        
+        <content type="html">&lt;p&gt;This post is something I planned writing since I finished making &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;together&quot;&gt;Together&lt;&#x2F;a&gt;, a game I created with my wife Brena Cardoso during the &lt;a href=&quot;https:&#x2F;&#x2F;itch.io&#x2F;jam&#x2F;crossing-latitudes-jam&#x2F;rate&#x2F;2244216&quot;&gt;Crossing Latitudes game jam&lt;&#x2F;a&gt;. The reason for this is that I was able to test some ideas with this game and consolidated my workflow publishing web games on itch.io, but for everyone wanting to do the same, it&#x27;s worth to know some of the &amp;quot;gotchas&amp;quot; they might get.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;together-2.png&quot; alt=&quot;Screenshot of the game Together&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&amp;quot;Together&amp;quot; is an exploration and puzzle game, in which you have to find your path to climb a mountain. During the exploration, you collect letters you can use to write messages other players will see - but the message you write are always in a different language than the messages you&#x27;ll read (Portuguese or Suomi). It&#x27;s an asynchronous cooperation game, and we play around with the idea of the language barrier affecting the cooperation because that&#x27;s one of the experiences me and Brena had having just moved to Helsinki from Brazil.&lt;&#x2F;p&gt;
+&lt;p&gt;The idea of the game came naturally to us because when we heard about the jam, our minds were more-or-less settled on the idea of making a game that played with the language (since we just started taking Suomi classes). On the engineer side, I also wanted to use the jam to explore some topics:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Making an asynchronous coop game.&lt;&#x2F;strong&gt; I liked this idea because I had just finished a website project (&lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;mastonews.com&lt;&#x2F;a&gt;) and I finally had a good workflow making servers that was quick and I was confortable with - so I wanted to test this with an asynchronous multiplayer game.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Making a pretty AND efficient 3D game on browser.&lt;&#x2F;strong&gt; I&#x27;m used to create browser games with Godot 3.x for game jams, but I could never set on a workflow that allowed me to &amp;quot;prettify&amp;quot; 3D games confortably (the reason for that is that a browser game is much more limited in hardware capabilities than publishing the game as executables). I wanted to test baking lights (more on that later) to make the game look better, but I also wanted a workflow that allowed me to compress the game in the smallest binary I could.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;So, let&#x27;s dive in the results of each exploration a bit.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;basic-asynchronous-logic&quot;&gt;basic asynchronous logic&lt;&#x2F;h3&gt;
+&lt;p&gt;I knew we were going to make a template system for the messages, similar to Dark Souls. So the server needs to store the messages each player sends with:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first message option chosen by the player (an integer).&lt;&#x2F;li&gt;
+&lt;li&gt;The second message option chosen by the player (an integer).&lt;&#x2F;li&gt;
+&lt;li&gt;The position of the message in the game world (three integers for a 3D position).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;letter-1.png&quot; alt=&quot;Screenshot of Letter&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is only relevant to the client to parse the messages, the server actually just stores a string with the message content concatenated. For example, if a client posts a message on position (10, 15, 20) with options 1 and 2, the server will store the following string:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;1;2;10.00;15.00;20.00&amp;quot;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;When a client receives this message, it will parse it for the message options chosen and it&#x27;s position, and it will spawn a &amp;quot;letter&amp;quot; object in that position.&lt;&#x2F;p&gt;
+&lt;p&gt;How and when the players would receive messages followed a simple logic:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;When a player starts a game, I query for 20 random messages from the server and spawn the letter objects in their respective position.&lt;&#x2F;li&gt;
+&lt;li&gt;Everytime a player reads a letter, I delete the letter object and query for another random message from the server to replace it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This solution have obvious (but minor) problems I chose to ignore (because Game Jam):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A player may get repeated letters. I could solve this by adding an unique UUID for each letter in the database, and to query the database until I had a letter with a different UUID than the one I deleted or already spawned.&lt;&#x2F;li&gt;
+&lt;li&gt;Some regions of the game have less chance of spawning letters. Ideally, every region would spawn X amount of letters, because less players reach the end of the game than they start (so the starting regions have way more letters than the later ones).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;together-1.png&quot; alt=&quot;Screenshot of the Game&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;making-an-asynchronous-coop-game&quot;&gt;making an asynchronous coop game&lt;&#x2F;h3&gt;
+&lt;p&gt;My workflow is based on the &lt;a href=&quot;https:&#x2F;&#x2F;codepilotsf.medium.com&#x2F;how-to-deploy-a-sveltekit-node-app-1c11171fe852&quot;&gt;amazing tutorial by Sean Schertell&lt;&#x2F;a&gt; on how to deploy SvelteKit apps (I used it for Mastonews). This is a brilliant guide because it gives you the basic sysadmin workflow to setup a single and very simple server. You can use it for pretty much anything, not only SvelteKit! It also showed me &lt;code&gt;Caddy&lt;&#x2F;code&gt;, which for someone that head nightmares with &lt;code&gt;nginx&lt;&#x2F;code&gt; broken configurations, was the one thing that convinced me that &amp;quot;hey creating servers is not actually that difficult!&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;I knew that for this particular game, I&#x27;d only need a server with an &lt;code&gt;SQLite&lt;&#x2F;code&gt; database to write player messages, and from where the players would query for messages to display on their game. This would be super simple to make if it wasn&#x27;t for the one &amp;quot;itch.io&amp;quot; gotcha:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Browser games in itch.io HAVE to use SSL for any request.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;You don&#x27;t need to understand how SSL works, but you already seen it: any (most) websites nowadays use &amp;quot;HTTPS:&#x2F;&#x2F;&amp;quot; - not &amp;quot;HTTP:&#x2F;&#x2F;&amp;quot;. &amp;quot;HTTPS&amp;quot; is a site with SSL set and a certificate that guarantees the communication between client (e.g. a game) and the server is secure (as in, no one will be able to &amp;quot;eavesdrop&amp;quot; the communication). Itch.io understandably enforces SSL on browser games for security reasons, but that means you have to set SSL on your server if you want to make a game that communicates with your server. Setting up SSL means two things:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;You have to buy a domain name.&lt;&#x2F;li&gt;
+&lt;li&gt;You have to set your server to use a certificate from the domain you bought.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;In my case, I&#x27;ve already bought &amp;quot;illusionfisherman.com&amp;quot; on GoDaddy. &lt;code&gt;Caddy&lt;&#x2F;code&gt; also automates the whole second step for me, so I literally only needed to follow the tutorial I mentioned setting up the domain name as &amp;quot;illusionfisherman.com&amp;quot; and that was it, server was ready to communicate with client.&lt;&#x2F;p&gt;
+&lt;p&gt;The server itself is just a Node with &lt;code&gt;better-sqlite&lt;&#x2F;code&gt;, a JS package that is extremely straightforward and easy-to-use to deal with local &lt;code&gt;SQLite&lt;&#x2F;code&gt; databases. It&#x27;s running on a &lt;code&gt;pm2&lt;&#x2F;code&gt; process, an awesome process manager that I also discovered following the tutorial I mentioned (Sean Schertell: if you ever read this, THANK YOU).&lt;&#x2F;p&gt;
+&lt;p&gt;The second &amp;quot;gotcha&amp;quot; is setting up an encryption method for the messages between client and server, something the players themselves can&#x27;t easily hack. I don&#x27;t think this is something that would affect this game in particular, but I&#x27;ve seen players hacking leaderboards quite easily on other Game Jams, and I wanted to explore at least a simple encryption method between players and servers to avoid this kind of scenario in the future.&lt;&#x2F;p&gt;
+&lt;p&gt;(A quick side-note: SSL is an encryption layer, but it&#x27;s not helpful in the case of local players hacking the messages being sent to the server, because they are able to check and interfere with the message BEFORE it is encrypted by SSL)&lt;&#x2F;p&gt;
+&lt;p&gt;I tested some things, but by far the easiest (to develop) solution I found was:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the message string to send to the server. Remember that the server only needs to store a single string for each message.&lt;&#x2F;li&gt;
+&lt;li&gt;Calculate the message SHA256 hash with a secret string key appended at the end.&lt;&#x2F;li&gt;
+&lt;li&gt;Send the hash and the message to the server.&lt;&#x2F;li&gt;
+&lt;li&gt;The server receives the message content, appends the same secret string key at the end and calculate the SHA256 hash.&lt;&#x2F;li&gt;
+&lt;li&gt;If the hash the server calculates is the same as the hash it received along with the content, this is a valid message.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;A SHA256 string hash can be thought as a way to translate a string to an &amp;quot;unique&amp;quot; byte sequence. That means that the chance of two different strings to share the same hash is almost impossible (to the point of being irrelevant to be considered in the case of this game), and since the &amp;quot;secret string key&amp;quot; is not published anywhere but in the game&#x27;s code and the website code, this is sufficient to &amp;quot;guarantee&amp;quot; that a message wasn&#x27;t tempered with (unless the hacker knows the secret string key).&lt;&#x2F;p&gt;
+&lt;p&gt;This is not a perfect solution, but it&#x27;s a solution with a &amp;quot;good enough&amp;quot; hacking friction that makes the game at least not trivially hackable.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;making-a-pretty-and-efficient-3d-game-on-browser&quot;&gt;making a pretty AND efficient 3D game on browser&lt;&#x2F;h3&gt;
+&lt;p&gt;The second challenge was to make a game that was pretty, but small and efficient to run in browser. I had a couple of ideas in mind:&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;using-glb-3d-models-but-make-changes-on-import&quot;&gt;using .glb 3D models, but make changes on import&lt;&#x2F;h4&gt;
+&lt;p&gt;This is something I learned working at GDQuest, but the ideal 3D workflow on Godot is to use &lt;code&gt;.glb&lt;&#x2F;code&gt; models with the least amount of changes (avoiding using inherited scenes or changing them in &lt;code&gt;.tscn&lt;&#x2F;code&gt; files). The reason for that is that when you inherit the &lt;code&gt;.glb&lt;&#x2F;code&gt; models and make changes to it in &lt;code&gt;.tscn&lt;&#x2F;code&gt; files, you are serializing the model (and the changes you made) to text format, which can make the exported binary of the game much bigger. This is better explained here: https:&#x2F;&#x2F;github.com&#x2F;gdquest-demos&#x2F;godot-4-3d-third-person-controller&#x2F;pull&#x2F;30.&lt;&#x2F;p&gt;
+&lt;p&gt;Since me and my wife used some of the Kenney assets, the trick was to add a &amp;quot;Post import script&amp;quot; to the 3D models that would do the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reorganizes the model tree, so it could be converted to a MeshLibrary later.&lt;&#x2F;li&gt;
+&lt;li&gt;Creates a convex collision mesh and add it in the scene.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This also made my life easier whenever we changed some of the models - I only needed to change the model file and reimport it, since the only dependencies were scenes that were adding the &amp;quot;.glb&amp;quot; file directly into their node tree.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;lightmap.png&quot; alt=&quot;Lightmap option&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;baking-the-lightmaps&quot;&gt;Baking the lightmaps&lt;&#x2F;h4&gt;
+&lt;p&gt;This wasn&#x27;t the first time I tried baking a lightmap in Godot, but it was the first time the assets workflow made it easy enough to bake lightmaps. What I had to understand is that &lt;strong&gt;reimporting assets with the settings you want is, most of the time, better than changing settings on an inherited scene&lt;&#x2F;strong&gt;. This is also true for generating lightmap UV2 in Godot.&lt;&#x2F;p&gt;
+&lt;p&gt;My workflow was to bake single regions of the game:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;level.png&quot; alt=&quot;Level scene&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;And have a &amp;quot;world&amp;quot; scene that would control which level the player was in, and show&#x2F;hide levels accordingly:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;world.png&quot; alt=&quot;World scene&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is a similar workflow I had for a &lt;a href=&quot;https:&#x2F;&#x2F;illusion-fisherman.itch.io&#x2F;would-you-still-love-me-if-i-was-a-banana-peel&quot;&gt;metroidvania game I made for Metroidvania Month 17&lt;&#x2F;a&gt;. Having the entire level already instantiated is not optimal but the level is small enough to not make a difference - but having the entire world visible to you is REALLY helpful in designing the game.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;summing-up-my-experience&quot;&gt;Summing up my experience&lt;&#x2F;h3&gt;
+&lt;p&gt;I feel I was a bit greedy at the start of the jam, because me and my wife had Boring Stuff (tm) to do during the jam time, so we&#x27;d have less time than we wanted to make the game. But things got aligned surprisingly quickly, and the engineer workflow I had in mind worked really well. Brena is also amazing at adapting the assets and animations we found, and creating new assets ad-hoc.&lt;&#x2F;p&gt;
+&lt;p&gt;The end result is a game that works really well in the browser, smaller than most games I made before (some of them even simpler than &amp;quot;Together&amp;quot;), but packing quite a bit of development love from me and Brena.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;making-together&#x2F;ending.png&quot; alt=&quot;Ending&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>creating a peer-to-peer snake game with godot webRTC</title>
+        <published>2023-09-07T00:00:00+00:00</published>
+        <updated>2023-09-07T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/creating-peer-to-peer-snake-game/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/creating-peer-to-peer-snake-game/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;I posted this on my &amp;quot;write.as&amp;quot; profile (which I don&#x27;t use anymore) on 2021-01-06. I still plan to update the project (the server I made is down, and I have a couple of ideas to improve it), but I&#x27;m re-posting this guide as-is&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;creating-a-peer-to-peer-snake-game-with-godot-webrtc&quot;&gt;Creating a Peer-to-Peer Snake Game with Godot WebRTC&lt;&#x2F;h1&gt;
+&lt;p&gt;This is an introductory article on creating a simple P2P web browser game using the Godot Game Engine. It assumes the reader is familiar with the Engine and has at least intermediate programming knowledge.&lt;&#x2F;p&gt;
+&lt;p&gt;The project is a very simple Multiplayer Snake game played in versus; each player controls a Snake, trying to outgrow the enemy player and force them into a corner. The last player standing is the winner.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;N6kT1hS.png&quot; alt=&quot;Game Screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The project source-code can be found &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;henriquelalves&#x2F;SnakeVersusWebRTC&quot;&gt;on GitHub&lt;&#x2F;a&gt;; the result is playable on &lt;a href=&quot;https:&#x2F;&#x2F;perons.itch.io&#x2F;snake-versus&quot;&gt;Itch.io&lt;&#x2F;a&gt;. This article only provides context for parts of the source code.&lt;&#x2F;p&gt;
+&lt;p&gt;The project was inspired by the WebRTC example available on Godot Demos repository.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-peer-to-peer&quot;&gt;Why Peer-to-peer?&lt;&#x2F;h2&gt;
+&lt;p&gt;There are a lot of strategies to create multiplayer games, and most of them fit into two online architecture categories:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Authoritative Server&lt;&#x2F;em&gt;. Players connect to a Game Room server, which becomes the single source-of-truth for the game simulation.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Peer-to-Peer&lt;&#x2F;em&gt;. Players communicate with each other relying on every player having the same game state and every action being performed deterministically.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Detailing both architectures and other implementation strategies (e.g. Rollback, Client-side prediction) is beyond the scope of this article; suffice to say the &lt;em&gt;Authoritative Server&lt;&#x2F;em&gt; model is the most common in production games for reasons like being harder for a player to cheat the game (it&#x27;s easier to tamper with internet packets in P2P games), and internet connection for all connected players being more reliable (unlike P2P games, in which players depend on each other&#x27;s connections).&lt;&#x2F;p&gt;
+&lt;p&gt;But an &lt;em&gt;Authoritative Server&lt;&#x2F;em&gt; imposes some implementation challenges:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Scaling Game Rooms&lt;&#x2F;em&gt;. In match-based games, the number of concurrent matches is not constant, so the number of Game Rooms should be scaled accordingly.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Client and Game Simulation difference&lt;&#x2F;em&gt;. In the &lt;em&gt;Authoritative Server&lt;&#x2F;em&gt; model, the game simulation only runs in the server, and the Client is usually a &amp;quot;dumb-client&amp;quot; (only renders the game state and sends the player&#x27;s input to the Game Room). This difference makes it harder to implement a common code-base for both Server and Client.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Server Latency&lt;&#x2F;em&gt;. Server location can affect the player&#x27;s online experience differently.  Games that rely on real-time communication with low latency and smaller number of players (e.g. Fighting Games) usually use a P2P architecture for this reason.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For a small project, an Authoritative Server can quickly become a hassle to implement, as it requires a more robust codebase and more expensive backend to allocate Game Room resources. For this reason, a Peer-to-Peer architecture was chosen for this project, as it would be easier to implement the game on a single repository with fewer server resources.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;webrtc&quot;&gt;WebRTC&lt;&#x2F;h2&gt;
+&lt;p&gt;WebRTC is a new web project that allows efficient peer-to-peer data communication using a common protocol between peers.&lt;&#x2F;p&gt;
+&lt;p&gt;From the official &lt;a href=&quot;https:&#x2F;&#x2F;webrtc.org&#x2F;&quot;&gt;WebRTC website&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With WebRTC, you can add real-time communication capabilities to your application that works on top of an open standard. It supports video, voice, and generic data to be sent between peers, allowing developers to build powerful voice- and video-communication solutions.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.html5rocks.com&#x2F;en&#x2F;tutorials&#x2F;webrtc&#x2F;basics&#x2F;dataPathways.png&quot; alt=&quot;WebRTC Data traversal&quot; &#x2F;&gt;
+&lt;em&gt;(image from https:&#x2F;&#x2F;www.html5rocks.com)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;One of the challenges of Peer-to-Peer communication is handling NAT traversal: most peers are behind NAT walls (e.g. an internet router in their homes), which protects the user from remote internet packets of unknown origins (that&#x27;s the reason some games that allows multiplayer via a host (e.g. Minecraft) requires the hosting player to &amp;quot;Port-Forward&amp;quot; their router, so other players can connect to the host without the host&#x27;s router blocking the packets). There are strategies to work around this challenge (e.g. &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;UDP_hole_punching&quot;&gt;UDP Hole Punching&lt;&#x2F;a&gt;), but they require a non-trivial setup between clients, and it may depends on the peers NAT configurations. WebRTC is implemented such as the protocol itself will handle the peers NAT traversal using a special &amp;quot;handshake&amp;quot; exchange between peers before allowing them to exchange data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;project-architecture&quot;&gt;Project Architecture&lt;&#x2F;h2&gt;
+&lt;p&gt;The game is a single Godot Project that contains both Client and Server scenes (the project runs the correct starting scene thanks to a different Export configuration). The project can be divided in &lt;em&gt;Matchmaker Server code&lt;&#x2F;em&gt; (a standalone server that will connect players and act as a WebRTC setup intermediary), the &lt;em&gt;Multiplayer Framework&lt;&#x2F;em&gt; (client classes that operate on how messages are relayed) and the &lt;em&gt;Gameplay Code&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;We4iVUN.png&quot; alt=&quot;Example of Application flow&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The matchmaking flow is:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Player 1 Searches for a match&lt;&#x2F;em&gt;. The player&#x27;s client connects to the Matchmaking Server using a WebSocket, and waits for a starting-match message so it can initiate the WebRTC handshake with other players.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Player 2 Searches for a match&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;The Matchmaker pair the players&lt;&#x2F;em&gt;. The Matchmaker removes both players from the matchmaking queue, and sends to both players a &amp;quot;start match&amp;quot; message with each players information.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Player 1 sends an Offer (first part of the WebRTC handshake) to Player 2 using the Matchmaker server as relay&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Player 2 sends an Answer (second part of the WebRTC handshake) to Player 1 using the Matchmaker server as relay&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Both players wait until a connection is stabilished thanks to the WebRTC client polling&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Players disconnect from the Matchmaking Server and start a match using the WebRTC Peer-to-Peer connection&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;matchmaking-server&quot;&gt;Matchmaking Server&lt;&#x2F;h3&gt;
+&lt;p&gt;The Matchmaker is the only standalone server the project needs, so it can pair players looking for a match and relay their WebRTC handshake. It&#x27;s game agnostic (it has no knowledge of the game data exchange) and works as a relay server as long as players are connected to it. This makes the Matchmaker very lightweight, thus needing very few resources to work.&lt;&#x2F;p&gt;
+&lt;p&gt;The Matchmaker is a simple scene that runs the &lt;code&gt;MatchmakerServer.gd&lt;&#x2F;code&gt; script.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;LpnljtX.png&quot; alt=&quot;Matchmaker Ready Function&quot; &#x2F;&gt;
+&lt;em&gt;MatchmakerServer.gd&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The players connect to the Matchmaker using a WebSocket port (the reason being that WebSocket&#x27;s are easier to setup and exchange messages than a TCP&#x2F;UDP connection). The Matchmaker stores the players information in a queue, so it can poll from it later to pair the players. When the number of players in the match queue is bigger than the match size (a configurable editor variable), the Matchmaker creates a match by sending to each player the necessary information to start a match (each other&#x27; players connection ID).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;OQENLJ4.png&quot; alt=&quot;Message on Server&quot; &#x2F;&gt;
+&lt;em&gt;MatchmakerServer.gd&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;code&gt;Message&lt;&#x2F;code&gt; class (&lt;code&gt;Message.gd&lt;&#x2F;code&gt;) is the only common class between the Client and the Matchmaker server; it&#x27;s used as a wrapper for the packets the players send to the network by converting a variant to an array of bytes using Godot&#x27;s &lt;code&gt;var2bytes&lt;&#x2F;code&gt; standard method, and wraps it to send as a packet along with useful flags (such as a &amp;quot;start match&amp;quot;, or &amp;quot;echo&amp;quot; messages that should be sent back to the sender client). When the Matchmaker server receives a message from a player ID, it relays the message to the other players connected in the same match.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;multiplayer-framework&quot;&gt;Multiplayer Framework&lt;&#x2F;h3&gt;
+&lt;p&gt;The Multiplayer Framework consists of:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ClientManager&lt;&#x2F;code&gt;. Responsible in setting up the relay messages with the Matchmaker Server using WebSockets and setting up the WebRTCClient class signals when a match starts.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;WebRTCClient&lt;&#x2F;code&gt;. The proper WebRTC client class that sets up the Peer-to-Peer connection after a match starts.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;dIXUS9l.png&quot; alt=&quot;Connect to Server&quot; &#x2F;&gt;
+&lt;em&gt;ClientManager.gd&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;When connecting to the Matchmaker websocket, the ClientManager sets all match variables (where players information that comes from the Matchmaker are stored), and which number the player is (used to set which player is the &amp;quot;host&amp;quot; in the Gameplay code). The ClientManager also has both the WebSocket and WebRTC clients and sets their callbacks accordingly.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;JUEGPKz.png&quot; alt=&quot;WebSocket Client&quot; &#x2F;&gt;
+&lt;em&gt;ClientManager.gd&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The business logic for the Websocket client is hardcoded in the ClientManager class, and it deals with initializing the RTC client when receiving a message from the server with the &lt;code&gt;match_start&lt;&#x2F;code&gt; flag set. This creates an RTC peer, and set it up to receive the RTC Handshake messages.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;xj3FC9S.png&quot; alt=&quot;Create Peer&quot; &#x2F;&gt;
+&lt;em&gt;WebRTCClient.gd&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;When creating a WebRTC peer, we need to provide the &amp;quot;ICE&amp;quot; server we&#x27;re going to use (a third-party server responsible in setting up the NAT traversal protocol); there a freely available ICE servers such as the one used in the project. The WebRTC clients are divided in two groups: the &lt;em&gt;Offer&lt;&#x2F;em&gt; group (clients that will create an offer and send it in the network), and the &lt;em&gt;Answer&lt;&#x2F;em&gt; group (clients that will wait for an offer message, and then answer with their network information). On this stage of the process and until the WebRTC handshake finishes between all clients, all messages are exchanged via the Matchmaker Server.&lt;&#x2F;p&gt;
+&lt;p&gt;When all peers are connected, ClientManager will emit a signal so that the match can start, and the gameplay code disconnects from the Matchmaker Server (as it will send messages directly between players using the stabilished WebRTC Peer-to-Peer connection).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;gameplay-code&quot;&gt;Gameplay Code&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;FWN3pb6.png&quot; alt=&quot;Gameplay Code&quot; &#x2F;&gt;
+&lt;em&gt;Game.gd&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The Gameplay code itself is very simple and naive Snake game; it actually uses one player as a match host and the source-of-truth for the simulation (a client working both as a dumb-client and as an authoritative server). When the match starts, the host will send the seed for the simulation (so all players get the same output for the Food positions). During the course of the match, other players will just send to the host their inputs, and then the host &amp;quot;ticks&amp;quot; the simulation, sending back the &amp;quot;final&amp;quot; input of each player for that particular tick, effectively moving every simulation to the same next turn (as all food tiles will have the same position in all clients, so the simulation is deterministic). As soon as there is only one player standing, the match ends (since it&#x27;s a two player game for now, there is no problem with the host leaving the match, as it would end either way).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;thoughts-about-the-project&quot;&gt;Thoughts about the project&lt;&#x2F;h2&gt;
+&lt;p&gt;I started this project so I could create a simple framework for browser multiplayer games with the Godot engine; originally, the &amp;quot;Matchmaker Server&amp;quot; was a Relay server that players used throughout the match to communicate with each other (a &amp;quot;fake&amp;quot; peer-to-peer, as the clients were using the Relay server to communicate with other peers, but the server itself was still agnostic to the game being played). The main problem was latency; there was no cheap server to rent in South America (where I live), and communication was really slow between peers with a Relay Server in North America.&lt;&#x2F;p&gt;
+&lt;p&gt;I learned about WebRTC looking into Peer-to-Peer solutions for the Web, and was amazed by the fact that Godot already had it implemented in the Engine. It did took me quite a bit of time to figure out how the &lt;code&gt;webrtc_signaling&lt;&#x2F;code&gt; demo worked, as the documentation was somewhat lacking, but the payoff was a fraction of the latency I had with the same Snake game with a Relay Server.&lt;&#x2F;p&gt;
+&lt;p&gt;This project is by no means feature complete (it has obvious design flaws, like the fact that a snake can run in circles indefinitely, effectively deadlocking the match), but hopefully it can help anyone else also interested in creating Peer-to-peer games. It&#x27;s amazingly easy once you understand and implement the framework that&#x27;ll support the game itself.&lt;&#x2F;p&gt;
+&lt;p&gt;Cheers!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>making my own website weirder</title>
+        <published>2023-08-31T00:00:00+00:00</published>
+        <updated>2023-08-31T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/making-my-website-weirder/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/making-my-website-weirder/</id>
+        
+        <content type="html">&lt;p&gt;Following the promise of my &lt;a href=&quot;&#x2F;posts&#x2F;notes-about-making-the-web-weirder&quot;&gt;previous post&lt;&#x2F;a&gt;, I changed my website structure, both &amp;quot;behind-the-scenes&amp;quot; and the frontend.&lt;&#x2F;p&gt;
+&lt;p&gt;I replaced my &lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt; setup to &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;, a static website generator made in Rust. The main two reasons for this change was the fact that Jekyll has a boring setup (I don&#x27;t use Ruby for anything else, so it&#x27;s just extra clutter in my computer), and I couldn&#x27;t really understand how Jekyll worked - I just followed a recipe to create more blog posts, but I never really felt confortable changing my website to my needs.&lt;&#x2F;p&gt;
+&lt;p&gt;Zola, on the other hand, is just a small executable to test locally and build the website (so the setup is much easier), and I can actually understand what is going on much better. This search for a better experience writing content for the website is me scratching the itch to write more, and this is an itch that started to appear more since I&#x27;ve started making &lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;mastonews.com&lt;&#x2F;a&gt;. Little by little contributing to making the internet weirder.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>mastonews devlog 1</title>
+        <published>2023-08-30T00:00:00+00:00</published>
+        <updated>2023-08-30T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/mastonews-devlog-1/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/mastonews-devlog-1/</id>
+        
+        <content type="html">&lt;p&gt;I published &lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;mastonews.com&lt;&#x2F;a&gt; a couple of weeks ago but I don&#x27;t have yet written anything about it&#x27;s creation process. Mastonews is a personal project that I ended up learning a lot and made me lose a bunch of fears of publishing a web project that is not game related, so I think it may be benefitial to write a bit about it. It&#x27;s also going to be interesting to check in the future how the project unfolds.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ll divide this post in my initial objectives, what I tried, what I ended up with, and the current project status.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;objective&quot;&gt;Objective&lt;&#x2F;h3&gt;
+&lt;p&gt;The objective was to create a website that reads your mastodon profile and creates an RSS feed from the personal blogs and websites of the accounts you follow. I&#x27;ve talked a bit about where this desire comes from on a &lt;a href=&quot;&#x2F;posts&#x2F;notes_about_making_the_web_weirded&quot;&gt;previous post&lt;&#x2F;a&gt;, so the brief explanation is that the final idea of Mastonews is to help the discoverability of new and interesting websites by leveraging users you already trust.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-first-steps&quot;&gt;The first steps&lt;&#x2F;h3&gt;
+&lt;p&gt;The idea of Mastonews is actually quite simple and could as well be just a python script:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use Mastodon public API to get all the accounts that a public account follows.&lt;&#x2F;li&gt;
+&lt;li&gt;List all the verified links of each account from the last step.&lt;&#x2F;li&gt;
+&lt;li&gt;List all RSS feeds of each verified link listed from the last step.&lt;&#x2F;li&gt;
+&lt;li&gt;Display the content from all the RSS feeds in chronological order&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Step 4 is pretty much optional as a python script, I could just write all RSS feeds into a file and use this file in any other RSS aggregator. But although a python script would be really simple to make, it would never become something that non-tech people could use openly, so I never went forward with just making it a script (it would also become a problem the fact that Step 1 only works for public accounts; private accounts would need OAuth, and thus a domain to be redirected to). Instead, I jumped right into making a simple FastAPI server to test how I could talk with the Mastodon API from my backend, and get ready to display it in a web page frontend.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;trying-fastapi&quot;&gt;Trying FastAPI&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;fastapi.tiangolo.com&#x2F;&quot;&gt;FastAPI&lt;&#x2F;a&gt; is a nifty Python package to create efficient API servers. Although I&#x27;m more or less used to Django, I really wanted to learn FastAPI because it seemed like a shiny new Python toy, so I gave it a spin. It helped that this project looked simple enough to test how a production FastAPI environment would be.&lt;&#x2F;p&gt;
+&lt;p&gt;Recreating the behavior from the last step was really simple, but I notice a problem in how the Mastodon API would work really early in the project: it (understandably) have really low API call limits for single IP addresses (maximum of 300 requests in 5 minutes). And to make matters worse, the only way I knew how to get all the account follows from a single account (and to this day) was to get paginated results with a maximum of 80 accounts - so I&#x27;d have to request multiple times for each user.&lt;&#x2F;p&gt;
+&lt;p&gt;This was a blocking scalability problem to me, since I wanted my app to become popular (not today, but surely tomorrow). So I reviewed my strategy, and decided that if the frontend made the API calls to get the follows, I wouldn&#x27;t have this problem anymore (since it&#x27;s the single user IP that is making the call, so hitting the request limit is much less probable). I&#x27;m not sure if this is an obvious web application setup I was just unaware of, but to the web clueless me, this was an insight I had to have.&lt;&#x2F;p&gt;
+&lt;p&gt;So now I&#x27;d have to choose a frontend library.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;trying-sveltekit&quot;&gt;Trying SvelteKit&lt;&#x2F;h3&gt;
+&lt;p&gt;I knew &lt;a href=&quot;https:&#x2F;&#x2F;kit.svelte.dev&#x2F;&quot;&gt;SvelteKit&lt;&#x2F;a&gt; from before, but I never created any project with it. I knew it from React alternatives I was looking into, because for some reason I just can&#x27;t create a mental model of how the hell React works, so every time that I tried making a &amp;quot;fun little project&amp;quot; in React, I just got intellectually sad and demotivated.&lt;&#x2F;p&gt;
+&lt;p&gt;I really don&#x27;t know why my brain hates React so much, but I accepted that I&#x27;m not a React guy and moved forward with my life.&lt;&#x2F;p&gt;
+&lt;p&gt;SvelteKit seemed like a really good alternative. Does it have a mistery black-box (the compilation process) that transform all of your stuff into other stuff? Yes. But from what I looked into and tested, I could pretty much trust the black-box and just worry about writing some HTML and JS and CSS. The responsiveness would work out of the box and much more intuitively to me than with React.&lt;&#x2F;p&gt;
+&lt;p&gt;The other thing that make SvelteKit attractive was the fact that the backend could be thrown in together on the same development process, making the hobbyst life much easier, AND the backend would be written in JS too. I have nothing against JS in particular (I even have friends that like JS), but what gravitated me towards a JS backend was the fact that there were more libraries to look for RSS feeds in arbitrary URIs in JS than in Python, and this was a problem I didn&#x27;t want to solve myself.&lt;&#x2F;p&gt;
+&lt;p&gt;So SvelteKit was chosen, along with &lt;a href=&quot;https:&#x2F;&#x2F;skeleton.dev&quot;&gt;skeleton.dev&lt;&#x2F;a&gt; UI. I ended up with this architecture:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Frontend: Makes the API calls to list all accounts, list all verified links, send the list of verified links to the backend, and waits for the response to list all content to the user.&lt;&#x2F;li&gt;
+&lt;li&gt;Backend: Receives a list of links, search for the RSS feed in each link and list its content (the posts), and returns to the frontend a list with all posts made in the last 24h.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Notice I wouldn&#x27;t be able to make everything happen in the frontend because of the RSS-feed-search step. CORS protection won&#x27;t allow a browser to make arbitrary requests to websites (DISCLAIMER: I&#x27;m web clueless and I have no idea how CORS works, but I did tested this and CORS didn&#x27;t like what I was doing).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;current-status&quot;&gt;Current Status&lt;&#x2F;h3&gt;
+&lt;p&gt;The project is still under development. The last bit I made was to allow private accounts to use Mastonews by way of OAuth, but for the short term I still have this in mind:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add some structure to the website (About page, Donations page, etc).&lt;&#x2F;li&gt;
+&lt;li&gt;Filter buttons for each account that is shown in your feed (so you know how many posts each account is showing and can filter them).&lt;&#x2F;li&gt;
+&lt;li&gt;A &amp;quot;popular&amp;quot; &#x2F; &amp;quot;trending&amp;quot; list of accounts and their websites, to make discoverability more interesting.&lt;&#x2F;li&gt;
+&lt;li&gt;A small (opt in) donation incentive of showing users that donate to the website with a small flair around them.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In the long term I have bigger plans for the project, but I want to make sure the project is self-sustainable via donations before anything bigger, so I don&#x27;t need to worry to monetize the website in any other way.&lt;&#x2F;p&gt;
+&lt;p&gt;That&#x27;s it for now. There still some things to write about (hosting the website, website logging and stats), but I&#x27;ll leave that to a second post.&lt;&#x2F;p&gt;
+&lt;p&gt;Cheers!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>windows XP retro gaming part 2: trying to create an ISO</title>
+        <published>2023-08-27T00:00:00+00:00</published>
+        <updated>2023-08-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/windows-xp-adventure-2/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/windows-xp-adventure-2/</id>
+        
+        <content type="html">&lt;p&gt;Before trying my hands again at solving the SSD error, &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.gamedev.place&#x2F;@adamscott&#x2F;110952935538175974&quot;&gt;@adamscott suggested in my Mastodon post&lt;&#x2F;a&gt; to use &lt;a href=&quot;https:&#x2F;&#x2F;86box.net&#x2F;&quot;&gt;86Box&lt;&#x2F;a&gt; to emulate the Windows XP OS in my hardware, instead of installing Windows XP. It&#x27;s a software I never heard before, so I investigated it a bit. It was a good suggestion, but I could see those problems:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It seems like Windows XP emulation &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;86Box&#x2F;86Box&#x2F;issues?q=is%3Aissue+windows+xp+is%3Aclosed&quot;&gt;had some problems in 86Box&lt;&#x2F;a&gt;. This made sense to me - 86Box seems like it was made to emulate older OS&#x27;s, and Windows XP is kind of between the newer OS&#x27;s that should run 86Box and the old OS&#x27;s it was made to emulate.&lt;&#x2F;li&gt;
+&lt;li&gt;It still is an emulation layer between running Windows XP in my hardware and the software I want to run. I couldn&#x27;t have any guarantee that it would run all software.&lt;&#x2F;li&gt;
+&lt;li&gt;I want to understand how difficult it can be to install Windows XP on the hardware I have.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So I dropped the option of using 86Box and went back to look on how to create a bootable Windows XP USB with the drivers I needed.&lt;&#x2F;p&gt;
+&lt;p&gt;I started looking into lots of forums and tutorials, and the best one I found was this one: &lt;a href=&quot;https:&#x2F;&#x2F;windowspro.eu&#x2F;installing-windows-xp-on-ssd-disk&#x2F;&quot;&gt;https:&#x2F;&#x2F;windowspro.eu&#x2F;installing-windows-xp-on-ssd-disk&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;first-round-enabling-bios-hard-disk-compatibility-mode&quot;&gt;First Round: Enabling BIOS Hard Disk compatibility mode&lt;&#x2F;h3&gt;
+&lt;p&gt;The tutorial mentions that I could enable BIOS Hard Disk compatibility mode so I could install Windows XP anyway, and later change the HDD operating mode with registry tweaks. Seemed like a no-brainer to me, but it didn&#x27;t work. I had the same &lt;code&gt;7b&lt;&#x2F;code&gt; BSOD problem as before.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;second-round-creating-a-bootable-cd-with-the-drivers-i-needed&quot;&gt;Second Round: Creating a Bootable CD with the drivers I needed&lt;&#x2F;h3&gt;
+&lt;p&gt;So, I tried the next tutorial option: to create a Bootable CD with the drivers I needed.&lt;&#x2F;p&gt;
+&lt;p&gt;BUT, &lt;strong&gt;fun&lt;&#x2F;strong&gt; stuff: I can&#x27;t create a Bootable CD, because the DVD reader from my laptop was just that: A DVD reader. Not writer.&lt;&#x2F;p&gt;
+&lt;p&gt;So, I had to move forward with the assumption that a Bootable USB would work the same as a Bootable CD, which may as well be a completely wrong assumption (during Driver installation, the setup is specific in saying it&#x27;s looking for extra drivers in the CD or floppy disk (lmao)).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;second-and-a-half-round-creating-a-bootable-usb-with-the-drivers-i-needed&quot;&gt;Second (and a half) Round: Creating a Bootable USB with the drivers I needed&lt;&#x2F;h3&gt;
+&lt;p&gt;More &lt;strong&gt;fun&lt;&#x2F;strong&gt; stuff happened now:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;I tried looking into the drivers for my SSD (a Toshiba THNS256GG8BBAA) in a bunch of shady sites, but I couldn&#x27;t find a download that gave me the actual driver (I may have download tons of viruses though, maybe, possibly). But even the shady sites only showed drivers for Windows 7+.&lt;&#x2F;li&gt;
+&lt;li&gt;nLite, the software the tutorial mentioned is used to create the &amp;quot;updated&amp;quot; bootable Windows XP setup WITH the drivers, didn&#x27;t work with any Windows XP ISO I downloaded. I&#x27;d find later an anti-feature list that pointed out that nLite wouldn&#x27;t create Windows XP ISOs, so I have no idea the tutorial was just wrong or if it was assuming a different (older) version of nLite.&lt;&#x2F;li&gt;
+&lt;li&gt;the OTHER software this tutorial mentioned could also be used to create an updated Windows XP ISO with extra drivers, as mentioned in this second tutorial (that the first tutorial even mentions, making the whole process a bit confusing to me. Why the hell I needed nLite for, then?): &lt;a href=&quot;http:&#x2F;&#x2F;forum.driverpacks.net&#x2F;viewtopic.php?id=1449&quot;&gt;http:&#x2F;&#x2F;forum.driverpacks.net&#x2F;viewtopic.php?id=1449&lt;&#x2F;a&gt;. BUT:
+&lt;ul&gt;
+&lt;li&gt;This second tutorial has broken image links, so I couldn&#x27;t check if the process was going the way it was supposed to or not.&lt;&#x2F;li&gt;
+&lt;li&gt;The software in question, DP_Base, downloaded updated drivers from its Database. The Database is offline though. So no extra drivers (I downloaded a &amp;quot;Drivers pack&amp;quot; from the first tutorial though, with supposedly all the drivers I needed).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Using DP_Base, I finally created a new version of the Bootable Windows XP USB I was using, set the installation to install drivers before installing Windows XP.... and it didn&#x27;t work, because it couldn&#x27;t find any drivers to install. I tried using another Windows XP base ISO just to be sure, but to no avail.&lt;&#x2F;p&gt;
+&lt;p&gt;This was no surprising to me at all, since the whole process was convoluted as hell, I couldn&#x27;t find good sources of information, and I was relying on software that is not even supported anymore to create a Bootable USB of an OS that is even less supported. It&#x27;s part of the course, but it reminded me that most information on the internet is not made to be preserved. Maybe if I bought the Fujitsu notebook and tried to install Windows XP on day 0 back in the day, I&#x27;d be able to find the drivers, software and information I needed. In 2023, that&#x27;s definetly not as easy, and maybe just not true at all.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m not so much of a masochist as to keep fighting my own SSD just so I can install Windows XP, so onwards to plan B:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-2&#x2F;fujitsu-naked.jpg&quot; alt=&quot;Fujitsu without its bottom part&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-2&#x2F;fujitsu-ssd.jpg&quot; alt=&quot;Fujitsu without its bottom part&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I checked how to remove the SSD from it, and I&#x27;m planning to replace it for an HDD. I double checked and it seems like Windows XP (with SP1) is compatible with SATA III under 2TB, so I&#x27;ll buy something on the range of 1TB (probably? It&#x27;s the least and cheapest SATA I could find) and replace the SSD.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s hope for the best.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>windows XP retro gaming part 1: it begins</title>
+        <published>2023-08-20T00:00:00+00:00</published>
+        <updated>2023-08-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/windows-xp-adventure-1/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/windows-xp-adventure-1/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;I&#x27;ll be posting my adventure trying to create the perfect Windows XP machine just so I can play The Sims 1 (and some other games, but mostly The Sims 1)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I recently mentioned on Mastodon how tempted I was to buy an old machine to start retro-gaming with Windows XP. The main reason is this:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;windows-xp-adventure-1&#x2F;the-sims.jpg&quot; alt=&quot;The Sims and Civilization IV&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I found this refurbished The Sims 1 (and Civilization IV) on a second-hand store, and for me this was quite a find because:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;The Sims 1 is one of the games I most played in my youth.&lt;&#x2F;li&gt;
+&lt;li&gt;You can&#x27;t legally buy The Sims 1 in any digital store anymore. &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;sims2help&#x2F;comments&#x2F;sxqye7&#x2F;getting_the_sims_2_on_2022&#x2F;&quot;&gt;That&#x27;s also true for The Sims 2&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The second reason is absolutely insane but &lt;a href=&quot;https:&#x2F;&#x2F;gamehistory.org&#x2F;87percent&#x2F;&quot;&gt;not exactly novel&lt;&#x2F;a&gt;. The product reason behind this is, most possibly, the lack of support for playing old games in new hardware. But this is still a shitty reason, because as a savvy user, I don&#x27;t even have a choice to buy the game with no support whatsoever.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m quite fond of digital conservation, so for a €2.00 coin this was a no-brainer to me, even if my only machine was a Manjaro Linux and I wasn&#x27;t planning to change it to Windows. But alas, my impulsive tendencies got the best of me:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;windows-xp-adventure-1&#x2F;toshiba.jpg&quot; alt=&quot;A Toshiba Laptop&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is a refurbished Toshiba laptop I bought for cheap (at least as cheap as buying second-hand electronic in Helsinki goes). It&#x27;s a &lt;strong&gt;beast&lt;&#x2F;strong&gt; of a machine featuring a powerful Intel Core i7 (2nd gen), an NVidia GPU (Quadro 1000M), and 4GB of RAM. I had to look for specs almost exactly like this (a 2nd generation CPU, an old Quadro GPU) to have some guarantee that I would be able to find Drivers for them when running Windows XP.&lt;&#x2F;p&gt;
+&lt;p&gt;The Laptop came with the digital version of Windows 10, though. Why I&#x27;m so fixated on Windows XP?&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Windows in general have a good reputation on maintaing compatibility with old software, but Windows 10 is a bit too much new for the software I want to play. I tried installing a Diablo 2 CD (also bought for 2 euros) but I wasn&#x27;t able to run the game.&lt;&#x2F;li&gt;
+&lt;li&gt;Even so, there would probably be fixes for most games I&#x27;d like to play (Tower of the Sorcerer, another game I really wanted to play, worked flawlessly on Windows 10 - and this is a game I couldn&#x27;t run on Wine because of font issues) - but that is not a guarantee. I want a guarantee.&lt;&#x2F;li&gt;
+&lt;li&gt;Windows XP was one of the most popular OS of all-time (source: my intuition) - and is also a great OS to run the games of the era I want (plus it has great compatibility for even older games).&lt;&#x2F;li&gt;
+&lt;li&gt;And honestly, playing stuff on Windows XP is part of the charm of the whole process. I want to feel this nostalgia.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The Laptop itself came with Windows 10, so I downloaded a legitimate copy of Windows XP (which &lt;a href=&quot;https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;WinXPProSP3x86&quot;&gt;apparently Microsoft itself uploaded to Internet Archive&lt;&#x2F;a&gt;), used Rufus (on the Windows 10) to create a bootable USB, booted from it, and voilá!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-1&#x2F;windows-xp.jpg&quot; alt=&quot;Installation screen of windows XP&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It didn&#x27;t work!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;henriquelalves.com&#x2F;posts&#x2F;windows-xp-adventure-1&#x2F;oops.jpg&quot; alt=&quot;BSOD during windows xp installation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;So, there is ONE part of the laptop spec that is actually quite troublesome for installing older OS&#x27;s: the fact that it uses an SSD.&lt;&#x2F;p&gt;
+&lt;p&gt;On my quite short research, it seems that SSD drives don&#x27;t have some of the commands HDD have (in particular, TRIM), so Windows XP doesn&#x27;t exactly know what to do once it tries to install on it.&lt;&#x2F;p&gt;
+&lt;p&gt;I still have quite a bit of investigation to do, but it seems like I can install 3rd party drivers before installing the Windows XP, and one of the drivers might be the SSD driver so I can actually continue with the installation. So my options right now are:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make due with the SSD. It may possibly deteriorate the SSD faster though, because older OS&#x27;s weren&#x27;t made to use SSD intelligently (and old SSD drives weren&#x27;t as robust as the ones we have today).&lt;&#x2F;li&gt;
+&lt;li&gt;Replace the SSD with an HDD. I&#x27;ll have to check the Laptop adapters though (I know it&#x27;s possible, but I have no idea if the laptop age is going to get in my way).&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;There you have it. Hopefully the following post will have some answers on how the hell I&#x27;ll be installing Windows XP on my Toshiba.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>notes about making the web weirder</title>
+        <published>2023-08-13T00:00:00+00:00</published>
+        <updated>2023-08-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/notes-about-making-the-web-weirder/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/notes-about-making-the-web-weirder/</id>
+        
+        <content type="html">&lt;p&gt;I just wanted to write down some notes on what I think about the current web and reason about my nostalgia goggles.&lt;&#x2F;p&gt;
+&lt;p&gt;I recently deployed a personal project on &lt;a href=&quot;https:&#x2F;&#x2F;mastonews.com&quot;&gt;mastonews.com&lt;&#x2F;a&gt;, a website that creates an RSS feed from the verified websites of the people you follow on Mastodon (the defederated Twitter&#x2F;X alternative). a &amp;quot;verified website&amp;quot; is a website that uses the &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTML&#x2F;Attributes&#x2F;rel&#x2F;me&quot;&gt;rel=me&lt;&#x2F;a&gt; HTML attribute to indicate that the website owner is the same as the Mastodon account, basically a nifty semantic way to say on Mastodon &amp;quot;hey this is my website&amp;quot;. I mostly made this app for me, but reasoned more people that are less tech savvy would find it useful too, so I made it a WebApp.&lt;&#x2F;p&gt;
+&lt;p&gt;I had the idea for the app after checking some of the profiles of users I follow on Mastodon, and noticed some of the had some quirky and cool little websites - stuff that I&#x27;d totally miss otherwise, since we&#x27;re living on a hellscape of SEO-optimization sites and AI generated content.&lt;&#x2F;p&gt;
+&lt;p&gt;I think there are two things that affect how I reminisce on the &amp;quot;old&amp;quot; web:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;We followed human beings. There were bigger sites, but blogs were mostly personal things, so following a blog meant we wanted to keep track of someone&#x27;s content.&lt;&#x2F;li&gt;
+&lt;li&gt;Discoverability lead to more discoverability. There were web-rings and blog-to-blog recommendations, and when you trusted a source, the sites it led to were more hits than misses.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Not to say social media wasn&#x27;t an improvement in everyone&#x27;s life, but depending on social media means we did lost content that social media doesn&#x27;t support. When you build a website or a blog, there is an identity you have to build in it that doesn&#x27;t happen with the same complexity on e.g. Facebook, and the kind of content you build is much more free in shape and form. Internet was quirker and weirder, and that&#x27;s the &#x27;fun&#x27; I reminisce about it (definetely not the Flash ads boom though).&lt;&#x2F;p&gt;
+&lt;p&gt;The increasing popularity of a federated web (and by extension the Semantic Web, or the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Semantic_Web&quot;&gt;real Web 3.0&lt;&#x2F;a&gt;) seems like an opportunity to hack our way out of SEO&#x27;s and Google search engine enshittification to give Web visibility back to individuals. I want more weird and quirky websites, not just for the joy of finding cool websites, but because I want the joy of platonically connecting to new individuals I can trust.&lt;&#x2F;p&gt;
+&lt;p&gt;And even if are past the point of understanding how dangerous a platonic social connection can be, a self-aware platonic connection is much healthier than the environment we are creating ourselves with social media and SEO-driven search engines.&lt;&#x2F;p&gt;
+&lt;p&gt;Having said(written) that, my own personal next steps is to make my own website weirder.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>setting up emacs for godot engine development</title>
+        <published>2023-07-13T00:00:00+00:00</published>
+        <updated>2023-07-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/setting-up-emacs-godot/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/setting-up-emacs-godot/</id>
+        
+        <content type="html">&lt;p&gt;This is a quick blog post, in case any developer wonders how to configure their favourite OS to use with Godot development (the Engine code itself, not individual projects).&lt;&#x2F;p&gt;
+&lt;p&gt;I previously had a tough time configuring Emacs for C&#x2F;C++ projects, probably because I had no idea what I was doing, but I like to think that the problem was the LSP support on Emacs. Nowadays it&#x27;s pretty much straightforward. The main requisite is following this guide:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;emacs-lsp.github.io&#x2F;lsp-mode&#x2F;tutorials&#x2F;CPP-guide&#x2F;&quot;&gt;https:&#x2F;&#x2F;emacs-lsp.github.io&#x2F;lsp-mode&#x2F;tutorials&#x2F;CPP-guide&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To install the corresponding LSP packages on your Emacs. The main packages are &lt;code&gt;lsp-mode&lt;&#x2F;code&gt; (main LSP mode), &lt;code&gt;lsp-ui&lt;&#x2F;code&gt; (LSP UI support), &lt;code&gt;dap-mode&lt;&#x2F;code&gt; (for debugging), &lt;code&gt;company&lt;&#x2F;code&gt; (autocomplete) and &lt;code&gt;flycheck&lt;&#x2F;code&gt; (syntax checking). Remember to set up &lt;code&gt;clangd&lt;&#x2F;code&gt; first.&lt;&#x2F;p&gt;
+&lt;p&gt;Ignore their &lt;code&gt;Project Setup&lt;&#x2F;code&gt; section for the Godot project. Instead, what you want to do is run &lt;code&gt;scons compiledb=yes compile_commands.json&lt;&#x2F;code&gt; on the Godot project root folder, so it generates the stuff LSP needs.&lt;&#x2F;p&gt;
+&lt;p&gt;After setting up &lt;code&gt;clangd&lt;&#x2F;code&gt;, LSP and generating &lt;code&gt;compile_commands.json&lt;&#x2F;code&gt;, Emacs should behave just like any other IDE a normal sensible person would use if they don&#x27;t like the THRILL of breaking their IDE configuration every now and then.&lt;&#x2F;p&gt;
+&lt;p&gt;To be able to use the debug commands (&lt;code&gt;M-x dap-debug&lt;&#x2F;code&gt;) the tutorial points you to, you have to create a &lt;code&gt;launch.json&lt;&#x2F;code&gt; file in the Godot project root, the Debug launch command configuration. Mine looks like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;{
+		&amp;quot;name&amp;quot;: &amp;quot;Launch Project&amp;quot;,
+		&amp;quot;type&amp;quot;: &amp;quot;cppdbg&amp;quot;,
+		&amp;quot;request&amp;quot;: &amp;quot;launch&amp;quot;,
+		&amp;#x2F;&amp;#x2F; Change to godot.linuxbsd.tools.64.llvm for llvm-based builds.
+		&amp;quot;program&amp;quot;: &amp;quot;${workspaceFolder}&amp;#x2F;bin&amp;#x2F;godot.linuxbsd.editor.dev.x86_64&amp;quot;,
+		&amp;#x2F;&amp;#x2F; Change the arguments below for the project you want to test with.
+		&amp;#x2F;&amp;#x2F; To run the project instead of editing it, remove the &amp;quot;--editor&amp;quot; argument.
+		&amp;quot;args&amp;quot;: [ &amp;quot;--editor, &amp;quot;--path&amp;quot;, &amp;quot;path-to-your-godot-project-folder&amp;quot; ],
+		&amp;quot;stopAtEntry&amp;quot;: false,
+		&amp;quot;cwd&amp;quot;: &amp;quot;${workspaceFolder}&amp;quot;,
+		&amp;quot;environment&amp;quot;: [],
+		&amp;quot;externalConsole&amp;quot;: false,
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;That&#x27;s the VSCode &lt;code&gt;.json&lt;&#x2F;code&gt; from the Godot documentation guide, but replacing &lt;code&gt;lldb&lt;&#x2F;code&gt; with &lt;code&gt;cppdbg&lt;&#x2F;code&gt;, and removing the &lt;code&gt;preLaunchTask&lt;&#x2F;code&gt; property (you&#x27;ll have to create a &amp;quot;build&amp;quot; task &lt;code&gt;.json&lt;&#x2F;code&gt; if you want a &lt;code&gt;preLaunchTask&lt;&#x2F;code&gt;). After that, you should be able to add breakpoints with &lt;code&gt;M-x dap-breakpoint-add&lt;&#x2F;code&gt; and run &lt;code&gt;M-x dap-debug&lt;&#x2F;code&gt; successfully.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-emacs-though-isn-t-vscode-much-easier-to-configure-and-use-for-c-development&quot;&gt;Why Emacs, though? Isn&#x27;t VSCode much easier to configure and use for C++ development?&lt;&#x2F;h3&gt;
+&lt;p&gt;Yes.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>making of: GDQuest 3D platformer demo</title>
+        <published>2023-02-24T00:00:00+00:00</published>
+        <updated>2023-02-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/gdquest-platformer-demo/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/gdquest-platformer-demo/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;This is a Making Of article of a Demo I made in Godot &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt;. Most of the learnings are generic and can be applied anywhere.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;project-complete.png&quot; alt=&quot;Platformer Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Our objective &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt; was to create a 3D Platformer demo in Godot, with the following requisites:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maximum of two weeks of development. We are creating demos fast, so we can have lots of content and test ideas using the latest version of Godot (at the time of the Demo, v4.0 beta 4).&lt;&#x2F;li&gt;
+&lt;li&gt;Inspired by &lt;em&gt;3D Mario games&lt;&#x2F;em&gt; mechanics.&lt;&#x2F;li&gt;
+&lt;li&gt;Make it simple and modular, so users can copy-paste the project into theirs or study the codebase.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I was the developer, and &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;heytibo&quot;&gt;Tibo&lt;&#x2F;a&gt; was the artist behind this Demo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;setting-tasks&quot;&gt;Setting tasks&lt;&#x2F;h2&gt;
+&lt;p&gt;Following the last TPS demo, the idea was to leverage nostalgia to create interest and making users more eager to explore the demo to their benefit.&lt;&#x2F;p&gt;
+&lt;p&gt;The feature-set I decided upon to create a good Demo was:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A character controller that would play like Mario 64 in the following ways:
+&lt;ul&gt;
+&lt;li&gt;Jump combo (triple jumping like in Mario 64).&lt;&#x2F;li&gt;
+&lt;li&gt;Ground pound and ground related jumps.&lt;&#x2F;li&gt;
+&lt;li&gt;Wall jump.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Camera guidance similar to what Mario Odyssey.&lt;&#x2F;li&gt;
+&lt;li&gt;Simple button to ground pound and interact with the scenario.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Those tasks completely changed during the development process, but this will be better described below.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-and-decisions&quot;&gt;Development and Decisions&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;camera-action&quot;&gt;Camera action&lt;&#x2F;h4&gt;
+&lt;p&gt;The camera movement was inspired by Mario Odyseey. My objective was to create a non-intrusive way to guide the player&#x27;s camera, without affecting gameplay or where the player wants to look at. In Mario Odyssey, certain regions of the map slightly guide the player&#x27;s camera to where the Game Designers want the player to pay attention to. This is a very light camera movement, and it stops if the player starts moving the camera on their own.&lt;&#x2F;p&gt;
+&lt;p&gt;To replicate this behavior, I created &amp;quot;Camera Regions&amp;quot;, 3D areas in the demo level that the camera would try following a predetermined path when the player is inside.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;camera-region.png&quot; alt=&quot;Camera region&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The camera movement itself is created using two Paths:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;One path is the Player Path, or the closest point the player is from this specific line.&lt;&#x2F;li&gt;
+&lt;li&gt;The other is the Camera Path, which is the &amp;quot;optimal&amp;quot; camera position corresponding to the position the player is on the Player Path.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So if player is at the start of the Player Path (or the closest position in the Path from where the player is), the Camera will try moving to the position at the start of the Camera Path. When the player starts moving and their Player Path position starts changing, the camera position at the Camera Path will also change accordingly, and the Camera will try its best lerping to the new position.&lt;&#x2F;p&gt;
+&lt;p&gt;One important thing was that even with a small velocity, guiding camera was really intrusive. So following more closely the Mario Odyssey behavior, when the player moves the camera, the &amp;quot;guiding&amp;quot; action resets and takes at least 10 seconds of player movement to go back to its previous behavior of following the Camera Path position.&lt;&#x2F;p&gt;
+&lt;p&gt;Ideally, it would also take in consideration if the camera is more than X degrees from &amp;quot;ideal&amp;quot; position (don&#x27;t animate camera when player has its own preferred perspective), but this ended up being a nice-to-have, yet to be implemented.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;arriving-at-the-floor&quot;&gt;Arriving at the floor&lt;&#x2F;h4&gt;
+&lt;p&gt;When I started developing the Demo, jumping accross platforms was really difficult with a naive jump mechanic. After tweaking how the player was able to manipulate the character in-air (to better control air speed before falling), arriving at a platform got less difficult; but staying in a problem was really hard (even on bigger platforms).&lt;&#x2F;p&gt;
+&lt;p&gt;The problem was the fact that the player, when arriving in a platform after a jump that needed precision, usually was tweaking the character in the air, so the analog position is in another direction. When touching the floor, the character would make a sudden move to another direction, making the player lose control of the chracter and falling from the platform if they arrived close to the edge.&lt;&#x2F;p&gt;
+&lt;p&gt;The solution was to add frames in which the character is not able to change direction as soon as they arrive at the floor. If the character is pointing to another direction, instead of walking in the direction, consider the player as &amp;quot;braking&amp;quot; and then moving to the other direction (to give player time to tune direction they want to go).&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;ledge-grabbing&quot;&gt;Ledge grabbing&lt;&#x2F;h4&gt;
+&lt;p&gt;During the development of the game, I noticed that crouch related mechanics (ground pound &#x2F; crouch jumping) was an added character state that would be much less benefitial to other developers using the Demo than Ledge Grabbing, which is a much more difficult mechanic to replicate and makes the gameplay much more interesting.&lt;&#x2F;p&gt;
+&lt;p&gt;The initial mathematical idea for ledge grabbing seemed easy: raycast into solid objects (looking for ledges), and &amp;quot;glue&amp;quot; player character in the found position.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;ledge-grabbing-moving-wrong.gif&quot; alt=&quot;Ledge grabbing wrong&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But this wouldn&#x27;t work on moving platforms. Just gluing character in the found position wouldn&#x27;t work, since the position could change in time depending on the platform the character was holding at. Deciding to fix this was important because this is a generic 3D Platformer solution for developers to use, so they should be able to animate any kind of 3D platform in Godot and copy-paste the Character Controller to play around with the controllers.&lt;&#x2F;p&gt;
+&lt;p&gt;The solution was to save the global transform of the ledge&#x27;s object, convert the ledge position (global position) into the object&#x27;s position (local position), and making the inverse conversion each frame to get the new ledge position.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;ledge-grabbing-moving-right.gif&quot; alt=&quot;Ledge grabbing right&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This solution worked most of the time, but moving platforms caused a lot of trouble with physics, and I had to tweak carefully when the player character should drop from the ledge (while holding the ledge, other platforms may push the player out of it, for example).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cutting-corners&quot;&gt;Cutting corners&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;crouch-and-stomping&quot;&gt;Crouch and stomping&lt;&#x2F;h4&gt;
+&lt;p&gt;Removed crouch&#x2F;stomping as a mechanic. It just seemed to add a new state for the character that wasn&#x27;t needed for the basic platforming action we had; instead, I focused on ledge grabbing, which is a harder mechanic to implement, and influences gameplay in a much more meaningful way.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;jump-fall-gravities&quot;&gt;Jump&#x2F;Fall Gravities&lt;&#x2F;h4&gt;
+&lt;p&gt;When I was studying the reference, one of the design videos I saw mentioned that Mario had different gravities for jumping and falling (GameMaker&#x27;s toolkit, didn&#x27;t mentioned which 3D Mario). I decided to test and it made jump seem easier after a couple of iterations (having a bigger gravity when falling than when going up), but this was before tweaking other jumping variables (like the moment the player touches the floor after jumping).&lt;&#x2F;p&gt;
+&lt;p&gt;Different gravity values stayed in the Demo until I decided to test on Mario 64 whether the &amp;quot;different gravities&amp;quot; was true. I recorded a video and counted the number of frames Mario stays in the air when jumping and falling; it&#x27;s the same, so the previous reference was wrong (or at least not using the same 3D Mario reference as me).&lt;&#x2F;p&gt;
+&lt;p&gt;After all the other tweaks, using the same gravity for jumping and falling made more sense. Thanks to the other tweaks, jumping seemed much less difficult and more natural. So I cut this specific feature out.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;final-result&quot;&gt;Final result&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-platformer-demo&#x2F;complete-demo.gif&quot; alt=&quot;Complete demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;At total, I spent around 10 business days in the core features of the Demo. It took me more time to tweak the Ledge Grabbing physics, since it could get finnicky with moving platforms, but I got really satisfied with the end result.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>making of: GDQuest TPS demo</title>
+        <published>2022-11-30T00:00:00+00:00</published>
+        <updated>2022-11-30T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://henriquelalves.com/posts/gdquest-tps-demo/" type="text/html"/>
+        <id>https://henriquelalves.com/posts/gdquest-tps-demo/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;This is a Making Of article of a Demo I made in Godot &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt;. Most of the learnings are generic and can be applied anywhere.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;project-complete.png&quot; alt=&quot;TPS Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Our objective &lt;a href=&quot;https:&#x2F;&#x2F;www.gdquest.com&#x2F;&quot;&gt;@GDQuest&lt;&#x2F;a&gt; was to create a Third-Person Shooter demo in Godot, with the following requisites:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Close to one week of development. We are creating demos fast, so we can have lots of content and test ideas using the latest version of Godot (at the time of the Demo, v4.0 beta 4).&lt;&#x2F;li&gt;
+&lt;li&gt;Inspired by &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; mechanics.&lt;&#x2F;li&gt;
+&lt;li&gt;Make it simple and modular, so users can copy-paste the project into theirs or study the codebase.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I was the developer, and &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;heytibo&quot;&gt;Tibo&lt;&#x2F;a&gt; was the artist behind this Demo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;setting-tasks&quot;&gt;Setting tasks&lt;&#x2F;h2&gt;
+&lt;p&gt;Players will always compare Demos or Prototypes to the closest game from the same genre and with similar aesthetics, so playing with the affective memory of users has the upside of making the Demo feel better to play, leading to more invested time by each user and a deeper analysis on the mechanics. It does have the downside of increasing the expectations users have on the Demo and possibly making it feel &amp;quot;worse&amp;quot; to play for the lack of content, but having an exhaustive feedback that you must filter is better than not having enough feedback.&lt;&#x2F;p&gt;
+&lt;p&gt;So the feature-set I decided upon to create a good Demo was:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A good character controller, with camera action similar to &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Melee attack combo.&lt;&#x2F;li&gt;
+&lt;li&gt;Two weapons: a gun and a grenade.&lt;&#x2F;li&gt;
+&lt;li&gt;Two kinds of enemies: a standing one that shoot bullets, and a walking one that follows the player.&lt;&#x2F;li&gt;
+&lt;li&gt;A collectible like &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; metal bolts.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Those features would be basic elements to create an &amp;quot;intro&amp;quot; level to a &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt;-like game. No element alone needs an in-depth explanation, and the user can pretty much test the demo without reading any instruction to understand the references and play around the level like a playground.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-and-decisions&quot;&gt;Development and Decisions&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;camera-action&quot;&gt;Camera action&lt;&#x2F;h4&gt;
+&lt;p&gt;One thing I noticed working in the game&#x27;s camera control is that games like &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; are polished for levels with distinct &#x27;arena&#x27; spaces, with more horizontal action than vertical exploration, and camera is close enough so it won&#x27;t move too much when you are aiming from the shoulder.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;ratchet-screenshot.jpg&quot; alt=&quot;Ratchet &amp;amp; Clank screenshot&quot; &#x2F;&gt;
+&lt;em&gt;Ratchet &amp;amp; Clank (PS2)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;My first thought was to create the usual Camera pivot following the character, but &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; Camera always follow the character&#x27;s ground height, not the Character itself. This feels much better to play, as you can jump around to avoid enemies and enemy projectiles without affecting your current view, so I created this behavior with a &amp;quot;Camera Controller&amp;quot; object with &lt;code&gt;top_level&lt;&#x2F;code&gt; toggled (a nifty Godot v4.0 &lt;code&gt;Node3D&lt;&#x2F;code&gt; toggle that allows the object to have a transform that doesn&#x27;t inherit it&#x27;s parent node). The Player&#x27;s ground height is updated every frame using a &lt;code&gt;Shapecast&lt;&#x2F;code&gt; node (it&#x27;s basically a &lt;code&gt;Raycast&lt;&#x2F;code&gt; but using a cillinder shape, so the ground height is correct even when the player is at the edge of a platform).&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;creating-the-grenade-path&quot;&gt;Creating the grenade path&lt;&#x2F;h4&gt;
+&lt;p&gt;The grenade weapon itself is quite simple: it&#x27;s just an object that, when thrown, checks for enemies in an area around them to damage. The problem was creating a good grenade trajectory visually and the look-and-feel of the grenade throw action.&lt;&#x2F;p&gt;
+&lt;p&gt;My first approach was to create a &lt;code&gt;Curve3D&lt;&#x2F;code&gt; (in a &lt;code&gt;Path3D&lt;&#x2F;code&gt; Node) which the grenade would follow using a &lt;code&gt;PathFollow&lt;&#x2F;code&gt; node. The &lt;code&gt;Curve3D&lt;&#x2F;code&gt; had some default points parameters, and I would only change the start and end points of the curve to generate a new grenade trajectory.&lt;&#x2F;p&gt;
+&lt;p&gt;Instead of generating an ArrayMesh procedurally to make the visual path, I used a &lt;code&gt;CSGPolygon&lt;&#x2F;code&gt; with the &lt;code&gt;path&lt;&#x2F;code&gt; property set to the &lt;code&gt;Path3D&lt;&#x2F;code&gt; Node (CSG is not ideal when changing the geometry in runtime, but in this case it was basically an easy-win). The result was okayish, but the grenade felt weird when thrown because it was following the curve linearly (both horizontally and vertically), and not in a ballistic trajectory (linear horizontal movement, but quadratic vertical speed).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;grenade-first-approach.gif&quot; alt=&quot;Grenade first approach&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The second approach was to calculate the Grenade trajectory procedurally using ballistic equations, and feed the new points into the &lt;code&gt;Curve3D&lt;&#x2F;code&gt;. I&#x27;d still use the &lt;code&gt;CSGPolygon&lt;&#x2F;code&gt; to generate the curve visually, but instead of using the &lt;code&gt;PathFollow&lt;&#x2F;code&gt; node, I&#x27;d use the ballistic equations to know the velocity I&#x27;d have to throw the grenade, and I&#x27;d trust Godot physics simulation to do the rest. This made the ballistic trajectory feel a lot better compared to the previous attempt, but for some reason that I couldn&#x27;t figure out, the trajectory was always a little bit different than the calculations (not enough to prove the calculations wrong, but different enough to make some grenade trajectories miss the target by a really small margin).&lt;&#x2F;p&gt;
+&lt;p&gt;The final approach became an &amp;quot;evolution&amp;quot; of the second approach, adding a small correction each step during the grenade trajectory to make it stay close to the curve the player expected to see (forcing it to hit the target regardless), but mostly trusting Godot physics for the look-and-feel of the trajectory. The physics approach also made it possible to add a little &amp;quot;bounce&amp;quot; effect: the grenade triggers when it collides with the environment, but it explodes a couple of milliseconds after.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;grenade-third-approach.gif&quot; alt=&quot;Grenade third approach&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;blocking-the-level-with-csg-mesh&quot;&gt;Blocking the Level with CSG Mesh&lt;&#x2F;h4&gt;
+&lt;p&gt;I got inspired by the first couple of minutes of the first &lt;code&gt;Ratchet &amp;amp; Clank&lt;&#x2F;code&gt; level, in particular the simple level jump setup. So I used Godot CSG Mesh extensively to block the level and test some platforms.&lt;&#x2F;p&gt;
+&lt;p&gt;In the time I was developing the Demo (Godot v4.0 beta 4), CSG Mesh had some problems:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On subtraction operations, Godot would sometimes crash. I&#x27;m still not 100% sure, but most of the time Godot seemed like it crashed because the meshes in the CSGMesh operation had conflicting vertices (vertices or surfaces were perfectly aligned).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The result mesh had disappearing surfaces.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The result mesh collider had &amp;quot;invisible bumps&amp;quot; that would affect the player movement on the surface.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Problems 1) and 2) were solved by tweaking the CSG primitive sizes in 0.001 increments, so they wouldn&#x27;t have conflicting vertices nor disappearing faces in the result mesh. Problem 3) was solved by changing the Player collider: instead of using a single Capsule shape for the Player collider, I added a small separation ray at the bottom, to force the Player physics object to ignore eventual &amp;quot;floor bumps&amp;quot; without affecting the Player&#x27;s collision with the overall scenario.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cutting-corners&quot;&gt;Cutting corners&lt;&#x2F;h2&gt;
+&lt;h4 id=&quot;melee-attack-combo&quot;&gt;Melee Attack Combo&lt;&#x2F;h4&gt;
+&lt;p&gt;I thought I&#x27;d be able to create a melee attack combo flow for the character controller, but I noticed a single attack with a light impulse was enough to make the demo interesting, since combat wasn&#x27;t in-depth and I felt users would mostly use the weapons.&lt;&#x2F;p&gt;
+&lt;p&gt;The lack of &amp;quot;depthness&amp;quot; in the combat may be caused by the the fact that &lt;em&gt;Ratchet &amp;amp; Clank&lt;&#x2F;em&gt; combat has light resource management mechanics, which wasn&#x27;t the focus on this Demo but does create an interesting choice for the player (use weapons and waste ammo vs store ammo for the hard parts of the level). Since we wanted users to test the Camera and changing weapons, it didn&#x27;t look like it would make sense to limit the amount of ammo players had.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;final-result&quot;&gt;Final result&lt;&#x2F;h2&gt;
+&lt;p&gt;At total, I spent 5 business days in the core features of the Demo, plus some days to tweak mechanics (mostly the grenade throwing) and integrate the beautiful art assets made by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;heytibo&quot;&gt;Tibo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;posts&#x2F;gdquest-tps-demo&#x2F;complete-project.gif&quot; alt=&quot;Complete project&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
