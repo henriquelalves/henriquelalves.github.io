@@ -104,3 +104,5 @@ About licensing: I believe GPL should be a flag for games that have in their cor
 I've been meaning to put those thoughts down for quite some time mostly because I think we've been missing some interesting games that could have been made, and interesting ways of making games other than using the [many game engines available out there](https://enginesdatabase.com). In parts, I think this essay depends on the wishful thought that **we haven't seen a big commercially successful Free Software game because no well designed game have went all-in on software freedom yet**. I might be wrong - maybe I don't know the prime example of successful Free Software game that already exists, or worse, maybe there are good games that went all-in on software freedom and simply haven't achieved success, despite my arguments on how it could mitigate risks.
 
 I do like the concept of **Living Games** I described here, and I want to explore the possibility space of creating good living games in the (near) future.
+
+If you have any comments and/or feedbacks, you can comment on my [Mastodon post!](https://mastodon.gamedev.place/@henriquelalves/112208125827364142).
