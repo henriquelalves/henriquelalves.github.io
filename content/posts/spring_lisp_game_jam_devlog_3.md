@@ -1,6 +1,6 @@
 +++
 title = "spring lisp game jam - devlog 3"
-date = 2024-04-13
+date = 2024-04-22
 [taxonomies]
 tags = ["lisp", "guile", "gamejam", "devlog"]
 +++
