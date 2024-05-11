@@ -1,6 +1,6 @@
 +++
 title = "about me"
-date = 2024-03-20
+date = 2024-05-11
 template = "post-page.html"
 +++
 
@@ -26,6 +26,8 @@ I'm currently working @ Jungle, creating a new FPS mobile experience!
 
 My main interests are **Game Design**, **Retro Computing** and **Preaching how good Godot is and that it is MIT licensed! You should totally use Godot**.
 
-Add me on [LinkedIn](https://www.linkedin.com/in/henrique-lacreta-alves-80614169/)!
+Add me on [LinkedIn](https://www.linkedin.com/in/henriquelalves/)!
+
+You can find my CV here: <a href="/about/resume/resume.html">Online CV</a> 
 
 You can also contact me at <a class="u-email" href="mailto:henriquelalves@gmail.com">henriquelalves@gmail.com</a>.

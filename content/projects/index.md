@@ -1,12 +1,14 @@
 +++
 title = "list of projects"
-date = 2024-03-20
+date = 2024-05-11
 template = "post-page.html"
 +++
 
 ### games i worked with
 
 A list of games I worked in as part of a company or job.
+
+- (2024) [FTW (Android / iOS)](https://play.google.com/store/apps/details?id=com.jungle.development.ftw&hl=en_US&pli=1). Jungle. Multiplayer hero shooter game with RPG progression. Acted as Senior Gameplay Engineer, mostly focused on improving Character-Camera-Control and adding new game-changing mechanics such as character Ultimates.
 
 - (2021) [Sky Warriors (Android / iOS)](https://apps.apple.com/us/app/sky-warriors-airplane-games/id1572323748). Wildlife Studios. Multiplayer arcade game with aerial combat for mobile. Leaded the prototype stage of the game and acted as full-stack engineer during pre-production.
 
