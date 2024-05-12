@@ -12,6 +12,12 @@ I write a small review and grade them just to keep it easier to remember what I 
 
 #### Finished
 
+**2024**:
+
+- ITO, Junji. *Sensor* ⭐⭐⭐⭐★
+  
+	A bit horror, a bit lovecraftian, very much Junji Ito. It's the first complete story I read from him, and I quite enjoyed it.
+
 **2023**:
 
 - AURELIUS, Marcus. *Meditations* ⭐⭐⭐⭐★
