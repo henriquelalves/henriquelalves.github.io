@@ -1,6 +1,6 @@
 +++
 title = "list of projects"
-date = 2024-05-11
+date = 2024-05-19
 template = "post-page.html"
 +++
 
@@ -34,7 +34,9 @@ A list of games I worked in as part of a company or job.
 
 List of my own personal games I created, solo or in small teams. I usually self-publish as "Illusion Fisherman" on my [itch.io](https://illusion-fisherman.itch.io/).
 
-- (2024) [Don't stop reading (Web)](https://illusion-fisherman.itch.io/dont-stop-reading). Interactive Fiction. A small interactive fiction experiment to play with the [Inky](https://enginesdatabase.com/engine/inky/) tool.
+- (2024) [Time Flies (GBC)](https://illusion-fisherman.itch.io/time-flies). Frog-like adventure game. A small narrative adventure game about a frog having dates, made for Gameboy Color using [GB Studio](https://enginesdatabase.com/engine/gbstudio/).
+
+- (2024) [Don't stop reading (Web)](https://illusion-fisherman.itch.io/dont-stop-reading). Illusion Fisherman. Interactive Fiction. A small interactive fiction experiment to play with the [Inky](https://enginesdatabase.com/engine/inky/) tool.
 
 - (2024) [A Fair Game (Web)](https://illusion-fisherman.itch.io/ggj-2024). Wario-ware like. Me & wife & friends entry for the GGJ 2024.
 
