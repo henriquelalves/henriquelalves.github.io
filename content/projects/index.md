@@ -1,6 +1,6 @@
 +++
 title = "list of projects"
-date = 2024-05-19
+date = 2024-05-27
 template = "post-page.html"
 +++
 
@@ -33,6 +33,8 @@ A list of games I worked in as part of a company or job.
 ### personal games
 
 List of my own personal games I created, solo or in small teams. I usually self-publish as "Illusion Fisherman" on my [itch.io](https://illusion-fisherman.itch.io/).
+
+- (2024) [Life Predictor (Web)](https://illusion-fisherman.itch.io/life-predictor). Puzzle game. A small puzzle game featuring Conway's Game of Life, built on an Engine I'm making myself using Raylib and Scheme.
 
 - (2024) [Time Flies (GBC)](https://illusion-fisherman.itch.io/time-flies). Frog-like adventure game. A small narrative adventure game about a frog having dates, made for Gameboy Color using [GB Studio](https://enginesdatabase.com/engine/gbstudio/).
 
