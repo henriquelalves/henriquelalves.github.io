@@ -14,6 +14,10 @@ I write a small review and grade them just to keep it easier to remember what I 
 
 **2024**:
 
+- CIXIN, Liu. *The Three-Body Problem* ⭐⭐⭐★★
+
+	A very interesting sci-fi premise that got derailed with hard sci-fi shenanigans and unfulfilling lore exposition midway. There are really good ideas in the book if you are willing to look the other way of the wreck done in the second half, though.
+
 - ITO, Junji. *Sensor* ⭐⭐⭐⭐★
   
 	A bit horror, a bit lovecraftian, very much Junji Ito. It's the first complete story I read from him, and I quite enjoyed it.
