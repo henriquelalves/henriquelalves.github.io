@@ -1,6 +1,6 @@
 +++
 title = "reading list"
-date = 2023-10-17
+date = 2024-07-06
 template = "post-page.html"
 +++
 
@@ -13,6 +13,10 @@ I write a small review and grade them just to keep it easier to remember what I 
 #### Finished
 
 **2024**:
+
+- HAN, Byung-Chul. *The Burnout Society* ⭐⭐★★★
+
+	A short and interesting read, but it feels like the philosophic essay equivalent of "this could be a Medium post".
 
 - CIXIN, Liu. *The Three-Body Problem* ⭐⭐⭐★★
 
