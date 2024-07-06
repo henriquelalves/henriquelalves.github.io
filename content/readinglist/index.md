@@ -4,10 +4,6 @@ date = 2024-07-06
 template = "post-page.html"
 +++
 
-#### Currently Reading
-
-
-
 #### Finished
 
 **2024**:
