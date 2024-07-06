@@ -4,15 +4,17 @@ date = 2024-07-06
 template = "post-page.html"
 +++
 
-I write a small review and grade them just to keep it easier to remember what I felt when I read the book, and whether I would recommend them or not.
-
 #### Currently Reading
 
-- Bell, R.C. *Board and Table Games from Many civilizations*
+
 
 #### Finished
 
 **2024**:
+
+- BELL, R.C. *Board and Table Games from Many civilizations* ⭐⭐⭐⭐★
+
+	Sometimes the reading goes a bit too much in the direction of either board game or history without balancing it well, but it's a great book for enthusiasts on both topics.
 
 - HAN, Byung-Chul. *The Burnout Society* ⭐⭐★★★
 
