@@ -1,6 +1,6 @@
 +++
 title = "list of projects"
-date = 2024-05-27
+date = 2024-07-22
 template = "post-page.html"
 +++
 
@@ -32,33 +32,33 @@ A list of games I worked in as part of a company or job.
 
 ### personal games
 
-List of my own personal games I created, solo or in small teams. I usually self-publish as "Illusion Fisherman" on my [itch.io](https://illusion-fisherman.itch.io/).
+List of my own personal games I created, solo or in small teams. I usually self-publish as "Perons" on my [itch.io](https://perons.itch.io/).
 
-- (2024) [Life Predictor (Web)](https://illusion-fisherman.itch.io/life-predictor). Puzzle game. A small puzzle game featuring Conway's Game of Life, built on an Engine I'm making myself using Raylib and Scheme.
+- (2024) [Life Predictor (Web)](https://perons.itch.io/life-predictor). Puzzle game. A small puzzle game featuring Conway's Game of Life, built on an Engine I'm making myself using Raylib and Scheme.
 
-- (2024) [Time Flies (GBC)](https://illusion-fisherman.itch.io/time-flies). Frog-like adventure game. A small narrative adventure game about a frog having dates, made for Gameboy Color using [GB Studio](https://enginesdatabase.com/engine/gbstudio/).
+- (2024) [Time Flies (GBC)](https://perons.itch.io/time-flies). Frog-like adventure game. A small narrative adventure game about a frog having dates, made for Gameboy Color using [GB Studio](https://enginesdatabase.com/engine/gbstudio/).
 
-- (2024) [Don't stop reading (Web)](https://illusion-fisherman.itch.io/dont-stop-reading). Illusion Fisherman. Interactive Fiction. A small interactive fiction experiment to play with the [Inky](https://enginesdatabase.com/engine/inky/) tool.
+- (2024) [Don't stop reading (Web)](https://perons.itch.io/dont-stop-reading). Interactive Fiction. A small interactive fiction experiment to play with the [Inky](https://enginesdatabase.com/engine/inky/) tool.
 
-- (2024) [A Fair Game (Web)](https://illusion-fisherman.itch.io/ggj-2024). Wario-ware like. Me & wife & friends entry for the GGJ 2024.
+- (2024) [A Fair Game (Web)](https://perons.itch.io/ggj-2024). Wario-ware like. Me & wife & friends entry for the GGJ 2024.
 
-- (2023) [Orpheus (Web)](https://illusion-fisherman.itch.io/orpheus). Illusion Fisherman. Puzzle game. Made with Puzzlescript, inspired by the myth of Orpheus.
+- (2023) [Orpheus (Web)](https://perons.itch.io/orpheus). Puzzle game. Made with Puzzlescript, inspired by the myth of Orpheus.
 
-- (2023) [Bankoso (Web)](https://illusion-fisherman.itch.io/bankoso). Illusion Fisherman. Puzzle game. A small Sokoban-like experiment.
+- (2023) [Bankoso (Web)](https://perons.itch.io/bankoso). Puzzle game. A small Sokoban-like experiment.
 
-- (2023) [Together (Web)](https://illusion-fisherman.itch.io/together). Illusion Fisherman. A puzzle-exploration game. Developed with Brena Cardoso for Crossing Latitudes Jam.
+- (2023) [Together (Web)](https://perons.itch.io/together). A puzzle-exploration game. Developed with Brena Cardoso for Crossing Latitudes Jam.
 
-- (2023) [Fogoto! (Web)](https://illusion-fisherman.itch.io/fogoto). Illusion Fisherman. Arcade "foddian-like" game. Developed solo for SpeedJam #2 (16th of 84 submissions).
+- (2023) [Fogoto! (Web)](https://perons.itch.io/fogoto). Arcade "foddian-like" game. Developed solo for SpeedJam #2 (16th of 84 submissions).
 
-- (2023) [Unrolling Dice! (Web)](https://illusion-fisherman.itch.io/unrolling-dice). Illusion Fisherman. Puzzle game. Developed solo for GMTK Game Jam 2023 (357th of 6818 submissions).
+- (2023) [Unrolling Dice! (Web)](https://perons.itch.io/unrolling-dice). Puzzle game. Developed solo for GMTK Game Jam 2023 (357th of 6818 submissions).
 
-- (2022) [>devour (Web)](https://illusion-fisherman.itch.io/devour). Illusion Fisherman. Adventure text horror game. Developed solo for Themed Horror Game Jam #7.
+- (2022) [>devour (Web)](https://perons.itch.io/devour). Adventure text horror game. Developed solo for Themed Horror Game Jam #7.
 
-- (2022) [Would you still love me if I was a banana peel? (Web)](https://illusion-fisherman.itch.io/would-you-still-love-me-if-i-was-a-banana-peel). Illusion Fisherman. Metroidvania action game. Developed solo for Metroidvania Month 17.
+- (2022) [Would you still love me if I was a banana peel? (Web)](https://perons.itch.io/would-you-still-love-me-if-i-was-a-banana-peel). Metroidvania action game. Developed solo for Metroidvania Month 17.
 
-- (2022) [Dungeons and Dice (Web)](https://illusion-fisherman.itch.io/dungeonsanddice). Puzzle game. Developed in a team for the GMTK Game Jam 2022 (431th of 6082 submissions).
+- (2022) [Dungeons and Dice (Web)](https://perons.itch.io/dungeonsanddice). Puzzle game. Developed in a team for the GMTK Game Jam 2022 (431th of 6082 submissions).
 
-- (2017) [Viral Cards (Web)](https://illusion-fisherman.itch.io/viral-cards). Illusion Fisherman. Puzzle game. Developed solo for Livre GameJam 2017.
+- (2017) [Viral Cards (Web)](https://perons.itch.io/viral-cards). Puzzle game. Developed solo for Livre GameJam 2017.
 
 - (??) Water Cannonball.
 
@@ -80,6 +80,6 @@ Projects of note I created myself. Most of them you can find on my [github](http
 
 - (2022) [GLAM (Godot Lightweight Addon Manager)](https://github.com/henriquelalves/glam). A Rust CLI tool to manage Godot addons.
 
-- (2016) [Godot CRT Shader](https://github.com/henriquelalves/SimpleGodotCRTShader). A shader to simulate CRT displays. Used in the game [>devour](https://illusion-fisherman.itch.io/devour).
+- (2016) [Godot CRT Shader](https://github.com/henriquelalves/SimpleGodotCRTShader). A shader to simulate CRT displays. Used in the game [>devour](https://perons.itch.io/devour).
 
-- (2016) [Godot Text Interface Engine](https://github.com/henriquelalves/GodotTIE). An addon to control text printing as dialogue. Used in the game [>devour](https://illusion-fisherman.itch.io/devour).
+- (2016) [Godot Text Interface Engine](https://github.com/henriquelalves/GodotTIE). An addon to control text printing as dialogue. Used in the game [>devour](https://perons.itch.io/devour).
