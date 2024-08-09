@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>windows XP retro gaming part 2: trying to create an ISO | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">windows XP retro gaming part 2: trying to create an ISO</div>
+</p>
+<p>
+  <div class="date_postpage">2023-08-27</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/windows-xp/">#windows-xp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/retro-gaming/">#retro-gaming</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>Before trying my hands again at solving the SSD error, <a href="https://mastodon.gamedev.place/@adamscott/110952935538175974">@adamscott suggested in my Mastodon post</a> to use <a href="https://86box.net/">86Box</a> to emulate the Windows XP OS in my hardware, instead of installing Windows XP. It's a software I never heard before, so I investigated it a bit. It was a good suggestion, but I could see those problems:</p>
+<ul>
+<li>It seems like Windows XP emulation <a href="https://github.com/86Box/86Box/issues?q=is%3Aissue+windows+xp+is%3Aclosed">had some problems in 86Box</a>. This made sense to me - 86Box seems like it was made to emulate older OS's, and Windows XP is kind of between the newer OS's that should run 86Box and the old OS's it was made to emulate.</li>
+<li>It still is an emulation layer between running Windows XP in my hardware and the software I want to run. I couldn't have any guarantee that it would run all software.</li>
+<li>I want to understand how difficult it can be to install Windows XP on the hardware I have.</li>
+</ul>
+<p>So I dropped the option of using 86Box and went back to look on how to create a bootable Windows XP USB with the drivers I needed.</p>
+<p>I started looking into lots of forums and tutorials, and the best one I found was this one: <a href="https://windowspro.eu/installing-windows-xp-on-ssd-disk/">https://windowspro.eu/installing-windows-xp-on-ssd-disk/</a>.</p>
+<h3 id="first-round-enabling-bios-hard-disk-compatibility-mode">First Round: Enabling BIOS Hard Disk compatibility mode</h3>
+<p>The tutorial mentions that I could enable BIOS Hard Disk compatibility mode so I could install Windows XP anyway, and later change the HDD operating mode with registry tweaks. Seemed like a no-brainer to me, but it didn't work. I had the same <code>7b</code> BSOD problem as before.</p>
+<h3 id="second-round-creating-a-bootable-cd-with-the-drivers-i-needed">Second Round: Creating a Bootable CD with the drivers I needed</h3>
+<p>So, I tried the next tutorial option: to create a Bootable CD with the drivers I needed.</p>
+<p>BUT, <strong>fun</strong> stuff: I can't create a Bootable CD, because the DVD reader from my laptop was just that: A DVD reader. Not writer.</p>
+<p>So, I had to move forward with the assumption that a Bootable USB would work the same as a Bootable CD, which may as well be a completely wrong assumption (during Driver installation, the setup is specific in saying it's looking for extra drivers in the CD or floppy disk (lmao)).</p>
+<h3 id="second-and-a-half-round-creating-a-bootable-usb-with-the-drivers-i-needed">Second (and a half) Round: Creating a Bootable USB with the drivers I needed</h3>
+<p>More <strong>fun</strong> stuff happened now:</p>
+<ul>
+<li>I tried looking into the drivers for my SSD (a Toshiba THNS256GG8BBAA) in a bunch of shady sites, but I couldn't find a download that gave me the actual driver (I may have download tons of viruses though, maybe, possibly). But even the shady sites only showed drivers for Windows 7+.</li>
+<li>nLite, the software the tutorial mentioned is used to create the &quot;updated&quot; bootable Windows XP setup WITH the drivers, didn't work with any Windows XP ISO I downloaded. I'd find later an anti-feature list that pointed out that nLite wouldn't create Windows XP ISOs, so I have no idea the tutorial was just wrong or if it was assuming a different (older) version of nLite.</li>
+<li>the OTHER software this tutorial mentioned could also be used to create an updated Windows XP ISO with extra drivers, as mentioned in this second tutorial (that the first tutorial even mentions, making the whole process a bit confusing to me. Why the hell I needed nLite for, then?): <a href="http://forum.driverpacks.net/viewtopic.php?id=1449">http://forum.driverpacks.net/viewtopic.php?id=1449</a>. BUT:
+<ul>
+<li>This second tutorial has broken image links, so I couldn't check if the process was going the way it was supposed to or not.</li>
+<li>The software in question, DP_Base, downloaded updated drivers from its Database. The Database is offline though. So no extra drivers (I downloaded a &quot;Drivers pack&quot; from the first tutorial though, with supposedly all the drivers I needed).</li>
+</ul>
+</li>
+</ul>
+<p>Using DP_Base, I finally created a new version of the Bootable Windows XP USB I was using, set the installation to install drivers before installing Windows XP.... and it didn't work, because it couldn't find any drivers to install. I tried using another Windows XP base ISO just to be sure, but to no avail.</p>
+<p>This was no surprising to me at all, since the whole process was convoluted as hell, I couldn't find good sources of information, and I was relying on software that is not even supported anymore to create a Bootable USB of an OS that is even less supported. It's part of the course, but it reminded me that most information on the internet is not made to be preserved. Maybe if I bought the Fujitsu notebook and tried to install Windows XP on day 0 back in the day, I'd be able to find the drivers, software and information I needed. In 2023, that's definetly not as easy, and maybe just not true at all.</p>
+<p>I'm not so much of a masochist as to keep fighting my own SSD just so I can install Windows XP, so onwards to plan B:</p>
+<p><img src="https://henriquelalves.com/posts/windows-xp-adventure-2/fujitsu-naked.jpg" alt="Fujitsu without its bottom part" /></p>
+<p><img src="https://henriquelalves.com/posts/windows-xp-adventure-2/fujitsu-ssd.jpg" alt="Fujitsu without its bottom part" /></p>
+<p>I checked how to remove the SSD from it, and I'm planning to replace it for an HDD. I double checked and it seems like Windows XP (with SP1) is compatible with SATA III under 2TB, so I'll buy something on the range of 1TB (probably? It's the least and cheapest SATA I could find) and replace the SSD.</p>
+<p>Let's hope for the best.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

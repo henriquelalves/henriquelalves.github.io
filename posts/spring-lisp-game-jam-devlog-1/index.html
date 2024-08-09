@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>spring lisp game jam - devlog 1 | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">spring lisp game jam - devlog 1</div>
+</p>
+<p>
+  <div class="date_postpage">2024-04-12</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/lisp/">#lisp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/guile/">#guile</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gamejam/">#gamejam</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>This is a quick devlog so I can track the state of development of my small Lisp Game Engine I'm building for the <a href="https://itch.io/jam/spring-lisp-game-jam-2024">Spring Lisp Game Jam</a>.</p>
+<h3 id="the-state-before">The State Before</h3>
+<p>I've manage to build a small PoC for the engine using Raylib (C) as the backend part of the engine, and Guile for the scripting logic. The engine is 2D only, and will work with a similar API as <a href="https://enginesdatabase.com/engine/pyxel/">Pyxel</a>.</p>
+<p>The current main question is whether I can make an <strong>online build</strong> using EMScripten to compile the Engine + Guile wrapper to web. My main question right now is <strong>How do I compile libguile to Web?</strong></p>
+<p>I'm currently using CMake to build the engine. I'm not very experience with CMake, so I decided I'd try to compile &quot;manually&quot; (using EMSdk tools) the Guile repository. My assumption is that I'd be able to compile libguile with EMsdk into libguile.h + EMSdk-compatible object files, and I'd be able to manually link those files with the main project EMSdk-enchanced CMake.</p>
+<h3 id="progress-today">Progress Today</h3>
+<p>Compiling the Guile repo using <code>emconfigure ./configure</code> + <code>emmake make</code> didn't work.</p>
+<ul>
+<li>First, <code>emconfigure ./configure</code> didn't work because GNU MP was missing (although GNU MP lib is installed). My understandment is that a &quot;missing&quot; library is a library that isn't &quot;included&quot; with EMSdk, so I'd need to compile it using EMSdk tools and link the new compatible version. I could circumvent this error using <code>emconfigure ./configure --enable-mini-gmp</code>.</li>
+<li>Then, I got an error that GNU libunistring was also missing. This error gave me no options to replace the library, so I cloned GNU libunistring repository to test compiling it using EMSdk.</li>
+<li>Before running <code>./autogen.sh</code>, I had to run <code>./gitsub.sh pull</code> to download some repository dependencies. Still, running autogen after that gave me a bunch of errors and warnings. Running <code>emconfigure ./configure</code>seemed ok until the following error:</li>
+</ul>
+<p><code>config.status: error: cannot find input file: 'lib/Makefile.in'</code></p>
+<p>and then, running <code>emmake make</code> gave me:</p>
+<p><code>/Users/macpc/Projects/libunistring/build-aux/missing: line 81: makeinfo: command not found</code></p>
+<p>A <code>a.wasm</code> file was still generated (<strong>why? Does EMSdk use wasm files instead of '.o' files?</strong>), along with a <code>gnulib/</code> folder. Interesting enough, the wasm file was created on <code>emconfigure ./configure</code>, so I really have no idea why it is useful.</p>
+<h3 id="next-steps">Next Steps</h3>
+<p>I feel I have a better grasp on how deep the &quot;compile Guile with EMSdk&quot; rabbit-hole goes, although I'm operating on some compilation assumptions I'm not quite sure (what EMSdk uses to link libraries? How can I use <strong>some</strong> libraries with EMSdk but not others?).</p>
+<p>Worst-case scenario I can drop the idea of compiling the engine to web, but I believe now I need to:</p>
+<ol>
+<li>Understand if I'm operating on the right assumptions.</li>
+<li>Insist a bit more on compiling Guile to web by compiling each dependency. Right now, I'm stuck at <code>libunistring</code>.</li>
+</ol>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>
