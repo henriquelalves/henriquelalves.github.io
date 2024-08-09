@@ -34,6 +34,12 @@ A list of games I worked in as part of a company or job.
 
 List of my own personal games I created, solo or in small teams. I usually self-publish as "Perons" on my [itch.io](https://perons.itch.io/).
 
+- (2024) [Sand and Flow (Web)](https://perons.itch.io/sand-and-flow). Puzzle game. A small puzzle game using PuzzleScript featuring a water flood mechanic.
+
+- (2024) [SokoRGBan](https://perons.itch.io/sokorgban). Puzzle game. A small sokoban-like game using PuzzleScript.
+
+- (2024) [The Concept of Gravity](https://perons.itch.io/the-concept-of-gravity). 3D puzzle-platformer. A 3D puzzle-platformer using gravity mechanics, made with Godot.
+
 - (2024) [Life Predictor (Web)](https://perons.itch.io/life-predictor). Puzzle game. A small puzzle game featuring Conway's Game of Life, built on an Engine I'm making myself using Raylib and Scheme.
 
 - (2024) [Time Flies (GBC)](https://perons.itch.io/time-flies). Frog-like adventure game. A small narrative adventure game about a frog having dates, made for Gameboy Color using [GB Studio](https://enginesdatabase.com/engine/gbstudio/).
