@@ -1,8 +1,10 @@
 +++
 title = "list of projects"
-date = 2024-07-22
+date = 2024-08-11
 template = "post-page.html"
 +++
+
+You can find my full portfolio here: <a href="/projects/portfolio.pdf">Full Portfolio (2024)</a> 
 
 ### games i worked with
 
