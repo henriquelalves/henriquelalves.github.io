@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>guile for game development - a devlog | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">guile for game development - a devlog</div>
+</p>
+<p>
+  <div class="date_postpage">2024-03-20</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/guile/">#guile</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/raylib/">#raylib</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>Trying to synthesize a bit of my learning experience with Guile, so I can better track my own progress learning it.</p>
+<h3 id="first-what-do-i-want-to-do">first, what do I want to do?</h3>
+<p>The project that I have in mind is to create a turn-based Tabletop Game Engine (TGE). The idea is that the language itself can describe rules and abstract the most common things used in tabletop games, and the Engine would enforce those rules, show which moves are available for the players on their turn, etc. I'm not worried about making the visuals for the Engine, just pure data - so in the future, I could embed the TGE anywhere, and the state of each turn would be an Engine query of &quot;What is the current state of the board?&quot;, and I would draw it anyway I want.</p>
+<p>This is <strong>not a novel idea</strong>. The thought actually came to me when out of curiosity I started studying a bit the <a href="https://en.wikipedia.org/wiki/Game_Description_Language">Game Description Language</a>, and I fell into a rabbit hole of declarative metagame descriptions and other experiments with similar objectives (this is worth another post with some very interesting findings). However, most of those experiments were done with AI research and training in mind (<strong>not Large Language Model AI</strong>, but general problem-solving AI research), and even if fun to play around with, they (understandably) are not suitable for game development, even if they could be used in gamedev.</p>
+<p>The project that I have in mind <strong>is very</strong> gamedev related, though. The final product I have in mind is an online engine in the veins of <a href="https://enginesdatabase.com/engine/puzzlescript/">PuzzleScript</a>, in which someone could edit Tabletop game rules, and play them in the browser - and, if they find the game fun, they would be able to share and <strong>play online with their friends</strong>. This for me is the near-perfect tabletop prototype experience, being able to create the game in the browser and call your friends to play with you.</p>
+<p>The online part I'm confident is going to be smooth sail because I have some experience with online multiplayer games. In particular, it seems to me easy enough because <strong>as long as the players have the same tabletop game rules</strong>, they only need to share their actions per turn, and the state of the board is deterministic. Not real time, and I'm not planning (for now) to create random components in the games such as card drawing and dices. The problem is deciding on what the Tabletop Game Engine is going to be made of, because I want something that is very iterable and easy to embed in other engines.</p>
+<p>Enter Guile.</p>
+<h3 id="why-guile">why Guile?</h3>
+<p>I started looking into languages I could use to create such engine. The first thought that came to me was:</p>
+<p>&quot;Welp, I could just use Godot to create the whole thing and make an API on top of GDScript.&quot;</p>
+<p>And that is probably the easy way out, but <strong>GDScript is not an interpreted language.</strong> I'd have to create a pseudo-language that would parse into the GDScript API, limiting much of what someone would be able to do on top of the Tabletop Engine app in real-time. I wanted to give users more freedom than that, but without having to create an interpreted language from scratch.</p>
+<p>Also, using Godot for yet-another-project didn't look <a href="https://dwarffortresswiki.org/index.php/DF2014:Losing">Fun</a> enough, so I decided to look into other options.</p>
+<p>The Lisp family of languages picked my interest because:</p>
+<ul>
+<li>There are options to embed the language with C/C++ (e.g. <a href="https://www.cliki.net/ECL">ECL</a>).</li>
+<li>Projects in Lisp seem to naturally develop their own DSL, which is very useful to create the tabletop language subset I'm imagining.</li>
+<li>I use Emacs for a couple of years but I still have no idea how to program in ELisp, so learning it would be very useful.</li>
+</ul>
+<p>And of all languages from the Lisp language branch I looked into, Guile seemed the best fit, since (<a href="https://www.gnu.org/software/guile/">from the website</a>) it is &quot;designed to help programmers create flexible applications that can be extended by users or other programmers with plug-ins, modules, or scripts&quot;.</p>
+<h3 id="the-first-prototype">the first prototype</h3>
+<p>To test how fitting Guile would be, I thought about pairing it with <a href="https://enginesdatabase.com/engine/raylib/">Raylib</a>, a 2D/3D game framework library written in pure C. The idea was to implement a little something in Raylib to render a simple window screen, and to draw in it using Guile on a REPL console.</p>
+<p>A very important disclaimer first: <strong>I've never programmed in Lisp/Scheme nor used Raylib before.</strong> I was basically testing the waters to see how far I could go without much knowledge.</p>
+<p>I decided that I would follow the <a href="https://www.gnu.org/software/guile/docs/guile-tut/tutorial.html">Guile logo tutorial</a>, but replacing GNUPlot with Raylib. I didn't expect much because I never seen a Raylib project before (although I've been following Raylib development for some years), but Raylib has a very good starting point on their repo with a lot of examples and a template with the Makefile ready - so I picked the &quot;simple window screen&quot;, checked how I would be able to draw a line in the screen, and worked my way on the Guile integration. I picked the <em>Very Easy and Probably Wrong (TM)</em> solution of creating a separate thread to run the REPL Guile console from the Raylib application, so I would be able to connect to the console from my own computer. So, to summarize:</p>
+<ul>
+<li>A single <code>main.c</code> file initializing the window screen, creating a thread for the <code>Guile REPL</code> console, and creating the methods I would be able to call from Guile to draw stuff on the screen, Logo style.</li>
+</ul>
+<p><img src="https://henriquelalves.com/posts/guile-for-game-development/logo-guile.png" alt="Screenshot of Logo Guile working" /></p>
+<p>It... kind of worked? The implementation is super simple, so I just posted the <a href="https://gist.github.com/henriquelalves/8f6db4bc43b0e5161466ce972f7bf958">main.c</a> file on GitHub gist.</p>
+<p>And surprisinly, the <em>Very Easy and Probably Wrong</em> solution of using a different thread for Guile didn't give me any headache. I just created the thread, started the REPL, and I could play with my own little Raylib Logo from an Emacs Guile console. The fact that the first solution that came to mind worked almost out-of-the-box on the integration are huge kudos on my book for both Guile and Raylib. This got me really excited on the kind of things that using Guile+Raylib combination enables me to do on my own projects, even beyond the Tabletop Game Engine.</p>
+<p>My next step is to create a small <a href="https://en.wikipedia.org/wiki/Conway&#x27;s_Game_of_Life">Game of Life</a> simulation using Raylib and Guile, since this combination got me really excited. After that, I'll probably start working on some drafts for the TGE!</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>
