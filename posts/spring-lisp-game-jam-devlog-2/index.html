@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>spring lisp game jam - devlog 2 | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">spring lisp game jam - devlog 2</div>
+</p>
+<p>
+  <div class="date_postpage">2024-04-13</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/lisp/">#lisp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/guile/">#guile</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gamejam/">#gamejam</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>After a good night sleep, I now believe that the game engine I have in mind is NOT compatible for web, and any solution I find will be a workaround the design of the architecture I want.</p>
+<p>The idea was to create a Game Engine that separates the boring part (rendering, window management, input) from the fun part (game logic) by creating two well-integrated codebases:</p>
+<ul>
+<li>Raylib (C lang) as backend for everything boring. This part of the codebase is compiled in an executable.</li>
+<li>Guile as scripting language for all game logic. The scripts will be exported with the executable, but they should live in a folder as-is and should be easy to change.</li>
+</ul>
+<p>Most game engines that export to web pack the entire application into a Wasm executable, which is great for browser compatibility but it's fundamentally different from what I want from my game engine. The main reason I chose Guile is that it's a scripting language with amazing compatibiltity to the C backend I have in mind, but compiling &lt;libguile.h&gt; to Web means I'm basically killing the user-side functionality of a scripting language in the first place.</p>
+<p>So, what to do? The alternatives are:</p>
+<ul>
+<li><strong>Use [a] Lisp that can export to Web.</strong> There are some Lisps and frameworks like <a href="https://spritely.institute/news/guile-hoot-v040-released.html">Guile Hoot</a> that can export to Web. This is a fundamentally different game engine than the one I wanted to experiment with (no clear boundaries of boring/fun parts of the engine), but it's a compromise if I only want to learn Lisp.</li>
+<li><strong>Use a tech-stack better compatible with Web and sacrifice user scripting.</strong> I could use JVM <a href="https://enginesdatabase.com/engine/LibGDX/">LibGDX</a> + Clojure to create a similar architecture of Boring VS Fun engine components and export it MUCH easier to Web (supposedly! I never used LibGDX). I'd sacrifice user scripting in the process.</li>
+<li><strong>Keep insisting on compiling &lt;libguile.h&gt; to web using EMScripten.</strong> This is still useful (as a learning opportunity) and it would allow me to create a Game Engine to Rule them All (and export the same game to the Web, and executables with user scripting allowed). In the long-term this seems like a good solution, but right now I have to many unknown-unknowns with C and Guile programming + using EMSdk to compile them to Web.</li>
+</ul>
+<p>So... I think I'll just give up doing a Web version of the game for Spring Lisp Game Jam, and focus on building a good framework for the game engine that runs locally on player machines. I can explore the other solutions on other game jams.</p>
+<p>My next steps will be to start exploring the C Raylib wrapper and play around the Guile integration. No more EMSdk shenanigans for this jam!</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>
