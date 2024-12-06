@@ -1,12 +1,16 @@
 +++
 title = "reading list"
-date = 2024-07-06
+date = 2024-12-06
 template = "post-page.html"
 +++
 
 #### Finished
 
 **2024**:
+
+- FREIRE, Paulo. *Pedagogy of the Oppressed* ⭐⭐⭐★★
+
+	It's a great book, but also the kind of book that I'll have to read again in the future to grasp its core ideas better. It also has a bigger "revolutionary spirit" than I thought (and I found it great).
 
 - BELL, R.C. *Board and Table Games from Many civilizations* ⭐⭐⭐⭐★
 
