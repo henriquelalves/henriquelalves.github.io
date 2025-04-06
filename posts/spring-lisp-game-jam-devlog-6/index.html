@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>spring lisp game jam - devlog 6 | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">spring lisp game jam - devlog 6</div>
+</p>
+<p>
+  <div class="date_postpage">2024-05-27</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/lisp/">#lisp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/guile/">#guile</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gamejam/">#gamejam</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>Too long since my last devlog, and Lisp Game Jam already went by! The game I made was this one: <a href="https://illusion-fisherman.itch.io/life-predictor">Life Predictor</a>. It's not 100% stable (I have a segfault happening sometimes lol, lmao even), but it's a nifty simple Game of Life puzzle.</p>
+<p>End result: I managed to finish the game on time, and I have a very clear image of the &quot;feature-complete&quot; engine in my head - but the engine itself is far from finished. The current game was made with Raylib (in C) and S7 Scheme for all gameplay scripts, and a very simple wrapper on some Raylib functions. What I managed to validate:</p>
+<ul>
+<li>S7 Scheme works QUITE well for what I have in mind. I can easily integrate it in C, its source code is very simple, I have easy access to its garbage collector events, and I can easily compile it to web!</li>
+<li>Evaluating code in runtime is quite easy, but there are some small shenanigans I have to be careful when I have pointers to Scheme code in C (e.g. using <code>set!</code> on a symbol that has a pointer in C makes won't change the memory location C has access to, so it will &quot;see&quot; the same data as before).</li>
+<li>Raylib was also really, really easy to integrate. I'm not sure I want to stick it till the end because there are some really interesting libs I wanted to test on rendering, UI and physics, so I may want to keep Raylib a bit modular and work on it's integration as time goes on.</li>
+</ul>
+<p>Now that I validated the basics of my idea of the perfect Game Jam Engine, this are the features that I have in mind:</p>
+<ul>
+<li>REPL Server! Specifically, I want to be able to connect to the running game via Emacs Geiser. This is a must have for the feature.</li>
+<li>Save states for Scheme code. Ideally, I want the game you play to have a similar behavior than a retro-game emulator, with save states you can load anytime to iterate or test on specific parts of the gameloop.</li>
+<li>An Emacs mode for the game engine. It seems a bit too fancy, but the idea is to use the REPL Server to communicate with the game in runtime, and to use Emacs as an IDE to get/set values of any variables you see in the game scripts, know which code is different from the runtime environment, add new pieces of code in runtime, etc. Basically a REPL facilitator.</li>
+</ul>
+<p>I'm pretty much sure this will take a lot of time to be done, but my plan is to keep using the engine on other game jams, and keep on iterating on it.</p>
+<p>Last but not least, thanks for <a href="https://github.com/gilzoide">Gil Barbosa</a> to help me out discussing the techstack with me and contributing in the project!</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>creating a peer-to-peer snake game with godot webRTC | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">creating a peer-to-peer snake game with godot webRTC</div>
+</p>
+<p>
+  <div class="date_postpage">2023-09-07</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/making-of/">#making-of</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/webrtc/">#webrtc</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/multiplayer/">#multiplayer</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p><em>I posted this on my &quot;write.as&quot; profile (which I don't use anymore) on 2021-01-06. I still plan to update the project (the server I made is down, and I have a couple of ideas to improve it), but I'm re-posting this guide as-is</em></p>
+<h1 id="creating-a-peer-to-peer-snake-game-with-godot-webrtc">Creating a Peer-to-Peer Snake Game with Godot WebRTC</h1>
+<p>This is an introductory article on creating a simple P2P web browser game using the Godot Game Engine. It assumes the reader is familiar with the Engine and has at least intermediate programming knowledge.</p>
+<p>The project is a very simple Multiplayer Snake game played in versus; each player controls a Snake, trying to outgrow the enemy player and force them into a corner. The last player standing is the winner.</p>
+<p><img src="https://i.imgur.com/N6kT1hS.png" alt="Game Screenshot" /></p>
+<p>The project source-code can be found <a href="https://github.com/henriquelalves/SnakeVersusWebRTC">on GitHub</a>; the result is playable on <a href="https://perons.itch.io/snake-versus">Itch.io</a>. This article only provides context for parts of the source code.</p>
+<p>The project was inspired by the WebRTC example available on Godot Demos repository.</p>
+<h2 id="why-peer-to-peer">Why Peer-to-peer?</h2>
+<p>There are a lot of strategies to create multiplayer games, and most of them fit into two online architecture categories:</p>
+<ul>
+<li><em>Authoritative Server</em>. Players connect to a Game Room server, which becomes the single source-of-truth for the game simulation.</li>
+<li><em>Peer-to-Peer</em>. Players communicate with each other relying on every player having the same game state and every action being performed deterministically.</li>
+</ul>
+<p>Detailing both architectures and other implementation strategies (e.g. Rollback, Client-side prediction) is beyond the scope of this article; suffice to say the <em>Authoritative Server</em> model is the most common in production games for reasons like being harder for a player to cheat the game (it's easier to tamper with internet packets in P2P games), and internet connection for all connected players being more reliable (unlike P2P games, in which players depend on each other's connections).</p>
+<p>But an <em>Authoritative Server</em> imposes some implementation challenges:</p>
+<ul>
+<li><em>Scaling Game Rooms</em>. In match-based games, the number of concurrent matches is not constant, so the number of Game Rooms should be scaled accordingly.</li>
+<li><em>Client and Game Simulation difference</em>. In the <em>Authoritative Server</em> model, the game simulation only runs in the server, and the Client is usually a &quot;dumb-client&quot; (only renders the game state and sends the player's input to the Game Room). This difference makes it harder to implement a common code-base for both Server and Client.</li>
+<li><em>Server Latency</em>. Server location can affect the player's online experience differently.  Games that rely on real-time communication with low latency and smaller number of players (e.g. Fighting Games) usually use a P2P architecture for this reason.</li>
+</ul>
+<p>For a small project, an Authoritative Server can quickly become a hassle to implement, as it requires a more robust codebase and more expensive backend to allocate Game Room resources. For this reason, a Peer-to-Peer architecture was chosen for this project, as it would be easier to implement the game on a single repository with fewer server resources.</p>
+<h2 id="webrtc">WebRTC</h2>
+<p>WebRTC is a new web project that allows efficient peer-to-peer data communication using a common protocol between peers.</p>
+<p>From the official <a href="https://webrtc.org/">WebRTC website</a>:</p>
+<blockquote>
+<p>With WebRTC, you can add real-time communication capabilities to your application that works on top of an open standard. It supports video, voice, and generic data to be sent between peers, allowing developers to build powerful voice- and video-communication solutions.</p>
+</blockquote>
+<p><img src="https://www.html5rocks.com/en/tutorials/webrtc/basics/dataPathways.png" alt="WebRTC Data traversal" />
+<em>(image from https://www.html5rocks.com)</em></p>
+<p>One of the challenges of Peer-to-Peer communication is handling NAT traversal: most peers are behind NAT walls (e.g. an internet router in their homes), which protects the user from remote internet packets of unknown origins (that's the reason some games that allows multiplayer via a host (e.g. Minecraft) requires the hosting player to &quot;Port-Forward&quot; their router, so other players can connect to the host without the host's router blocking the packets). There are strategies to work around this challenge (e.g. <a href="https://en.wikipedia.org/wiki/UDP_hole_punching">UDP Hole Punching</a>), but they require a non-trivial setup between clients, and it may depends on the peers NAT configurations. WebRTC is implemented such as the protocol itself will handle the peers NAT traversal using a special &quot;handshake&quot; exchange between peers before allowing them to exchange data.</p>
+<h2 id="project-architecture">Project Architecture</h2>
+<p>The game is a single Godot Project that contains both Client and Server scenes (the project runs the correct starting scene thanks to a different Export configuration). The project can be divided in <em>Matchmaker Server code</em> (a standalone server that will connect players and act as a WebRTC setup intermediary), the <em>Multiplayer Framework</em> (client classes that operate on how messages are relayed) and the <em>Gameplay Code</em>.</p>
+<p><img src="https://i.imgur.com/We4iVUN.png" alt="Example of Application flow" /></p>
+<p>The matchmaking flow is:</p>
+<ol>
+<li>
+<p><em>Player 1 Searches for a match</em>. The player's client connects to the Matchmaking Server using a WebSocket, and waits for a starting-match message so it can initiate the WebRTC handshake with other players.</p>
+</li>
+<li>
+<p><em>Player 2 Searches for a match</em>.</p>
+</li>
+<li>
+<p><em>The Matchmaker pair the players</em>. The Matchmaker removes both players from the matchmaking queue, and sends to both players a &quot;start match&quot; message with each players information.</p>
+</li>
+<li>
+<p><em>Player 1 sends an Offer (first part of the WebRTC handshake) to Player 2 using the Matchmaker server as relay</em>.</p>
+</li>
+<li>
+<p><em>Player 2 sends an Answer (second part of the WebRTC handshake) to Player 1 using the Matchmaker server as relay</em>.</p>
+</li>
+<li>
+<p><em>Both players wait until a connection is stabilished thanks to the WebRTC client polling</em>.</p>
+</li>
+<li>
+<p><em>Players disconnect from the Matchmaking Server and start a match using the WebRTC Peer-to-Peer connection</em>.</p>
+</li>
+</ol>
+<h3 id="matchmaking-server">Matchmaking Server</h3>
+<p>The Matchmaker is the only standalone server the project needs, so it can pair players looking for a match and relay their WebRTC handshake. It's game agnostic (it has no knowledge of the game data exchange) and works as a relay server as long as players are connected to it. This makes the Matchmaker very lightweight, thus needing very few resources to work.</p>
+<p>The Matchmaker is a simple scene that runs the <code>MatchmakerServer.gd</code> script.</p>
+<p><img src="https://i.imgur.com/LpnljtX.png" alt="Matchmaker Ready Function" />
+<em>MatchmakerServer.gd</em></p>
+<p>The players connect to the Matchmaker using a WebSocket port (the reason being that WebSocket's are easier to setup and exchange messages than a TCP/UDP connection). The Matchmaker stores the players information in a queue, so it can poll from it later to pair the players. When the number of players in the match queue is bigger than the match size (a configurable editor variable), the Matchmaker creates a match by sending to each player the necessary information to start a match (each other' players connection ID).</p>
+<p><img src="https://i.imgur.com/OQENLJ4.png" alt="Message on Server" />
+<em>MatchmakerServer.gd</em></p>
+<p>The <code>Message</code> class (<code>Message.gd</code>) is the only common class between the Client and the Matchmaker server; it's used as a wrapper for the packets the players send to the network by converting a variant to an array of bytes using Godot's <code>var2bytes</code> standard method, and wraps it to send as a packet along with useful flags (such as a &quot;start match&quot;, or &quot;echo&quot; messages that should be sent back to the sender client). When the Matchmaker server receives a message from a player ID, it relays the message to the other players connected in the same match.</p>
+<h3 id="multiplayer-framework">Multiplayer Framework</h3>
+<p>The Multiplayer Framework consists of:</p>
+<ul>
+<li><code>ClientManager</code>. Responsible in setting up the relay messages with the Matchmaker Server using WebSockets and setting up the WebRTCClient class signals when a match starts.</li>
+<li><code>WebRTCClient</code>. The proper WebRTC client class that sets up the Peer-to-Peer connection after a match starts.</li>
+</ul>
+<p><img src="https://i.imgur.com/dIXUS9l.png" alt="Connect to Server" />
+<em>ClientManager.gd</em></p>
+<p>When connecting to the Matchmaker websocket, the ClientManager sets all match variables (where players information that comes from the Matchmaker are stored), and which number the player is (used to set which player is the &quot;host&quot; in the Gameplay code). The ClientManager also has both the WebSocket and WebRTC clients and sets their callbacks accordingly.</p>
+<p><img src="https://i.imgur.com/JUEGPKz.png" alt="WebSocket Client" />
+<em>ClientManager.gd</em></p>
+<p>The business logic for the Websocket client is hardcoded in the ClientManager class, and it deals with initializing the RTC client when receiving a message from the server with the <code>match_start</code> flag set. This creates an RTC peer, and set it up to receive the RTC Handshake messages.</p>
+<p><img src="https://i.imgur.com/xj3FC9S.png" alt="Create Peer" />
+<em>WebRTCClient.gd</em></p>
+<p>When creating a WebRTC peer, we need to provide the &quot;ICE&quot; server we're going to use (a third-party server responsible in setting up the NAT traversal protocol); there a freely available ICE servers such as the one used in the project. The WebRTC clients are divided in two groups: the <em>Offer</em> group (clients that will create an offer and send it in the network), and the <em>Answer</em> group (clients that will wait for an offer message, and then answer with their network information). On this stage of the process and until the WebRTC handshake finishes between all clients, all messages are exchanged via the Matchmaker Server.</p>
+<p>When all peers are connected, ClientManager will emit a signal so that the match can start, and the gameplay code disconnects from the Matchmaker Server (as it will send messages directly between players using the stabilished WebRTC Peer-to-Peer connection).</p>
+<h3 id="gameplay-code">Gameplay Code</h3>
+<p><img src="https://i.imgur.com/FWN3pb6.png" alt="Gameplay Code" />
+<em>Game.gd</em></p>
+<p>The Gameplay code itself is very simple and naive Snake game; it actually uses one player as a match host and the source-of-truth for the simulation (a client working both as a dumb-client and as an authoritative server). When the match starts, the host will send the seed for the simulation (so all players get the same output for the Food positions). During the course of the match, other players will just send to the host their inputs, and then the host &quot;ticks&quot; the simulation, sending back the &quot;final&quot; input of each player for that particular tick, effectively moving every simulation to the same next turn (as all food tiles will have the same position in all clients, so the simulation is deterministic). As soon as there is only one player standing, the match ends (since it's a two player game for now, there is no problem with the host leaving the match, as it would end either way).</p>
+<h2 id="thoughts-about-the-project">Thoughts about the project</h2>
+<p>I started this project so I could create a simple framework for browser multiplayer games with the Godot engine; originally, the &quot;Matchmaker Server&quot; was a Relay server that players used throughout the match to communicate with each other (a &quot;fake&quot; peer-to-peer, as the clients were using the Relay server to communicate with other peers, but the server itself was still agnostic to the game being played). The main problem was latency; there was no cheap server to rent in South America (where I live), and communication was really slow between peers with a Relay Server in North America.</p>
+<p>I learned about WebRTC looking into Peer-to-Peer solutions for the Web, and was amazed by the fact that Godot already had it implemented in the Engine. It did took me quite a bit of time to figure out how the <code>webrtc_signaling</code> demo worked, as the documentation was somewhat lacking, but the payoff was a fraction of the latency I had with the same Snake game with a Relay Server.</p>
+<p>This project is by no means feature complete (it has obvious design flaws, like the fact that a snake can run in circles indefinitely, effectively deadlocking the match), but hopefully it can help anyone else also interested in creating Peer-to-peer games. It's amazingly easy once you understand and implement the framework that'll support the game itself.</p>
+<p>Cheers!</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>spring lisp game jam - devlog 3 | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">spring lisp game jam - devlog 3</div>
+</p>
+<p>
+  <div class="date_postpage">2024-04-22</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/lisp/">#lisp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/guile/">#guile</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gamejam/">#gamejam</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>After some exploration and learning a little bit more about Guile, it looks like I found a major problem with my integration.</p>
+<p>The idea was to create a small C game engine in RayLib that integrated Guile by calling two named scheme methods from its game loop: <code>update</code> and <code>draw</code>. Those Guile methods would call the C Raylib wrappers I created, so the Guile script would be this simple script calling RayLib C functions via the update and draw entrypoints.</p>
+<p>Alas, it seems Guile doesn't like this approach. I managed to create a simple wrapped &quot;Texture2D&quot; structure to use with Guile, and the idea was that I'd be able to just load a RayLib Texture2D in Guile, and the &quot;unloading&quot; would be done via a Guile Finalizer in the C world. But the Guile GC wasn't being called, I was getting memory leaks all over the place, and I couldn't find in the documentation any alternatives for the wrapping structs or functions.</p>
+<p>I reduced the problem to a simple RayLib call of &quot;DrawText&quot;. A direct call of DrawText in the C world always works; but when I do my little integration shenanigan (C-world calling Scheme's world &quot;update&quot; -&gt; Scheme's world &quot;update&quot; calling C-world wrapped function), the follow happens:</p>
+<ul>
+<li><code>DrawText(&quot;&quot;)</code> (drawing an empty string) segfaults.</li>
+<li><code>DrawText(&quot;a&quot;)</code> (single character string) segfaults.</li>
+<li><code>DrawText(&quot;aa&quot;)</code> (double character string) works normally (?).</li>
+</ul>
+<p>And increasing the number of characters in the string might (or might not!) segfault and crash the game (fun fact, I discovered this bug by printing a number from 0 to 1000 - when it reached 1000, the game segfaulted because of the new number of characters in the string).</p>
+<p>The MVP of the problem is here: <a href="https://github.com/henriquelalves/SLGJ-2024">https://github.com/henriquelalves/SLGJ-2024</a>.</p>
+<p>There is the possibility of me making a really stupid mistake somewhere in the integration, but this is too close of a low-level high-effort arcane mistake that I don't want to worry about during the Jam. So, time to think on a plan B:</p>
+<ol>
+<li>Drop this way of integrating Guile and Raylib, and follow <code>dthompson</code> wise advice on Guile's IRC: &quot;most of us tend to recommend writing less C (preferably none) and using scheme to call C libraries when needed. all of my game programming stuff has been through the ffi so I know it's feasible.&quot;</li>
+<li>Just don't use a low-level language at all. Do everything on Guile.</li>
+<li>Replace Guile with <a href="https://janet-lang.org/">Janet</a> on the same integration.</li>
+</ol>
+<p>To be honest, I think I'll go with option 3 for now, just because I want to compare Janet's integration with Guile. Janet is less known and has less support, but who knows? Maybe I found my dream LISP integration for game development.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>together devlog | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">together devlog</div>
+</p>
+<p>
+  <div class="date_postpage">2023-09-17</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>This post is something I planned writing since I finished making <a href="https://illusion-fisherman.itch.io/together">Together</a>, a game I created with my wife Brena Cardoso during the <a href="https://itch.io/jam/crossing-latitudes-jam/rate/2244216">Crossing Latitudes game jam</a>. The reason for this is that I was able to test some ideas with this game and consolidated my workflow publishing web games on itch.io, but for everyone wanting to do the same, it's worth to know some of the &quot;gotchas&quot; they might get.</p>
+<p><img src="https://henriquelalves.com/posts/making-together/together-2.png" alt="Screenshot of the game Together" /></p>
+<p>&quot;Together&quot; is an exploration and puzzle game, in which you have to find your path to climb a mountain. During the exploration, you collect letters you can use to write messages other players will see - but the message you write are always in a different language than the messages you'll read (Portuguese or Suomi). It's an asynchronous cooperation game, and we play around with the idea of the language barrier affecting the cooperation because that's one of the experiences me and Brena had having just moved to Helsinki from Brazil.</p>
+<p>The idea of the game came naturally to us because when we heard about the jam, our minds were more-or-less settled on the idea of making a game that played with the language (since we just started taking Suomi classes). On the engineer side, I also wanted to use the jam to explore some topics:</p>
+<ol>
+<li><strong>Making an asynchronous coop game.</strong> I liked this idea because I had just finished a website project (<a href="https://mastonews.com">mastonews.com</a>) and I finally had a good workflow making servers that was quick and I was confortable with - so I wanted to test this with an asynchronous multiplayer game.</li>
+<li><strong>Making a pretty AND efficient 3D game on browser.</strong> I'm used to create browser games with Godot 3.x for game jams, but I could never set on a workflow that allowed me to &quot;prettify&quot; 3D games confortably (the reason for that is that a browser game is much more limited in hardware capabilities than publishing the game as executables). I wanted to test baking lights (more on that later) to make the game look better, but I also wanted a workflow that allowed me to compress the game in the smallest binary I could.</li>
+</ol>
+<p>So, let's dive in the results of each exploration a bit.</p>
+<h3 id="basic-asynchronous-logic">basic asynchronous logic</h3>
+<p>I knew we were going to make a template system for the messages, similar to Dark Souls. So the server needs to store the messages each player sends with:</p>
+<ul>
+<li>The first message option chosen by the player (an integer).</li>
+<li>The second message option chosen by the player (an integer).</li>
+<li>The position of the message in the game world (three integers for a 3D position).</li>
+</ul>
+<p><img src="https://henriquelalves.com/posts/making-together/letter-1.png" alt="Screenshot of Letter" /></p>
+<p>This is only relevant to the client to parse the messages, the server actually just stores a string with the message content concatenated. For example, if a client posts a message on position (10, 15, 20) with options 1 and 2, the server will store the following string:</p>
+<blockquote>
+<p>&quot;1;2;10.00;15.00;20.00&quot;</p>
+</blockquote>
+<p>When a client receives this message, it will parse it for the message options chosen and it's position, and it will spawn a &quot;letter&quot; object in that position.</p>
+<p>How and when the players would receive messages followed a simple logic:</p>
+<ul>
+<li>When a player starts a game, I query for 20 random messages from the server and spawn the letter objects in their respective position.</li>
+<li>Everytime a player reads a letter, I delete the letter object and query for another random message from the server to replace it.</li>
+</ul>
+<p>This solution have obvious (but minor) problems I chose to ignore (because Game Jam):</p>
+<ul>
+<li>A player may get repeated letters. I could solve this by adding an unique UUID for each letter in the database, and to query the database until I had a letter with a different UUID than the one I deleted or already spawned.</li>
+<li>Some regions of the game have less chance of spawning letters. Ideally, every region would spawn X amount of letters, because less players reach the end of the game than they start (so the starting regions have way more letters than the later ones).</li>
+</ul>
+<p><img src="https://henriquelalves.com/posts/making-together/together-1.png" alt="Screenshot of the Game" /></p>
+<h3 id="making-an-asynchronous-coop-game">making an asynchronous coop game</h3>
+<p>My workflow is based on the <a href="https://codepilotsf.medium.com/how-to-deploy-a-sveltekit-node-app-1c11171fe852">amazing tutorial by Sean Schertell</a> on how to deploy SvelteKit apps (I used it for Mastonews). This is a brilliant guide because it gives you the basic sysadmin workflow to setup a single and very simple server. You can use it for pretty much anything, not only SvelteKit! It also showed me <code>Caddy</code>, which for someone that head nightmares with <code>nginx</code> broken configurations, was the one thing that convinced me that &quot;hey creating servers is not actually that difficult!&quot;.</p>
+<p>I knew that for this particular game, I'd only need a server with an <code>SQLite</code> database to write player messages, and from where the players would query for messages to display on their game. This would be super simple to make if it wasn't for the one &quot;itch.io&quot; gotcha:</p>
+<blockquote>
+<p>Browser games in itch.io HAVE to use SSL for any request.</p>
+</blockquote>
+<p>You don't need to understand how SSL works, but you already seen it: any (most) websites nowadays use &quot;HTTPS://&quot; - not &quot;HTTP://&quot;. &quot;HTTPS&quot; is a site with SSL set and a certificate that guarantees the communication between client (e.g. a game) and the server is secure (as in, no one will be able to &quot;eavesdrop&quot; the communication). Itch.io understandably enforces SSL on browser games for security reasons, but that means you have to set SSL on your server if you want to make a game that communicates with your server. Setting up SSL means two things:</p>
+<ol>
+<li>You have to buy a domain name.</li>
+<li>You have to set your server to use a certificate from the domain you bought.</li>
+</ol>
+<p>In my case, I've already bought &quot;illusionfisherman.com&quot; on GoDaddy. <code>Caddy</code> also automates the whole second step for me, so I literally only needed to follow the tutorial I mentioned setting up the domain name as &quot;illusionfisherman.com&quot; and that was it, server was ready to communicate with client.</p>
+<p>The server itself is just a Node with <code>better-sqlite</code>, a JS package that is extremely straightforward and easy-to-use to deal with local <code>SQLite</code> databases. It's running on a <code>pm2</code> process, an awesome process manager that I also discovered following the tutorial I mentioned (Sean Schertell: if you ever read this, THANK YOU).</p>
+<p>The second &quot;gotcha&quot; is setting up an encryption method for the messages between client and server, something the players themselves can't easily hack. I don't think this is something that would affect this game in particular, but I've seen players hacking leaderboards quite easily on other Game Jams, and I wanted to explore at least a simple encryption method between players and servers to avoid this kind of scenario in the future.</p>
+<p>(A quick side-note: SSL is an encryption layer, but it's not helpful in the case of local players hacking the messages being sent to the server, because they are able to check and interfere with the message BEFORE it is encrypted by SSL)</p>
+<p>I tested some things, but by far the easiest (to develop) solution I found was:</p>
+<ol>
+<li>Create the message string to send to the server. Remember that the server only needs to store a single string for each message.</li>
+<li>Calculate the message SHA256 hash with a secret string key appended at the end.</li>
+<li>Send the hash and the message to the server.</li>
+<li>The server receives the message content, appends the same secret string key at the end and calculate the SHA256 hash.</li>
+<li>If the hash the server calculates is the same as the hash it received along with the content, this is a valid message.</li>
+</ol>
+<p>A SHA256 string hash can be thought as a way to translate a string to an &quot;unique&quot; byte sequence. That means that the chance of two different strings to share the same hash is almost impossible (to the point of being irrelevant to be considered in the case of this game), and since the &quot;secret string key&quot; is not published anywhere but in the game's code and the website code, this is sufficient to &quot;guarantee&quot; that a message wasn't tempered with (unless the hacker knows the secret string key).</p>
+<p>This is not a perfect solution, but it's a solution with a &quot;good enough&quot; hacking friction that makes the game at least not trivially hackable.</p>
+<h3 id="making-a-pretty-and-efficient-3d-game-on-browser">making a pretty AND efficient 3D game on browser</h3>
+<p>The second challenge was to make a game that was pretty, but small and efficient to run in browser. I had a couple of ideas in mind:</p>
+<h4 id="using-glb-3d-models-but-make-changes-on-import">using .glb 3D models, but make changes on import</h4>
+<p>This is something I learned working at GDQuest, but the ideal 3D workflow on Godot is to use <code>.glb</code> models with the least amount of changes (avoiding using inherited scenes or changing them in <code>.tscn</code> files). The reason for that is that when you inherit the <code>.glb</code> models and make changes to it in <code>.tscn</code> files, you are serializing the model (and the changes you made) to text format, which can make the exported binary of the game much bigger. This is better explained here: https://github.com/gdquest-demos/godot-4-3d-third-person-controller/pull/30.</p>
+<p>Since me and my wife used some of the Kenney assets, the trick was to add a &quot;Post import script&quot; to the 3D models that would do the following:</p>
+<ul>
+<li>Reorganizes the model tree, so it could be converted to a MeshLibrary later.</li>
+<li>Creates a convex collision mesh and add it in the scene.</li>
+</ul>
+<p>This also made my life easier whenever we changed some of the models - I only needed to change the model file and reimport it, since the only dependencies were scenes that were adding the &quot;.glb&quot; file directly into their node tree.</p>
+<p><img src="https://henriquelalves.com/posts/making-together/lightmap.png" alt="Lightmap option" /></p>
+<h4 id="baking-the-lightmaps">Baking the lightmaps</h4>
+<p>This wasn't the first time I tried baking a lightmap in Godot, but it was the first time the assets workflow made it easy enough to bake lightmaps. What I had to understand is that <strong>reimporting assets with the settings you want is, most of the time, better than changing settings on an inherited scene</strong>. This is also true for generating lightmap UV2 in Godot.</p>
+<p>My workflow was to bake single regions of the game:</p>
+<p><img src="https://henriquelalves.com/posts/making-together/level.png" alt="Level scene" /></p>
+<p>And have a &quot;world&quot; scene that would control which level the player was in, and show/hide levels accordingly:</p>
+<p><img src="https://henriquelalves.com/posts/making-together/world.png" alt="World scene" /></p>
+<p>This is a similar workflow I had for a <a href="https://illusion-fisherman.itch.io/would-you-still-love-me-if-i-was-a-banana-peel">metroidvania game I made for Metroidvania Month 17</a>. Having the entire level already instantiated is not optimal but the level is small enough to not make a difference - but having the entire world visible to you is REALLY helpful in designing the game.</p>
+<h3 id="summing-up-my-experience">Summing up my experience</h3>
+<p>I feel I was a bit greedy at the start of the jam, because me and my wife had Boring Stuff (tm) to do during the jam time, so we'd have less time than we wanted to make the game. But things got aligned surprisingly quickly, and the engineer workflow I had in mind worked really well. Brena is also amazing at adapting the assets and animations we found, and creating new assets ad-hoc.</p>
+<p>The end result is a game that works really well in the browser, smaller than most games I made before (some of them even simpler than &quot;Together&quot;), but packing quite a bit of development love from me and Brena.</p>
+<p><img src="https://henriquelalves.com/posts/making-together/ending.png" alt="Ending" /></p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

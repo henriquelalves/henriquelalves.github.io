@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>windows XP retro gaming part 1: it begins | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">windows XP retro gaming part 1: it begins</div>
+</p>
+<p>
+  <div class="date_postpage">2023-08-20</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/windows-xp/">#windows-xp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/retro-gaming/">#retro-gaming</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p><em>I'll be posting my adventure trying to create the perfect Windows XP machine just so I can play The Sims 1 (and some other games, but mostly The Sims 1)</em></p>
+<p>I recently mentioned on Mastodon how tempted I was to buy an old machine to start retro-gaming with Windows XP. The main reason is this:</p>
+<p><img src="/posts/windows-xp-adventure-1/the-sims.jpg" alt="The Sims and Civilization IV" /></p>
+<p>I found this refurbished The Sims 1 (and Civilization IV) on a second-hand store, and for me this was quite a find because:</p>
+<ol>
+<li>The Sims 1 is one of the games I most played in my youth.</li>
+<li>You can't legally buy The Sims 1 in any digital store anymore. <a href="https://www.reddit.com/r/sims2help/comments/sxqye7/getting_the_sims_2_on_2022/">That's also true for The Sims 2</a>.</li>
+</ol>
+<p>The second reason is absolutely insane but <a href="https://gamehistory.org/87percent/">not exactly novel</a>. The product reason behind this is, most possibly, the lack of support for playing old games in new hardware. But this is still a shitty reason, because as a savvy user, I don't even have a choice to buy the game with no support whatsoever.</p>
+<p>I'm quite fond of digital conservation, so for a €2.00 coin this was a no-brainer to me, even if my only machine was a Manjaro Linux and I wasn't planning to change it to Windows. But alas, my impulsive tendencies got the best of me:</p>
+<p><img src="/posts/windows-xp-adventure-1/toshiba.jpg" alt="A Toshiba Laptop" /></p>
+<p>This is a refurbished Toshiba laptop I bought for cheap (at least as cheap as buying second-hand electronic in Helsinki goes). It's a <strong>beast</strong> of a machine featuring a powerful Intel Core i7 (2nd gen), an NVidia GPU (Quadro 1000M), and 4GB of RAM. I had to look for specs almost exactly like this (a 2nd generation CPU, an old Quadro GPU) to have some guarantee that I would be able to find Drivers for them when running Windows XP.</p>
+<p>The Laptop came with the digital version of Windows 10, though. Why I'm so fixated on Windows XP?</p>
+<ol>
+<li>Windows in general have a good reputation on maintaing compatibility with old software, but Windows 10 is a bit too much new for the software I want to play. I tried installing a Diablo 2 CD (also bought for 2 euros) but I wasn't able to run the game.</li>
+<li>Even so, there would probably be fixes for most games I'd like to play (Tower of the Sorcerer, another game I really wanted to play, worked flawlessly on Windows 10 - and this is a game I couldn't run on Wine because of font issues) - but that is not a guarantee. I want a guarantee.</li>
+<li>Windows XP was one of the most popular OS of all-time (source: my intuition) - and is also a great OS to run the games of the era I want (plus it has great compatibility for even older games).</li>
+<li>And honestly, playing stuff on Windows XP is part of the charm of the whole process. I want to feel this nostalgia.</li>
+</ol>
+<p>The Laptop itself came with Windows 10, so I downloaded a legitimate copy of Windows XP (which <a href="https://archive.org/details/WinXPProSP3x86">apparently Microsoft itself uploaded to Internet Archive</a>), used Rufus (on the Windows 10) to create a bootable USB, booted from it, and voilá!</p>
+<p><img src="https://henriquelalves.com/posts/windows-xp-adventure-1/windows-xp.jpg" alt="Installation screen of windows XP" /></p>
+<p>It didn't work!</p>
+<p><img src="https://henriquelalves.com/posts/windows-xp-adventure-1/oops.jpg" alt="BSOD during windows xp installation" /></p>
+<p>So, there is ONE part of the laptop spec that is actually quite troublesome for installing older OS's: the fact that it uses an SSD.</p>
+<p>On my quite short research, it seems that SSD drives don't have some of the commands HDD have (in particular, TRIM), so Windows XP doesn't exactly know what to do once it tries to install on it.</p>
+<p>I still have quite a bit of investigation to do, but it seems like I can install 3rd party drivers before installing the Windows XP, and one of the drivers might be the SSD driver so I can actually continue with the installation. So my options right now are:</p>
+<ol>
+<li>Make due with the SSD. It may possibly deteriorate the SSD faster though, because older OS's weren't made to use SSD intelligently (and old SSD drives weren't as robust as the ones we have today).</li>
+<li>Replace the SSD with an HDD. I'll have to check the Laptop adapters though (I know it's possible, but I have no idea if the laptop age is going to get in my way).</li>
+</ol>
+<p>There you have it. Hopefully the following post will have some answers on how the hell I'll be installing Windows XP on my Toshiba.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

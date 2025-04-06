@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>free software and game development | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">free software and game development</div>
+</p>
+<p>
+  <div class="date_postpage">2024-04-03</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gamedev/">#gamedev</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/essay/">#essay</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>This post is me putting down some thoughts about Game Development, and specially how an indie game developer might succeed in today's industry leveraging Free Software.</p>
+<p>A very important disclaimer about me: I'm a Free Software enthusiast, but I'm okay doing compromises for game development. But ever since I started understanding the Free Software movement, I've been wondering: how could I leverage the benefits of Free Software for game development?</p>
+<p>This topic is something I've been rumminating for a while from different angles, but I think the main question that drove me to a &quot;sort-of&quot; idea was:</p>
+<h3 id="how-can-indies-sustain-themselves-in-this-hellscape-of-a-market">how can indies sustain themselves in this hellscape of a market?</h3>
+<p>I'm currently working in the Mobile gaming industry (and have been for a couple of years), but I hold the indie dream close to my heart (as most game developers do to stay sane), so this is a question that bothered me a lot, specially after so many layoffs I've seen in those last 2 years. This is a very difficult question to answer, but I think there are two challenges that are the biggest threats to most indies:</p>
+<ul>
+<li><strong>Distribution</strong>. Digital markets are saturated with new content, even Nintendo that a decade ago had the highest-walled garden of them all is now victim of a rampant number of shovelware games in their marketplace, making new games visibility a lot more difficult. </li>
+<li><strong>Financial risk management</strong>. Triple-A figured out the solution for this challenge was live-service games (or GaaS), <a href="https://www.thegamer.com/suicide-squad-season-1-joker-dlc-addition-grindy/">but it seems like this is not going well for Triple-A either</a>. Indies have it worse, since content development over-time is a very hard problem to tackle, so developers are always 1 &quot;failed&quot; game of going bankrupt.</li>
+</ul>
+<p>The usual answer for the first challenge is to <strong>find a niche</strong> a game can get some spotlight, even a small one but with guaranteed organic growth. The answer for the second challenge is diverse and depending a lot on the medium - mobile games from small teams can add small doses of live-service or stick with ads and a casual audience. Games on other platforms might use Kickstarter or look for a publisher to offset financial risks before the game starts development, but usually that means that there is a portion of development that you're just praying for the best until the game is in a state you can pitch for.</p>
+<p>The big picture is that making a plain-old &quot;premium&quot; game with a small team is a <strong>difficult</strong> endeavour with a low margin of financial success, specially if you can't self-publish your game. But are there alternatives that haven't been tried yet?</p>
+<h3 id="first-let-s-talk-about-live-service-games">first, let's talk about live-service games</h3>
+<p>Live-services games are getting a lot of heat as of recent, with <a href="https://www.pcgamer.com/im-officially-exhausted-by-all-the-live-service-games-and-i-want-to-see-way-less-next-year/">reported player burnout from all live-service games out there</a> to <a href="https://www.windowscentral.com/gaming/marvels-avengers-is-shutting-down-to-be-delisted-later-this-year">live-service games shutting down because of the lack of player interest</a>. Even then, the financial risk makes so much more sense from a corporate perspective that <a href="https://gamerant.com/warner-bros-focus-shift-live-service-games/">big publishers are still doubling down on it</a>.</p>
+<p>And it does make sense. Working on Mobile gaming on those last couple of years made me realize that the alternative is betting on a single big-hit of a game - and the meaning of a &quot;big-hit&quot; scales dramatically bad considering how expensive making a game is. The distribution problem means that UA (User Acquisition) costs are sky-high and only getting worse, and organic growth on the mobile space depends on hitting a magic SEO formulae that might change with the phases of the moon, or reaching Top Grossing/Top Downloads levels in the mobile stores, driving UA costs even more. To my knowledge mobile stores are the first to reach those levels of saturation, but other digital fronts are not that far behind anymore. So making a live-service game means that you're betting on a player pool that is sticking to your game for a longer time, possibly paving the way for whales to spend A Lot of Money in the game, and thus justifying the costs.</p>
+<p>Live-service is much more difficult for indie developers with limited resources, because:</p>
+<ul>
+<li>It depends on having a solid player-base from the get-go or to have enough money to acquire said user-base. This is simply not the case most of the time.</li>
+<li>It depends on more content being developed over time. Even with a solid user-base, it is very hard for small developers to fullfil the expectations of more content with the cadence needed so their game stay relevant.</li>
+</ul>
+<p>Worth mentioning that live-service games are not inherently &quot;evil&quot;. We've seen live-service games with fair models for IAP's, and even single-player games with &quot;small doses&quot; of live-service in their multiplayer mode counterpart. But this is strategy for lessening financial risks is only feasible to triple-A and huge indie hits.</p>
+<p>An important idea associated with live-service games is the concept of &quot;lifeness&quot; of a game. A &quot;Live-service game&quot; means that there is a service coupled with the game that is bringing a constant flow of new content. &quot;Live&quot; here is associated with the online nature of the service, but the <strong>lifeness</strong> of a game is inherently associated with this constant flow of <strong>new content</strong> - a game that is <strong>alive</strong> is a game that has a user base still playing it, but more importantly, that is still generating content. The content ranges from community challenges such as speed-runs (e.g. the Mario 64 community is <a href="https://www.speedrun.com/sm64">very much alive</a> to this day) to user created mods (e.g. the Elder Scrolls IV: Oblivion community is <a href="https://www.nexusmods.com/oblivion?tab=new+this+week">very much alive</a> too). What is interesting here is:</p>
+<ul>
+<li>A <strong>Living Game</strong> can be self-sufficient, as long as there are players willing to engage in the game more profoundly and to share it with a community.</li>
+<li>A <strong>Living Game</strong> attract new players organically because players cheerfully share the things they create, and any content that bursts the game community bubble is a success in the players own eyes.</li>
+</ul>
+<p><strong>Living Games</strong> are very clearly enablers of user generated content (even Mario 64 has a very rich scene of modded roms, thanks to its decompiled source code), and can reap some of the benefits of a live-service game and its financial risk mitigation, but without the development costs. That's my main argument on why this is interesting for indie developers.</p>
+<p>There is a counter-argument that reaching the status of a <strong>Living Game</strong> is a random shot from the already difficult task of making a mildly successful game, but I think we've been tackling this problem the wrong way:</p>
+<ol>
+<li>A game becoming a <strong>Living Game</strong> may come with an absurd amount of success, but many successful games have very different &quot;degrees&quot; of lifeness after their initial success, so there is a case of strategies on how to enable a <strong>Living Game</strong> better than others. </li>
+<li>The tech matters a lot. How easy and accessible is for the player to understand the tech matters a lot. The usual solution is to create special tools for the player to create content (e.g. Mario Maker 2, Dreams by Media Molecule), but I believe we could go a step further <strong>without</strong> having to maintain special and costly tools.</li>
+<li>The game doesn't need to be a major success at launch as long as it enables easy content generation. In the long-term, it will have better chances of attracting a small user base from niche creative communities, which can drive the long term organic growth of the game.</li>
+</ol>
+<p>I don't think a successful indie game made to enable user generated content this way can easily reach the sky-high profits of a successful live-service game, but I firmly believe that a game made to be a <strong>Living Game</strong> from it's conception is the Indie Developer equivalent of mitigating risks with long-term player content generation.</p>
+<p>Which finally brings us to:</p>
+<h3 id="an-engine-for-living-games">an engine for living games</h3>
+<p><a href="https://dthompson.us/">David Thompson</a> has a very interesting quote on his <a href="https://davexunit.itch.io/">itch.io page</a>:</p>
+<blockquote>
+<p>I try to make tools that advance the REPL-driven development methodology, resulting in games where the runtime and editor are the same program.</p>
+</blockquote>
+<p>David is the creator of <a href="https://enginesdatabase.com/engine/chickadee/">Chickadee</a>, a Guile framework for game development (which I do recommend taking a look if you are interested in Guile/Scheme for game development). I think a game in which <em>the runtime and the editor are the same program</em> is the ultimate goal of a game engine that enables a game to become <strong>alive</strong> easily - the game engine itself is the game, and advancing the tools to create the game also advances the tools available to users to change the game. The idea of a <strong>Game Engine for Living Games</strong> is to naturally transform game-development effort into tools for user generated content, but without locking the design of the game into a specific set of tools. The game and the editor are already one and the same, so the game developer can better tweak the balance of development effort and making the learning curve of the tools less steep, for himself and for the players. This also means there is only a thin line separating iteration and play - a Game Designer should be able to iterate on a level while it is played, and so should players.</p>
+<p>An analogy for a game made with this Game Engine would be to give a player an already built Lego car. How fun the game is depends on how fun playing with this Lego car is. But the player can also disassemble the car and reassemble it any other way, and the Game should not only allow that but be built with with this in mind. Comparing it to other games:</p>
+<ul>
+<li>Mario 64 is a great game, but it wasn't made to be disassembled. It's like a great toy to play with that the community create their own tools and guides to disassemble the toy and create what they want.</li>
+<li>Elder Scrolls IV is moddable, but not frictionless. There is a big line separating a player from a content creator. It would be like a toy that can be assembled with different components, but each individual component is a black-box piece much more difficult to take apart.</li>
+<li>Little Big Planet is much more fine-grained and player-friendly than Elder Scrolls, but a player doesn't have freedom in how to mod or redistribute the changes in their game but to use the live-service portion of it. The analogy falls a bit apart here because Little Big Planet is one very closed ecosystem but with very open-ended and friendly tools to create user content, but the current state of the game is an example of how its &quot;liveness&quot; wasn't made to outlive its live-service: players that like Little Big Planet 1 or 2 can only play the multiplayer via pirate servers on homebrewed hardware. As an indie, we want to build a <strong>Living Game</strong> free from the necessity of also maintaing a live service.</li>
+</ul>
+<p>The perfect <strong>Game Engine for Living Games</strong> is a Game Engine that run as editor and runtime, and has user freedom to modify and redistribute the game deeply rooted in the way someone develop a game in it and on it. </p>
+<p>This finally brings us back to the <a href="https://www.gnu.org/philosophy/free-sw.html.en">4 freedoms of Free Software</a>:</p>
+<blockquote>
+<ul>
+<li>The freedom to run the program as you wish, for any purpose (freedom 0).</li>
+<li>The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.</li>
+<li>The freedom to redistribute copies so you can help others (freedom 2).</li>
+<li>The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.</li>
+</ul>
+</blockquote>
+<p>Those freedoms by themselves won't make a game commercially successful, as in making the game GPL won't make it magically a good &quot;Living Game&quot; example. But a good <strong>Free Software</strong> has a similar set of characteristics than a good <strong>Living Game enabler</strong> Game Engine:</p>
+<ul>
+<li>It should be <strong>easy</strong> to run a program in any way you want for any purpose / It should be <strong>easy</strong> to run a game with no live-service blockers.</li>
+<li>It should <strong>easy</strong> to study a program source-code and to change it with immediate results / It should be <strong>easy</strong> to create mods for a game and/or change its core behaviors (think the <strong>editor &amp; runtime parity</strong> discussed earlier).</li>
+<li>There should be <strong>no blockers</strong> for redistributing a software with the modifications  / There should be <strong>no blockers</strong> for users redistributing the modifications they made for a game.</li>
+</ul>
+<p>This is my argument that an intersection of interests exists between Game Development and Free Software. How this can be of better use for game developers and what this Game Engine would look like is an educated guess because I don't think we have seen a prime example of that - at least not yet.</p>
+<h3 id="speculations-on-a-living-games-game-engine">speculations on a &quot;living games&quot; game engine</h3>
+<p>For any game created on this Game Engine, it should be <strong>dead easy</strong> to modify the runtime. The mission of this game engine should be to <strong>allow users to modify the game while it runs</strong>, and have <strong>development tools available at user request</strong>.</p>
+<p>Remember: <strong>the runtime and the editor are the same program</strong>. Let's imagine we're creating a platformer game. As game developers, we might create tools to edit levels, place enemies, modify physics settings, etc. The core game experience <strong>shouldn't</strong> show those tools to users - after all, we are focusing on creating a good game experience that is independent of user generated content at first. But we want to enable this game to become a <strong>Living Game</strong> - so at user request (e.g. a &quot;Development Mode&quot; toggle on the settings menu), users should have available for themselves the tools we used to create and edit levels.</p>
+<p><strong>Engine code</strong> and <strong>Player code</strong> should be different and clearly defined:</p>
+<ul>
+<li><strong>Engine code</strong> is mostly agnostic code to run the game optimally. All things non-game logic that support the Game (e.g. Rendering, Input, etc) should exist in this space.</li>
+<li><strong>Player code</strong> should exist and be modifiable in runtime, and is all game-related logic. Editor tools are <strong>Player code</strong> - the game developer is the player and any player can become a game developer.</li>
+</ul>
+<p>All <strong>Player code</strong> modifications should be compatible with the <strong>Engine code</strong> that supports it. Modifying <strong>Engine code</strong> shouldn't need to be as easy as changing <strong>Player code</strong> - it's a compromise to differentiate code that needs to be optimized from code that needs to be easy to modify.</p>
+<p>User modifications should be easy to reverse. Players should be able to get to the original state the game was distributed in, without being forced to backup their games to not lose the original state.</p>
+<p>About licensing: I believe GPL should be a flag for games that have in their core concept the idea of becoming <strong>good Living Games</strong>. There are great open-source games out there with permissive licenses, but I think we could leverage what GPL means to better classify games that were made to be <strong>prime examples</strong> of software that respect user freedom <strong>and</strong> make user freedom <strong>easier to exercise</strong>. Any <strong>good game</strong> can be open-source, but a game can only be a <strong>good open-sourced good game</strong> if they were made with this objective in mind from conception. GPL should be the license for this kind of game.</p>
+<h3 id="some-final-thoughts">some final thoughts</h3>
+<p>I've been meaning to put those thoughts down for quite some time mostly because I think we've been missing some interesting games that could have been made, and interesting ways of making games other than using the <a href="https://enginesdatabase.com">many game engines available out there</a>. In parts, I think this essay depends on the wishful thought that <strong>we haven't seen a big commercially successful Free Software game because no well designed game have went all-in on software freedom yet</strong>. I might be wrong - maybe I don't know the prime example of successful Free Software game that already exists, or worse, maybe there are good games that went all-in on software freedom and simply haven't achieved success, despite my arguments on how it could mitigate risks.</p>
+<p>I do like the concept of <strong>Living Games</strong> I described here, and I want to explore the possibility space of creating good living games in the (near) future.</p>
+<p>If you have any comments and/or feedbacks, you can comment on my <a href="https://mastodon.gamedev.place/@henriquelalves/112208125827364142">Mastodon post!</a>.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

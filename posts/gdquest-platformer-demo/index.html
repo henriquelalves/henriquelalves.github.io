@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>making of: GDQuest 3D platformer demo | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">making of: GDQuest 3D platformer demo</div>
+</p>
+<p>
+  <div class="date_postpage">2023-02-24</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gdquest/">#gdquest</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p><em>This is a Making Of article of a Demo I made in Godot <a href="https://www.gdquest.com/">@GDQuest</a>. Most of the learnings are generic and can be applied anywhere.</em></p>
+<p><img src="/posts/gdquest-platformer-demo/project-complete.png" alt="Platformer Demo" /></p>
+<p>Our objective <a href="https://www.gdquest.com/">@GDQuest</a> was to create a 3D Platformer demo in Godot, with the following requisites:</p>
+<ul>
+<li>Maximum of two weeks of development. We are creating demos fast, so we can have lots of content and test ideas using the latest version of Godot (at the time of the Demo, v4.0 beta 4).</li>
+<li>Inspired by <em>3D Mario games</em> mechanics.</li>
+<li>Make it simple and modular, so users can copy-paste the project into theirs or study the codebase.</li>
+</ul>
+<p>I was the developer, and <a href="https://twitter.com/heytibo">Tibo</a> was the artist behind this Demo.</p>
+<h2 id="setting-tasks">Setting tasks</h2>
+<p>Following the last TPS demo, the idea was to leverage nostalgia to create interest and making users more eager to explore the demo to their benefit.</p>
+<p>The feature-set I decided upon to create a good Demo was:</p>
+<ul>
+<li>A character controller that would play like Mario 64 in the following ways:
+<ul>
+<li>Jump combo (triple jumping like in Mario 64).</li>
+<li>Ground pound and ground related jumps.</li>
+<li>Wall jump.</li>
+</ul>
+</li>
+<li>Camera guidance similar to what Mario Odyssey.</li>
+<li>Simple button to ground pound and interact with the scenario.</li>
+</ul>
+<p>Those tasks completely changed during the development process, but this will be better described below.</p>
+<h2 id="development-and-decisions">Development and Decisions</h2>
+<h4 id="camera-action">Camera action</h4>
+<p>The camera movement was inspired by Mario Odyseey. My objective was to create a non-intrusive way to guide the player's camera, without affecting gameplay or where the player wants to look at. In Mario Odyssey, certain regions of the map slightly guide the player's camera to where the Game Designers want the player to pay attention to. This is a very light camera movement, and it stops if the player starts moving the camera on their own.</p>
+<p>To replicate this behavior, I created &quot;Camera Regions&quot;, 3D areas in the demo level that the camera would try following a predetermined path when the player is inside.</p>
+<p><img src="/posts/gdquest-platformer-demo/camera-region.png" alt="Camera region" /></p>
+<p>The camera movement itself is created using two Paths:</p>
+<ul>
+<li>One path is the Player Path, or the closest point the player is from this specific line.</li>
+<li>The other is the Camera Path, which is the &quot;optimal&quot; camera position corresponding to the position the player is on the Player Path.</li>
+</ul>
+<p>So if player is at the start of the Player Path (or the closest position in the Path from where the player is), the Camera will try moving to the position at the start of the Camera Path. When the player starts moving and their Player Path position starts changing, the camera position at the Camera Path will also change accordingly, and the Camera will try its best lerping to the new position.</p>
+<p>One important thing was that even with a small velocity, guiding camera was really intrusive. So following more closely the Mario Odyssey behavior, when the player moves the camera, the &quot;guiding&quot; action resets and takes at least 10 seconds of player movement to go back to its previous behavior of following the Camera Path position.</p>
+<p>Ideally, it would also take in consideration if the camera is more than X degrees from &quot;ideal&quot; position (don't animate camera when player has its own preferred perspective), but this ended up being a nice-to-have, yet to be implemented.</p>
+<h4 id="arriving-at-the-floor">Arriving at the floor</h4>
+<p>When I started developing the Demo, jumping accross platforms was really difficult with a naive jump mechanic. After tweaking how the player was able to manipulate the character in-air (to better control air speed before falling), arriving at a platform got less difficult; but staying in a problem was really hard (even on bigger platforms).</p>
+<p>The problem was the fact that the player, when arriving in a platform after a jump that needed precision, usually was tweaking the character in the air, so the analog position is in another direction. When touching the floor, the character would make a sudden move to another direction, making the player lose control of the chracter and falling from the platform if they arrived close to the edge.</p>
+<p>The solution was to add frames in which the character is not able to change direction as soon as they arrive at the floor. If the character is pointing to another direction, instead of walking in the direction, consider the player as &quot;braking&quot; and then moving to the other direction (to give player time to tune direction they want to go).</p>
+<h4 id="ledge-grabbing">Ledge grabbing</h4>
+<p>During the development of the game, I noticed that crouch related mechanics (ground pound / crouch jumping) was an added character state that would be much less benefitial to other developers using the Demo than Ledge Grabbing, which is a much more difficult mechanic to replicate and makes the gameplay much more interesting.</p>
+<p>The initial mathematical idea for ledge grabbing seemed easy: raycast into solid objects (looking for ledges), and &quot;glue&quot; player character in the found position.</p>
+<p><img src="/posts/gdquest-platformer-demo/ledge-grabbing-moving-wrong.gif" alt="Ledge grabbing wrong" /></p>
+<p>But this wouldn't work on moving platforms. Just gluing character in the found position wouldn't work, since the position could change in time depending on the platform the character was holding at. Deciding to fix this was important because this is a generic 3D Platformer solution for developers to use, so they should be able to animate any kind of 3D platform in Godot and copy-paste the Character Controller to play around with the controllers.</p>
+<p>The solution was to save the global transform of the ledge's object, convert the ledge position (global position) into the object's position (local position), and making the inverse conversion each frame to get the new ledge position.</p>
+<p><img src="/posts/gdquest-platformer-demo/ledge-grabbing-moving-right.gif" alt="Ledge grabbing right" /></p>
+<p>This solution worked most of the time, but moving platforms caused a lot of trouble with physics, and I had to tweak carefully when the player character should drop from the ledge (while holding the ledge, other platforms may push the player out of it, for example).</p>
+<h2 id="cutting-corners">Cutting corners</h2>
+<h4 id="crouch-and-stomping">Crouch and stomping</h4>
+<p>Removed crouch/stomping as a mechanic. It just seemed to add a new state for the character that wasn't needed for the basic platforming action we had; instead, I focused on ledge grabbing, which is a harder mechanic to implement, and influences gameplay in a much more meaningful way.</p>
+<h4 id="jump-fall-gravities">Jump/Fall Gravities</h4>
+<p>When I was studying the reference, one of the design videos I saw mentioned that Mario had different gravities for jumping and falling (GameMaker's toolkit, didn't mentioned which 3D Mario). I decided to test and it made jump seem easier after a couple of iterations (having a bigger gravity when falling than when going up), but this was before tweaking other jumping variables (like the moment the player touches the floor after jumping).</p>
+<p>Different gravity values stayed in the Demo until I decided to test on Mario 64 whether the &quot;different gravities&quot; was true. I recorded a video and counted the number of frames Mario stays in the air when jumping and falling; it's the same, so the previous reference was wrong (or at least not using the same 3D Mario reference as me).</p>
+<p>After all the other tweaks, using the same gravity for jumping and falling made more sense. Thanks to the other tweaks, jumping seemed much less difficult and more natural. So I cut this specific feature out.</p>
+<h2 id="final-result">Final result</h2>
+<p><img src="/posts/gdquest-platformer-demo/complete-demo.gif" alt="Complete demo" /></p>
+<p>At total, I spent around 10 business days in the core features of the Demo. It took me more time to tweak the Ledge Grabbing physics, since it could get finnicky with moving platforms, but I got really satisfied with the end result.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

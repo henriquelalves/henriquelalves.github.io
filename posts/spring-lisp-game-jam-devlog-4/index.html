@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>spring lisp game jam - devlog 4 | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">spring lisp game jam - devlog 4</div>
+</p>
+<p>
+  <div class="date_postpage">2024-04-23</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/lisp/">#lisp</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/guile/">#guile</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/gamejam/">#gamejam</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/devlog/">#devlog</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>I read a bit of Janet documentation and explored the amazing <a href="https://janet.guide/">Janet for Mortals</a> book, and I think I might have to sit on this problem for a while.</p>
+<p>The FFI solution I mentioned before is less than ideal because:</p>
+<ol>
+<li>I'll have to wrap the <strong>boring</strong> parts of the engine to the scripting language (e.g. managing windows, managing the lifetime of objects). I want to be able to <code>load-texture</code> in the scripting language and <strong>not worry about unloading it</strong>, because its lifetime will be binded by the boring engine. This is my ideal boring engine &amp; exciting gameplay scripting environment.</li>
+<li>I don't want to wrap the game from the scripting language, I want to wrap it from C. Creating an FFI for the &quot;boring&quot; bits of the engine means that the C part of the engine is a client for the scripting language I'm using, not the other way around, and I have a feeling this will make exporting the engine to other platforms much trickier and dependant on a language that certainly has less support than C.</li>
+</ol>
+<p>This way of thinking about the engine might be related to my experience using Godot and its scripting language GDScript. Godot does this really well, and I wanted to replicate this experience in a <strong>much</strong> smaller editor-less toy engine.</p>
+<p>From problem 1, the simplest scenario of using <code>LoadTexture</code> and <code>UnloadTexture</code> API from RayLib means I need to bind the lifetime of a GC object (scripting environment world) to C. Guile <code>finalizers</code> would do the trick - but then I'd need to solve the much more arcane problem of Guile's integration with RayLib. Janet doesn't seem like it has the same GC hooks, so unless I think on an alternative for binding the lifetime of textures, it's out-of-question.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>

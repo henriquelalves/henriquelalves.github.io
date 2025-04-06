@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>setting up emacs for godot engine development | henriquelalves</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <script defer src="https://umami.henriquelalves.com/script.js" data-website-id="04d239e9-77fc-4a81-94ad-938cc3c85948"></script>
+</head>
+
+<div class="header">
+  <div class="site_title">
+    <p><a href="/"><img class="icon" src="https:&#x2F;&#x2F;henriquelalves.com&#x2F;images&#x2F;logo.png" alt="henriquelalves"
+                                                                                 width="70" height=auto ></a></p>
+    <p><a href="/">&nbsp;henriquelalves</a></p>
+  </div>
+  <div class="menu">
+    <a href="/posts">posts</a>
+    &nbsp;&nbsp;&nbsp;<a href="/about">about</a>
+		&nbsp;&nbsp;&nbsp;<a href="/readinglist">reading list</a>
+		&nbsp;&nbsp;&nbsp;<a href="/projects">projects</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<p>
+  <div class="title_postpage">setting up emacs for godot engine development</div>
+</p>
+<p>
+  <div class="date_postpage">2023-07-13</div>
+  <div class="taxonomies_postpage">
+  
+  
+      
+      &emsp;<a href="https://henriquelalves.com/tags/emacs/">#emacs</a>
+      
+      &emsp;<a href="https://henriquelalves.com/tags/godot/">#godot</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p>This is a quick blog post, in case any developer wonders how to configure their favourite OS to use with Godot development (the Engine code itself, not individual projects).</p>
+<p>I previously had a tough time configuring Emacs for C/C++ projects, probably because I had no idea what I was doing, but I like to think that the problem was the LSP support on Emacs. Nowadays it's pretty much straightforward. The main requisite is following this guide:</p>
+<p><a href="https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/">https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/</a></p>
+<p>To install the corresponding LSP packages on your Emacs. The main packages are <code>lsp-mode</code> (main LSP mode), <code>lsp-ui</code> (LSP UI support), <code>dap-mode</code> (for debugging), <code>company</code> (autocomplete) and <code>flycheck</code> (syntax checking). Remember to set up <code>clangd</code> first.</p>
+<p>Ignore their <code>Project Setup</code> section for the Godot project. Instead, what you want to do is run <code>scons compiledb=yes compile_commands.json</code> on the Godot project root folder, so it generates the stuff LSP needs.</p>
+<p>After setting up <code>clangd</code>, LSP and generating <code>compile_commands.json</code>, Emacs should behave just like any other IDE a normal sensible person would use if they don't like the THRILL of breaking their IDE configuration every now and then.</p>
+<p>To be able to use the debug commands (<code>M-x dap-debug</code>) the tutorial points you to, you have to create a <code>launch.json</code> file in the Godot project root, the Debug launch command configuration. Mine looks like this:</p>
+<pre><code>{
+		&quot;name&quot;: &quot;Launch Project&quot;,
+		&quot;type&quot;: &quot;cppdbg&quot;,
+		&quot;request&quot;: &quot;launch&quot;,
+		&#x2F;&#x2F; Change to godot.linuxbsd.tools.64.llvm for llvm-based builds.
+		&quot;program&quot;: &quot;${workspaceFolder}&#x2F;bin&#x2F;godot.linuxbsd.editor.dev.x86_64&quot;,
+		&#x2F;&#x2F; Change the arguments below for the project you want to test with.
+		&#x2F;&#x2F; To run the project instead of editing it, remove the &quot;--editor&quot; argument.
+		&quot;args&quot;: [ &quot;--editor, &quot;--path&quot;, &quot;path-to-your-godot-project-folder&quot; ],
+		&quot;stopAtEntry&quot;: false,
+		&quot;cwd&quot;: &quot;${workspaceFolder}&quot;,
+		&quot;environment&quot;: [],
+		&quot;externalConsole&quot;: false,
+}
+</code></pre>
+<p>That's the VSCode <code>.json</code> from the Godot documentation guide, but replacing <code>lldb</code> with <code>cppdbg</code>, and removing the <code>preLaunchTask</code> property (you'll have to create a &quot;build&quot; task <code>.json</code> if you want a <code>preLaunchTask</code>). After that, you should be able to add breakpoints with <code>M-x dap-breakpoint-add</code> and run <code>M-x dap-debug</code> successfully.</p>
+<h3 id="why-emacs-though-isn-t-vscode-much-easier-to-configure-and-use-for-c-development">Why Emacs, though? Isn't VSCode much easier to configure and use for C++ development?</h3>
+<p>Yes.</p>
+
+  <hr class="hr_bottom"/>
+</p>
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+	<div class="left">
+		<a href="https://mastodon.gamedev.place/@henriquelalves">
+				<img src="/socials/mastodon.png" alt="Mastodon icon">
+		</a>
+		&nbsp;
+		<a href="https://github.com/henriquelalves">
+				<img src="/socials/github.png" alt="Github icon">
+		</a>
+		&nbsp;
+		<a href="https://www.linkedin.com/in/henriquelalves/">
+		  <img src="/socials/linkedin.png" alt="Linkedin icon">
+		</a>
+		&nbsp;
+		<a href="https://perons.itch.io/">
+			<img src="/socials/itchio.png" alt="ItchIo icon">
+		</a>		
+	</div>
+	<div class="right">
+		<a href="/">henriquelalves</a>&emsp;&copy; henrique l alves<br>
+		powered by <a href="https://www.getzola.org/">Zola</a>, based on <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+	</div>
+</div>
+
+</html>
