@@ -5,7 +5,7 @@ base_url = "https://henriquelalves.com"
 title = "henriquelalves"
 description = ""
 
-generate_feed = true
+#generate_feed = true
 
 # The default language; used in feeds.
 default_language = "en"

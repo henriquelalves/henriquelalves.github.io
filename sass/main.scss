@@ -3,8 +3,19 @@
 $rose: #ebbcba;
 $iris: #c4a7e7;
 
-$backgroundcolor: #191724;
-$textcolor: #e0def4;
+$base0: #464258;
+$base1: #514C66;
+$base2: #6A6483;
+$base3: #9673D3;
+$base4: #A0A0C0;
+$base5: #B8A2CE;
+$base6: #726C8A;
+$base7: #5B576C;
+$base8: #716799;
+$base9: #FFB8D1;
+
+$backgroundcolor: $base0;//#191724;
+$textcolor: $base5;//#e0def4;
 
 
 body {
@@ -45,7 +56,7 @@ body {
     background-color: $backgroundcolor;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 1px $rose;
+    border-bottom: solid 1px $base9;
     overflow: hidden;
     a {
         color: $textcolor;
@@ -61,7 +72,7 @@ body {
     justify-content: space-between;
     font-size: 1.5rem;
     a {
-        color: $textcolor;
+        color: $base9;
         text-decoration: none;
     }
 }
@@ -83,7 +94,7 @@ body {
 }
 
 .title {
-    color: $rose;
+    color: $base9;
     font-size: 1.3rem;
     a {
         text-decoration: none;
@@ -101,7 +112,7 @@ body {
     font-size: 1.6em;
     line-height: 1.4em;
     font-weight: bold;
-    color: $textcolor;
+    color: $base9;
 }
 
 .taxonomies a {
@@ -134,7 +145,7 @@ body {
 }
 
 .hr_bottom {
-  color: $rose;
+  color: $base9;
 }
 
 .footer {
@@ -195,7 +206,7 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $rose;
+    color: $base9;
     font-weight: bold;
 }
 
@@ -208,8 +219,10 @@ pre {
 
 :not(pre)>code {
     color: $backgroundcolor;
-    background-color: $textcolor;
+    background-color: $base5;
     padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
     border-radius: 8px;
 }
 
